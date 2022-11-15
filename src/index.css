@@ -7,7 +7,6 @@ body {
   font: 300 11px/1.4 'Coolvetica', 'Helvetica Neue', 'sans-serif';
   color: #1a1a1a;
   background: #fff;
-  overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

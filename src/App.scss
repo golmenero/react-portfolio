@@ -21,3 +21,60 @@ input,
 textarea {
   font-family: 'Helvetica Neue';
 }
+
+.page {
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.section-card {
+  padding: 2em;
+  background-color: #e6e6e6;
+
+  .text-large {
+    font-size: 2.5em;
+  }
+
+  .text-medium {
+    font-size: 1.5em;
+  } 
+}
