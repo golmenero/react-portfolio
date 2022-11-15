@@ -1,12 +1,16 @@
 .nav-bar {
     
     nav {
+        z-index: 3;
+        position: fixed;
+        top: 0;
         display: flex;
         width: 100%;
         font-family: 'Coolvetica';
-        padding-top: 14px;
+        padding: 14px 0;
+        background: #fff;
 
-        a, span {
+        a {
             text-decoration: none;
             font-size: 2em;
             font-weight: 400;
@@ -37,17 +41,14 @@
         }
     
         .nav-bar-left {
-            width: 25%;
             float: left;
         }
     
         .nav-bar-center {
-            width: 50%;
             text-align: center;
         }
     
         .nav-bar-right {
-            width: 25%;
             float: right;
             text-align: right;
         }
