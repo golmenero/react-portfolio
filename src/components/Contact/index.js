@@ -27,6 +27,7 @@ const Contact = () => {
 
     return (
         <>
+        <section id="contact">
             <div className='container contact-page'>
                 <div className='text-zone'>
 
@@ -56,6 +57,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+        </section>
         </>
     )
 }
