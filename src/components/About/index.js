@@ -1,25 +1,28 @@
 import './index.scss';
 
 const About = () => {
-
+    
     return (
-        <>
-            <div className='container about-page'>
-                <div className='text-zone'>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
+        <section id="about">
+            <div className='about-page'>
+                <div className='section-card header-zone'>
+                    <h1 className='text-large justify'>
+                        I'm Carlos, a Software Engineer. I love programming to make the world a simpler place.
+                    </h1>
+                    <div className='header-zone-subtext'>
+                        <div className='text-medium'>
+                            <p className='text-justify'>
+                            I am a young Engineer with a passion for programming. Since I was a kid I have been obsessed with solving problems, and code development allows me to fulfill my dream of unleashing my creativity to put a solution to any problem in the world, while making people's lives easier. any problem in the world, while making people's lives easier.
+                            </p>
+                            <span class="quote">"Build the simplest code, solve the biggest problems"</span>
+                        </div>
+                        <img className='w-25' alt="Profile picture" src='logo.png'/>
+                    </div>
                 </div>
             </div>
-        </>
+        </section>
 
     )
 }
 
-export default About
+export default About;
