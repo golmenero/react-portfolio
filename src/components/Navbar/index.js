@@ -6,12 +6,12 @@ const Navbar = () => (
     <div className='nav-bar'>
         <nav>
             <div className='nav-bar-left w-25'>
-                <a exact="true" activeclassname="active" href="#about">Carlos Gómez</a>
+                <a exact="true" activeclassname="active" href="#about">&lt; Carlos Gómez /&gt;</a>
             </div>
             <div className='nav-bar-center w-50'>
                 <a exact="true" activeclassname="active" href="#about">About</a>
                 <a exact="true" activeclassname="active" className="about-link" href="#skills">Skills</a>
-                <a exact="true" activeclassname="active" className="contact-link" href="#project">Projects</a>
+                <a exact="true" activeclassname="active" className="contact-link" href="#projects">Projects</a>
                 <a exact="true" activeclassname="active" className="contact-link" href="#contact">Contact Me</a>
             </div>
             <div className='nav-bar-right w-25'>
