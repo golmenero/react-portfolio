@@ -1,41 +1,38 @@
 .about-page {
+    margin-top: 125px;
+    animation: fadeInDown 2s 1s;
+    animation-delay: 0ms;
+    transition:all 1s ease-in-out;
 
-    .header-zone {
-        margin-top: 125px;
-        animation: fadeInDown 2s 1s;
-        animation-delay: 0ms;
-        transition:all 1s ease-in-out;
+    .about-subtext {
+        position: relative;
+        opacity: 0;
+        animation: fadeIn 1.5s 1.5s;
+        animation-fill-mode: forwards;
+        clear: both;
 
-        .header-zone-subtext {
-            display: flex;
-            position: relative;
-            opacity: 0;
-            animation: fadeIn 1.5s 1.5s;
-            animation-fill-mode: forwards;
-            clear: both;
+        p {
+            margin-right: 2em;
+            height: 50%;
+        }
 
-            p {
-                margin-right: 2em;
-                height: 50%;
-            }
+        .quote {
+            font-family: "La Belle Aurore";
+            display: block;
+            text-align: center;  
+        }
 
-            .quote {
-                font-family: "La Belle Aurore";
-                display: block;
-                text-align: center;  
-            }
-
-            .text-justify {
-                height: fit-content;
-                text-align: justify;
-            }
-
-            img {
-                object-fit: contain;
-                max-height: 100px;
-            }
+        .text-justify {
+            height: fit-content;
+            text-align: justify;
         }
     }
-    
 
+    img {
+        object-fit: contain;
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 100%;
+        border: 6px solid white;
+    }
 }
