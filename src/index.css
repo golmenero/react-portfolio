@@ -4,10 +4,70 @@ html {
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Coolvetica', 'Helvetica Neue', 'sans-serif';
-  color: #1a1a1a;
-  background: #fff;
+  font: 300 11px/1.4 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: #333333;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.text-xl {
+  font-size: 5em;
+}
+
+.text-l {
+  font-size: 3em;
+}
+
+.text-m {
+  font-size: 1.5em;
+} 
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+}
+
+.mr-5em {
+  margin-right: 5em;
+}
+
+.p-5em {
+  padding: 5em;
 }
