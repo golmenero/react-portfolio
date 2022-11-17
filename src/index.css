@@ -21,11 +21,15 @@ body {
 }
 
 .text-m {
-  font-size: 1.5em;
+  font-size: 1.8em;
 } 
 
 .w-25 {
   width: 25%;
+}
+
+.w-33 {
+  width: 33%;
 }
 
 .w-50 {
@@ -56,6 +60,10 @@ body {
   height: 100%;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 .justify {
   text-align: justify;
 }
@@ -64,10 +72,26 @@ body {
   display: flex;
 }
 
+.centered {
+  text-align: center;
+}
+
 .mr-5em {
   margin-right: 5em;
 }
 
 .p-5em {
   padding: 5em;
+}
+
+.m-15px {
+  margin: 15px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }
