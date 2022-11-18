@@ -1,0 +1,33 @@
+#projects {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s 2.5s;
+    animation-fill-mode: forwards;
+    clear: both;
+
+    .projects-page {
+        .projects-grid {
+            display: grid;
+            column-gap: 0px;
+            row-gap: 0px;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            
+            .project {
+                text-align: center;
+            }
+        }
+        
+
+        img {
+            height: auto;
+            width: auto;
+
+            max-height: 200px;
+        }
+    }
+}
