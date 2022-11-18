@@ -2,15 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
 
 
-const Skill = ({ icon, color, text, position}) => {
+const Skill = ({ icon, title, subtitle}) => {
     
     return (
-        <div className={`skill ${position}`}>
-            <div className='left m-15px'>
-                <FontAwesomeIcon icon={icon} className="icon-skill" color={color}/>
+        <div className='skill centered p-2em'>
+            <div>
+                <FontAwesomeIcon icon={icon} className="icon-skill" color="#999999"/>
             </div>
-            <div className='text-m bold'>
-                <p className='left'>{text}</p>
+            <div>
+                <h3 className='text-m bold-600'>{title}</h3>
+                <p className='text-s'>{subtitle}</p>
             </div>
         </div>                 
     )
