@@ -24,6 +24,10 @@ body {
   font-size: 1.8em;
 } 
 
+.text-s {
+  font-size: 1.4em;
+} 
+
 .w-25 {
   width: 25%;
 }
@@ -60,7 +64,7 @@ body {
   height: 100%;
 }
 
-.bold {
+.bold-600 {
   font-weight: 600;
 }
 
@@ -80,6 +84,10 @@ body {
   margin-right: 5em;
 }
 
+.p-2em {
+  padding: 2em;
+}
+
 .p-5em {
   padding: 5em;
 }
@@ -88,10 +96,26 @@ body {
   margin: 15px;
 }
 
+.m-r10px {
+  margin-right: 10px;
+} 
+
+.m-l10px {
+  margin-left: 10px;
+}
+
 .right {
   float: right;
 }
 
 .left {
   float: left;
+}
+
+p {
+  margin: 0;
+}
+
+.highlighted-text {
+  color: #EBF983;
 }
