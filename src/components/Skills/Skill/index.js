@@ -11,7 +11,7 @@ const Skill = ({ icon, title, subtitle}) => {
             </div>
             <div>
                 <h3 className='text-m bold-600'>{title}</h3>
-                <p className='text-s'>{subtitle}</p>
+                <p className='text-s justify'>{subtitle}</p>
             </div>
         </div>                 
     )
