@@ -11,7 +11,7 @@ function App() {
     <header>
         <Navbar />
     </header>
-    <main class="page">
+    <main className="page">
         <About />
         <Skills />
         <Projects />

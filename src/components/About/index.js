@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section id="about">
             <div className='about-page p-5em flex'>
-                <div class="w-75 mr-5em">
+                <div className="w-75 mr-5em">
                     <h1 className='text-l justify'>
                         <span className='highlighted-text'>Hello!</span> <br/> I'm Carlos, a software developer.
                     </h1>
@@ -16,12 +16,12 @@ const About = () => {
                         <p className='text-justify text-s'>
                             Since I was a kid I've been obsessed with solving problems, and code development allows me to fulfill my dream of unleashing my creativity to put a solution to any problem in the world, while making people's lives easier.
                         </p>
-                        <p class="quote text-l">
+                        <p className="quote text-l">
                             "Build the simplest code, solve the most complex problems"
                         </p>
                     </div>
                 </div>
-                <div class="w-25">
+                <div className="w-25">
                     <img alt="Profile" src='logo.jpeg'/>
                 </div>
             </div>
