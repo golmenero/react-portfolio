@@ -1,34 +1,66 @@
 .project {
     background: #404040;
-    min-height: 250px;
+    min-height: 200px;
+    text-align: center;
+    padding: 3em;
+    p {
+        display: none;
+    }
 
     &:hover {
-        background: #4d4d4d;
+        p {
+            display: block;
+        }
+
+        &.realestate {
+            background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('../../../../public/projects/project-realestate.png');
+            background-size: cover;
+            background-position: center;
+        }
+    
+        &.spring {
+            background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('../../../../public/projects/project-spring.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    
+        &.shooter {
+            background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('../../../../public/projects/project-shooter.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    
+        &.game {
+            background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('../../../../public/projects/project-js.png');
+            background-size: cover;
+            background-position: center;
+        }
+
         svg, h3 {
             color: #EBF983;
         }
     }
 
     &.realestate {
-        background: url('../../../../public/projects/project-realestate.png');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../../../public/projects/project-realestate.png');
         background-size: cover;
         background-position: center;
     }
 
     &.spring {
-        background: url('../../../../public/projects/project-spring.jpg');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../../../public/projects/project-spring.jpg');
         background-size: cover;
         background-position: center;
     }
 
     &.shooter {
-        background: url('../../../../public/projects/project-shooter.jpg');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../../../public/projects/project-shooter.jpg');
         background-size: cover;
         background-position: center;
     }
 
     &.game {
-        background: url('../../../../public/projects/project-js.png');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../../../public/projects/project-js.png');
         background-size: cover;
         background-position: center;
     }
