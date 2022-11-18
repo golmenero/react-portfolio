@@ -6,7 +6,7 @@ const Navbar = () => (
     <div className='nav-bar'>
         <nav>
             <div className='nav-bar-left w-25'>
-                <a exact="true" activeclassname="active" href="#about">&lt; Carlos Gómez /&gt;</a>
+                <a exact="true" activeclassname="highlighted-text" href="#about"><span className='highlighted-text'>&lt; Carlos Gómez /&gt;</span></a>
             </div>
             <div className='nav-bar-center w-50'>
                 <a exact="true" activeclassname="active" href="#about">About</a>
