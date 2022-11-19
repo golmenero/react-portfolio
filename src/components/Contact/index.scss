@@ -1,9 +1,11 @@
+@import '../../App.scss';
+
 .contact-form {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 20px;
-    background: #4d4d4d;
+    background: $secondary-color;
 
     ul {
         padding: 0;
@@ -21,8 +23,8 @@
         }
 
         li.half {
-            width: 49%;
-            margin-left: 2%;
+            width: 49.5%;
+            margin-left: 1%;
             float: left;
             clear: none;
 
@@ -59,16 +61,16 @@
         font-weight: 600;
         cursor: pointer;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #EBF983;
-        border: 1px solid #EBF983;
-        background: #333333;
+        color: $accent-color;
+        border: 1px solid $accent-color;
+        background: $primary-color;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
 
         &:hover {
-            background: #EBF983;
-            color: #333333;
+            background: $accent-color;
+            color: $primary-color;
         }
     }
 }

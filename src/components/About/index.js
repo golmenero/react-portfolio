@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section id="about">
             <div className='about-page p-5em flex'>
-                <div className="w-75 mr-5em">
+                <div className="w-75 m-r5em">
                     <h1 className='text-l justify'>
                         <span className='highlighted-text'>Hello!</span> <br/> I'm Carlos, a software developer.
                     </h1>

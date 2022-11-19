@@ -1,4 +1,6 @@
-$primary-color: #1a1a1a;
+$primary-color: #333333;
+$secondary-color: #4d4d4d;
+$accent-color: #ffcc66;
 
 @import 'animate.css';
 
@@ -30,6 +32,123 @@ textarea {
   display: block;
 }
 
-.text-blue {
-  color: #9bace7;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: $primary-color;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-xl {
+  font-size: 5em;
+}
+
+.text-l {
+  font-size: 3em;
+}
+
+.text-m {
+  font-size: 1.8em;
+} 
+
+.text-s {
+  font-size: 1.4em;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.centered {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.highlighted-text {
+  color: $accent-color;
+}
+
+.border {
+  position: relative;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 10px 10px rgba(0,0,0,.15);
+}
+
+// WIDTH
+$widths: 25, 33, 50, 75, 100;
+@each $width in $widths {
+  .w-#{$width} {
+    width: $width * 1%;
+  }
+}
+
+// HEIGHT
+$heights: 25, 33, 50, 75, 100;
+@each $height in $heights {
+  .h-#{$height} {
+    height: $height * 1%;
+  }
+}
+
+// FONT-WEIGHT
+$weights: 400, 600, 800;
+@each $weight in $weights {
+  .bold-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+// PADDING
+$paddings: 2em, 5em;
+@each $padding in $paddings {
+  .p-#{$padding} {
+    padding: $padding;
+  }
+}
+
+// MARGIN
+$ms: 15px;
+@each $m in $ms {
+  .m-#{$m} {
+    margin: $m;
+  }
+}
+
+// MARGIN-RIGHT
+$mrs: 10px, 5em;
+@each $mr in $mrs {
+  .m-r#{$mr} {
+    margin-right: $mr;
+  }
+}
+
+// MARGIN-LEFT
+$mls: 10px;
+@each $ml in $mls {
+  .m-l#{$ml} {
+    margin-left: $ml;
+  }
+}
+
+
+// FLOAT
+$floats: right, left;
+@each $float in $floats {
+  .#{$float} {
+    float: $float;
+  }
 }

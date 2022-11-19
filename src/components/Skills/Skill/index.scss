@@ -1,16 +1,18 @@
+@import '../../../App.scss';
+
 .icon-skill {
     height: 40px;
     width: 40px;
 }
 
 .skill {
-    background: #404040;
+    background: $secondary-color;
     min-height: 30px;
 
     &:hover {
-        background: #4d4d4d;
+        background: $secondary-color;
         svg, h3 {
-            color: #EBF983;
+            color: $accent-color;
         }
     }
 }
