@@ -33,7 +33,7 @@ const Contact = () => {
                     <h1 className='text-l highlighted-text justify centered'>
                         <div>Contact Me</div>
                     </h1>
-                    <div className='contact-form p-2em border'>
+                    <div className='contact-form p-2em'>
                         <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>

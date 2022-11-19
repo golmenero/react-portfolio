@@ -1,5 +1,6 @@
 $primary-color: #333333;
 $secondary-color: #4d4d4d;
+$text-color: #fff;
 $accent-color: #ffcc66;
 
 @import 'animate.css';
@@ -39,7 +40,7 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
+  color: $text-color;
   background: $primary-color;
   display: block;
   -webkit-font-smoothing: antialiased;
@@ -82,10 +83,8 @@ p {
   color: $accent-color;
 }
 
-.border {
-  position: relative;
-  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
-  box-shadow: 10px 10px rgba(0,0,0,.15);
+.white-content {
+  background: #e4e4e4;
 }
 
 // WIDTH
