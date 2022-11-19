@@ -5,7 +5,7 @@ import './index.scss';
 const Skill = ({ icon, title, subtitle}) => {
     
     return (
-        <div className='skill centered p-2em'>
+        <div className='skill centered border p-2em'>
             <div>
                 <FontAwesomeIcon icon={icon} className="icon-skill" color="#999999"/>
             </div>

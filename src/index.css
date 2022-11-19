@@ -119,3 +119,11 @@ p {
 .highlighted-text {
   color: #EBF983;
 }
+
+.border {
+  position: relative;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: white;
+  box-shadow: 10px 10px rgba(0,0,0,.15);
+}

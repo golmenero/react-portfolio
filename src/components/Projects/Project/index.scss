@@ -1,11 +1,15 @@
 .project {
-    background: #404040;
     min-height: 200px;
     text-align: center;
     padding: 3em;
+    text-decoration: none;
+    color: inherit;
+    
     p {
         display: none;
     }
+    
+
 
     &:hover {
         p {

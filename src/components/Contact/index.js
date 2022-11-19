@@ -1,8 +1,6 @@
 import { useRef } from 'react';
 import './index.scss';
 import emailjs from '@emailjs/browser';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
     const refForm = useRef();
@@ -29,14 +27,13 @@ const Contact = () => {
 
     return (
         <>
-
         <section id="contact">
             <div className='contact-page p-5em'>
                 <div className='w-100'>
                     <h1 className='text-l highlighted-text justify centered'>
                         <div>Contact Me</div>
                     </h1>
-                    <div className='contact-form'>
+                    <div className='contact-form p-2em border'>
                         <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
@@ -52,7 +49,9 @@ const Contact = () => {
                                     <textarea placeholder='Message' name='message' required></textarea>
                                 </li>
                                 <li>
-                                    <input type='submit' className='flat-button' value="SEND" />
+                                    <div className='centered'>
+                                        <input type='submit' className='flat-button' value="SEND" />
+                                    </div>
                                 </li>
                             </ul>
                         </form>
