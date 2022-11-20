@@ -11,7 +11,7 @@
     }
 
     nav {
-        background:   $primary-color;
+        background: $navigation-color;
 
         a {
             text-decoration: none;
@@ -22,26 +22,28 @@
         }
           
         a:hover {
-            color: $text-color;
+            color: $accent-color;
         }
           
-        a::before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: $accent-color;
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
+        .liner {
+            a::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $accent-color;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+              
+            a:hover::before {
+                transform: scaleX(1);
+            }
         }
-          
-        a:hover::before {
-            transform: scaleX(1);
-        }
-
+        
         .nav-item {
             margin-left: 10px;
             margin-right: 10px;

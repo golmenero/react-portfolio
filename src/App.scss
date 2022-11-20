@@ -1,3 +1,4 @@
+$navigation-color: #262626;
 $primary-color: #333333;
 $secondary-color: #4d4d4d;
 $text-color: #fff;
@@ -25,9 +26,9 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: $text-color;
-  background: url('.././public/background.png');
+  background: url('.././public/background_hd.png');
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -134,4 +135,12 @@ $floats: right, left;
 
 .container {
   margin-top: 100px;
+
+  h1:first-of-type {
+    margin-bottom: 75px;
+  }
+}
+
+.section-subtitle {
+  margin-bottom: 25px;
 }

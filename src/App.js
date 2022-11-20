@@ -1,8 +1,8 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes} from 'react-router-dom';
 import './App.scss';
-import Layout from './components/Layout';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -28,18 +28,20 @@ function App() {
   return (
     <>
     <header>
-        <Navigation />
+      <Navigation />
     </header>
     <main>
       <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="skills" element={<Skills />}></Route>
-            <Route path="projects" element={<Projects />}></Route>
-            <Route path="contact" element={<Contact />}></Route>
-          </Route>
+          <Route path="/" element={<Navigate to="about" />} />
+          <Route path="about" element={<About />}></Route>
+          <Route path="skills" element={<Skills />}></Route>
+          <Route path="projects" element={<Projects />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
       </Routes>
     </main>
+    <footer>
+      <Footer />
+    </footer>
     </>
   );
 }

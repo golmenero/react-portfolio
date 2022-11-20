@@ -18,7 +18,7 @@ const Navigation = () => {
         <NavbarBrand className='w-50' href="/">&lt; Carlos Gómez /&gt;</NavbarBrand>
         <NavbarToggler onClick={toggle}/>
         <Collapse className='w-100' isOpen={isOpen} navbar>
-          <Nav className='w-100 justify-content-center' navbar>
+          <Nav className='liner w-100 justify-content-center' navbar>
               <NavItem>
                 <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="/about">About</NavLink>
               </NavItem>
@@ -35,12 +35,12 @@ const Navigation = () => {
             <Nav className='w-100 justify-content-end'>
               <NavItem className='right'>
                 <NavLink href="https://www.linkedin.com/in/carlos-gomez-colmenero/">
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon className='highlighted-text' icon={faLinkedin} />
                 </NavLink>
               </NavItem>
               <NavItem className='right'>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  <FontAwesomeIcon icon={faGithub} />
+                <NavLink href="https://github.com/golmenero">
+                  <FontAwesomeIcon className='highlighted-text' icon={faGithub} />
                 </NavLink>
               </NavItem>
           </Nav>

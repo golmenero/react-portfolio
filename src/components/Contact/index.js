@@ -31,32 +31,35 @@ const Contact = () => {
         <>
         <Container className='fade-in-first'>
             <form ref={refForm} onSubmit={sendEmail}>
-                <Row>
-                    <h1 className='highlighted-text centered'>Contact Me</h1>
+                <Row className='fade-in-first'>
+                    <h1 className='highlighted-text'>Contact Me</h1>
+                    <p className='section-subtitle text-m'>I will be happy to answer any questions you have.</p>
                 </Row>
-                <Row>
-                    <Col sm='12' md="6">
-                        <Input bsSize="lg" type="text" name='name' placeholder='Name' required />
-                    </Col>
-                    <Col sm='12' md="6">
-                        <Input bsSize="lg" type="email" name='email' placeholder='Email' required />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Input bsSize="lg" placeholder='Subject' type="text" name="subject" required />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Input bsSize="lg" type="textarea" placeholder='Message' name='message' required />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Button type='submit' className='flat-button'>Send</Button>
-                    </Col>
-                </Row>
+                <div className='fade-in-second'>
+                    <Row>
+                        <Col sm='12' md="3">
+                            <Input type="text" name='name' placeholder='Name' required />
+                        </Col>
+                        <Col sm='12' md="3">
+                            <Input type="email" name='email' placeholder='Email' required />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md="6">
+                            <Input placeholder='Subject' type="text" name="subject" required />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md="6">
+                            <Input type="textarea" placeholder='Message' name='message' required />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md="6">
+                            <Button type='submit' className='flat-button right'>Contact Me</Button>
+                        </Col>
+                    </Row>
+                </div>
             </form>
         </Container>
         <Loader type="ball-scale-ripple-multiple" />
