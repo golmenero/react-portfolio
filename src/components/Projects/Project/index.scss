@@ -4,14 +4,15 @@
     min-height: 200px;
     text-align: center;
     padding: 3em;
-    text-decoration: none;
-    color: inherit;
-    
-    p {
-        display: none;
-    }
-    
 
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        p {
+            display: none;
+        }   
+    }
 
     &:hover {
         p {

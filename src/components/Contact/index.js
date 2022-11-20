@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import './index.scss';
 import emailjs from '@emailjs/browser';
+import { Button, Col, Input, Row } from 'reactstrap';
 
 const Contact = () => {
     const refForm = useRef();
@@ -27,37 +28,35 @@ const Contact = () => {
 
     return (
         <>
-        <section id="contact">
-            <div className='contact-page p-5em'>
-                <div className='w-100'>
-                    <h1 className='text-l highlighted-text justify centered'>
-                        <div>Contact Me</div>
-                    </h1>
-                    <div className='contact-form p-2em'>
-                        <form ref={refForm} onSubmit={sendEmail}>
-                            <ul>
-                                <li className='half'>
-                                    <input type="text" name='name' placeholder='Name' required />
-                                </li>
-                                <li className='half'>
-                                    <input type="email" name='email' placeholder='Email' required />
-                                </li>
-                                <li>
-                                    <input placeholder='Subject' type="text" name="subject" required />
-                                </li>
-                                <li>
-                                    <textarea placeholder='Message' name='message' required></textarea>
-                                </li>
-                                <li>
-                                    <div className='centered'>
-                                        <input type='submit' className='flat-button' value="SEND" />
-                                    </div>
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <section className='fade-in-third'  id="contact">
+            <form ref={refForm} onSubmit={sendEmail}>
+                <Row>
+                    <h1 className='highlighted-text centered'>Contact Me</h1>
+                </Row>
+                <Row>
+                    <Col sm='12' md="6">
+                        <Input bsSize="lg" type="text" name='name' placeholder='Name' required />
+                    </Col>
+                    <Col sm='12' md="6">
+                        <Input bsSize="lg" type="email" name='email' placeholder='Email' required />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Input bsSize="lg" placeholder='Subject' type="text" name="subject" required />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Input bsSize="lg" type="textarea" placeholder='Message' name='message' required />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Button type='submit' className='flat-button'>Send</Button>
+                    </Col>
+                </Row>
+            </form>
         </section>
         </>
     )

@@ -1,23 +1,9 @@
 @import '../../App.scss';
 
 #skills {
-    margin-top: 100px;
-    opacity: 0;
-    animation: fadeIn 1.5s 2.5s;
-    animation-fill-mode: forwards;
-    clear: both;
-
-    .skills-page {
-        .skills-grid {
-            width: 80%;
-            margin-left: 10%;
-            margin-right: 10%;
-            display: grid;
-            column-gap: 50px;
-            row-gap: 20px;
-            grid-template-columns: auto auto auto;
+    .row {
+        div {
+            margin-bottom: 15px;
         }
     }
 }
-
-

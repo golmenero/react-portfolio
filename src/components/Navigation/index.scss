@@ -1,22 +1,22 @@
 @import '../../App.scss';
 
 .nav-bar {
-    
+    position: fixed;
+    top:0;
+    z-index: 100;
+    width: 100%;
+
+    .navbar-toggler {
+        color: $text-color;
+    }
+
     nav {
-        z-index: 3;
-        position: fixed;
-        top: 0;
-        display: flex;
-        width: 100%;
-        font-family: 'Coolvetica';
-        padding: 14px 0;
         background:   $primary-color;
 
         a {
             text-decoration: none;
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: 400;
-            margin: 25px;
             color: inherit;
             position: relative;
         }
@@ -41,18 +41,14 @@
         a:hover::before {
             transform: scaleX(1);
         }
-    
-        .nav-bar-left {
-            float: left;
+
+        .nav-item {
+            margin-left: 10px;
+            margin-right: 10px;
         }
-    
-        .nav-bar-center {
-            text-align: center;
-        }
-    
-        .nav-bar-right {
-            float: right;
-            text-align: right;
+
+        .navbar-brand {
+            color: $accent-color;
         }
     }
 
