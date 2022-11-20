@@ -4,6 +4,7 @@ $text-color: #fff;
 $accent-color: #ffcc66;
 
 @import 'animate.css';
+@import '~loaders.css/src/animations/ball-scale-ripple-multiple.scss';
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -24,7 +25,9 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: $text-color;
-  background: $primary-color;
+  background: url('.././public/background.png');
+  background-position: center;
+  background-size: cover;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -64,6 +67,25 @@ p {
 
 .highlighted-text {
   color: $accent-color;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+
+  .loader-inner div {
+    color: $accent-color;
+    background-color: $accent-color;
+  }
 }
 
 // FONT-WEIGHT
@@ -110,10 +132,6 @@ $floats: right, left;
   opacity: 0;
 }
 
-section {
+.container {
   margin-top: 100px;
-}
-
-section div:first-of-type > h1:first-of-type {
-  margin-bottom: 50px;
 }

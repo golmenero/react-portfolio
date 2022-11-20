@@ -1,25 +1,21 @@
 @import '../../App.scss';
 
-#about {
-    margin-top: 150px;
-    
-    p {
-        margin-right: 2em;
-        height: 50%;
-    }
-    
-    .quote {
-        font-family: "La Belle Aurore";
-        display: block;
-        text-align: center;  
-        margin: 1em 0px;
-    }
-    
-    img {
-        object-fit: contain;
-        max-height: 100%;
-        max-width: 100%;
-        border-radius: 100%;
-        border: 4px solid $accent-color;
-    }
+p {
+    margin-right: 2em;
+    height: 50%;
+}
+
+.quote {
+    font-family: "La Belle Aurore";
+    display: block;
+    text-align: center;  
+    margin: 1em 0px;
+}
+
+img {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 100%;
+    border: 4px solid $accent-color;
 }

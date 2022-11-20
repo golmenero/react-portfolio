@@ -3,11 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
+  const location = useLocation();
+  const {pathname} = location;
+  const splitLocation = pathname.split("/");
   return (
     <div className='nav-bar'>
       <Navbar expand="md">
@@ -16,16 +20,16 @@ const Navigation = () => {
         <Collapse className='w-100' isOpen={isOpen} navbar>
           <Nav className='w-100 justify-content-center' navbar>
               <NavItem>
-                <NavLink href="#about">About</NavLink>
+                <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="/about">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#skills">Skills</NavLink>
+                <NavLink className={splitLocation[1] === "skills" ? "active" : ""} href="/skills">Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#projects">Projects</NavLink>
+                <NavLink className={splitLocation[1] === "projects" ? "active" : ""} href="/projects">Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#contact">Contact Me</NavLink>
+                <NavLink className={splitLocation[1] === "contact" ? "active" : ""} href="/contact">Contact Me</NavLink>
               </NavItem>
               </Nav>
             <Nav className='w-100 justify-content-end'>

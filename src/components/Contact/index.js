@@ -1,7 +1,8 @@
 import { useRef } from 'react';
 import './index.scss';
 import emailjs from '@emailjs/browser';
-import { Button, Col, Input, Row } from 'reactstrap';
+import { Button, Col, Container, Input, Row } from 'reactstrap';
+import Loader from 'react-loaders';
 
 const Contact = () => {
     const refForm = useRef();
@@ -28,7 +29,7 @@ const Contact = () => {
 
     return (
         <>
-        <section className='fade-in-third'  id="contact">
+        <Container className='fade-in-first'>
             <form ref={refForm} onSubmit={sendEmail}>
                 <Row>
                     <h1 className='highlighted-text centered'>Contact Me</h1>
@@ -57,7 +58,8 @@ const Contact = () => {
                     </Col>
                 </Row>
             </form>
-        </section>
+        </Container>
+        <Loader type="ball-scale-ripple-multiple" />
         </>
     )
 }

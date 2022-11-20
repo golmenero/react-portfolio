@@ -51,7 +51,8 @@
             color: $accent-color;
         }
     }
+}
 
-
-   
+.nav-link.active {
+    color: $accent-color !important;
 }
