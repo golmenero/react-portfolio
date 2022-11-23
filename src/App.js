@@ -12,18 +12,18 @@ function App() {
   /**
    * Event move background with cursor
    */
-  var movementStrength = 25;
-  var height = movementStrength / window.innerHeight;
-  var width = movementStrength / window.innerWidth;
-
-  document.addEventListener('mousemove', function (e) {
-    var pageX = e.pageX - (window.innerWidth / 2);
-    var pageY = e.pageY - (window.innerHeight / 2);
-    var newvalueX = width * pageX * -1 - 25;
-    var newvalueY = height * pageY * -1 - 50;
-
-    document.body.style.backgroundPosition = newvalueX+"px     "+newvalueY+"px";
-  })
+   var movementStrength = 10;
+   var height = movementStrength / window.innerHeight;
+   var width = movementStrength / window.innerWidth;
+ 
+   document.addEventListener('mousemove', function (e) {
+     var pageX = e.pageX - (window.innerWidth / 2);
+     var pageY = e.pageY - (window.innerHeight / 2);
+     var newvalueX = width * pageX * -1 - 25;
+     var newvalueY = height * pageY * -1 - 50;
+ 
+     document.body.style.backgroundPosition = newvalueX+"px     "+newvalueY+"px";
+   })
 
   return (
     <>

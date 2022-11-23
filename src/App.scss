@@ -5,7 +5,6 @@ body.light {
   --global-secondary-color:  #cccccc;
   --global-accent-color: #54926e;
   background: url('../public/background_light.png');
-  transition:all 1s ease-in-out;
 }
 
 body.dark {
@@ -15,7 +14,6 @@ body.dark {
   --global-secondary-color: #4d4d4d;
   --global-accent-color: #ffcc66;
   background: url('../public/background_dark.png');
-  transition:all 1s ease-in-out;
 }
 
 @import 'animate.css';
