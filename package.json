@@ -1,7 +1,6 @@
 {
   "name": "react-portfolio",
   "homepage": "https://golmenero.github.io/",
-  "predeploy": "npm run build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
