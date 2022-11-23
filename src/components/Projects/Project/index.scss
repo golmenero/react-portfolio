@@ -44,7 +44,7 @@
         }
 
         svg, h3 {
-            color: $accent-color;
+            color: var(--global-accent-color);
         }
     }
 

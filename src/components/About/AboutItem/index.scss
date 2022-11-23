@@ -7,13 +7,13 @@
 
 .about-item {
     height: 100%;
-    background: $secondary-color;
+    background: var(--global-secondary-color);
     min-height: 30px;
 
     &:hover {
-        background: $secondary-color;
+        background: var(--global-secondary-color);
         svg, h3 {
-            color: $accent-color;
+            color: var(--global-accent-color);
         }
     }
 }

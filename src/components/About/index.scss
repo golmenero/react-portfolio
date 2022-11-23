@@ -17,5 +17,5 @@ img {
     max-height: 100%;
     max-width: 100%;
     border-radius: 100%;
-    border: 4px solid $accent-color;
+    border: 4px solid var(--global-accent-color);
 }

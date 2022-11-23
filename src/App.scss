@@ -1,8 +1,22 @@
-$navigation-color: #262626;
-$primary-color: #333333;
-$secondary-color: #4d4d4d;
-$text-color: #fff;
-$accent-color: #ffcc66;
+body.light {
+  --global-primary-color: #e9e7e4;
+  --global-text-color: #0c0c0c;
+  --global-navigation-color: #cccccc;
+  --global-secondary-color:  #cccccc;
+  --global-accent-color: #54926e;
+  background: url('../public/background_light.png');
+  transition:all 1s ease-in-out;
+}
+
+body.dark {
+  --global-primary-color: #333333;
+  --global-text-color: #fff;
+  --global-navigation-color: #262626;
+  --global-secondary-color: #4d4d4d;
+  --global-accent-color: #ffcc66;
+  background: url('../public/background_dark.png');
+  transition:all 1s ease-in-out;
+}
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/ball-scale-ripple-multiple.scss';
@@ -25,8 +39,7 @@ $accent-color: #ffcc66;
 body {
   margin: 0;
   font: 300 11px/1.4 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: $text-color;
-  background: url('.././public/background_hd.png');
+  color: var(--global-text-color);
   background-position: center;
   background-size: auto;
   display: block;
@@ -67,7 +80,7 @@ p {
 }
 
 .highlighted-text {
-  color: $accent-color;
+  color: var(--global-accent-color);
 }
 
 .loader-active {
@@ -84,8 +97,8 @@ p {
   animation-fill-mode: forwards;
 
   .loader-inner div {
-    color: $accent-color;
-    background-color: $accent-color;
+    color: var(--global-accent-color);
+    background-color: var(--global-accent-color);
   }
 }
 
@@ -116,7 +129,6 @@ $floats: right, left;
 .fade-in-first {
   animation: fadeInDown 2s 1s;
   animation-delay: 0ms;
-  transition:all 1s ease-in-out;
 }
 
 .fade-in-second {
@@ -143,4 +155,8 @@ $floats: right, left;
 
 .section-subtitle {
   margin-bottom: 25px;
+}
+
+.point {
+  cursor: pointer;
 }

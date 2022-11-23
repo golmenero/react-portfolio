@@ -7,22 +7,22 @@
     width: 100%;
 
     .navbar-toggler {
-        color: $text-color;
+        color: --global-text-color;
     }
 
     nav {
-        background: $navigation-color;
+        background: var(--global-navigation-color);
 
         a {
             text-decoration: none;
             font-size: 1.5em;
-            font-weight: 400;
+            font-weight: 600;
             color: inherit;
             position: relative;
         }
           
         a:hover {
-            color: $accent-color;
+            color: var(--global-accent-color);
         }
           
         .liner {
@@ -34,7 +34,7 @@
                 height: 2px;
                 bottom: 0;
                 left: 0;
-                background-color: $accent-color;
+                background-color: var(--global-accent-color);
                 transform: scaleX(0);
                 transition: transform 0.3s ease;
             }
@@ -50,11 +50,11 @@
         }
 
         .navbar-brand {
-            color: $accent-color;
+            color: var(--global-accent-color);
         }
     }
 }
 
 .nav-link.active {
-    color: $accent-color !important;
+    color: var(--global-accent-color) !important;
 }
