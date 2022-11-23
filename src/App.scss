@@ -4,7 +4,7 @@ body.light {
   --global-navigation-color: #cccccc;
   --global-secondary-color:  #cccccc;
   --global-accent-color: #54926e;
-  background: url('../public/background_light.png');
+  background: url('./../public/background_light.png');
 }
 
 body.dark {
@@ -13,7 +13,7 @@ body.dark {
   --global-navigation-color: #262626;
   --global-secondary-color: #4d4d4d;
   --global-accent-color: #ffcc66;
-  background: url('../public/background_dark.png');
+  background: url('./../public/background_dark.png');
 }
 
 @import 'animate.css';

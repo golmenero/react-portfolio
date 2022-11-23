@@ -24,7 +24,7 @@ const About = () => {
                         </div>
                     </Col>
                     <Col sm="12" md="3">
-                        <img className='fade-in-first' alt="Profile" src='profile.jpeg'/>
+                        <img className='fade-in-first' alt="Profile" src='./profile.jpeg'/>
                     </Col>
                 </Row>
                 <Row>
