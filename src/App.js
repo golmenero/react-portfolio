@@ -32,11 +32,11 @@ function App() {
     </header>
     <main>
       <Routes>
-          <Route path="/" element={<Navigate to="./about" />} />
-          <Route path="./about" element={<About />}></Route>
-          <Route path="./skills" element={<Skills />}></Route>
-          <Route path="./projects" element={<Projects />}></Route>
-          <Route path="./contact" element={<Contact />}></Route>
+          <Route path="/" element={<Navigate to="/about" />} />
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/skills" element={<Skills />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </main>
     <footer>
