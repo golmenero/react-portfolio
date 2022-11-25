@@ -35,16 +35,16 @@ const Navigation = () => {
         <Collapse className='w-100' isOpen={isOpen} navbar>
           <Nav className='liner w-100 justify-content-center' navbar>
               <NavItem>
-                <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="about">About</NavLink>
+                <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="#/about">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "skills" ? "active" : ""} href="skills">Skills</NavLink>
+                <NavLink className={splitLocation[1] === "skills" ? "active" : ""} href="#/skills">Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "projects" ? "active" : ""} href="projects">Projects</NavLink>
+                <NavLink className={splitLocation[1] === "projects" ? "active" : ""} href="#/projects">Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "contact" ? "active" : ""} href="contact">Contact Me</NavLink>
+                <NavLink className={splitLocation[1] === "contact" ? "active" : ""} href="#/contact">Contact Me</NavLink>
               </NavItem>
           </Nav>
           <Nav className='w-100 justify-content-end'>
