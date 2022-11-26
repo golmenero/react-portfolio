@@ -16,9 +16,8 @@ const Navigation = () => {
 
   const switchTheme = () => {
     let theme = localStorage.getItem('theme');
-    console.log(theme)
-    
-    if (theme) {
+
+    if (theme == 'dark' || theme == 'light') {
       document.body.classList.remove(theme);
       theme = theme === 'light' ? 'dark' : 'light';
     } else theme = "light";
