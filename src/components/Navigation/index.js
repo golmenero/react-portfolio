@@ -16,6 +16,7 @@ const Navigation = () => {
 
   const switchTheme = () => {
     let theme = localStorage.getItem('theme');
+    console.log(theme)
     
     if (theme) {
       document.body.classList.remove(theme);
@@ -25,7 +26,7 @@ const Navigation = () => {
     document.body.classList.add(theme);
     localStorage.setItem('theme', theme);
   }
-  // document.addEventListener('DOMContentLoaded', switchTheme());
+  document.addEventListener('DOMContentLoaded', switchTheme());
   
   return (
     <div className='nav-bar'>
