@@ -25,7 +25,7 @@ const Navigation = () => {
     document.body.classList.add(theme);
     localStorage.setItem('theme', theme);
   }
-  document.addEventListener('DOMContentLoaded', switchTheme());
+  // document.addEventListener('DOMContentLoaded', switchTheme());
   
   return (
     <div className='nav-bar'>
