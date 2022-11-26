@@ -7,7 +7,17 @@
     width: 100%;
 
     .navbar-toggler {
-        color: --global-text-color;
+        border: 2px solid var(--global-accent-color);
+
+        .navbar-toggler-icon {
+            background-image: none;
+            &::before {
+                content: '\f0c9';
+                color: var(--global-accent-color);
+                font: var(--fa-font-solid);
+                font-size: 1.3em;
+            }
+        }
     }
 
     nav {
