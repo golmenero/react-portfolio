@@ -14,18 +14,33 @@ const Navigation = () => {
   const {pathname} = location;
   const splitLocation = pathname.split("/");
 
-  const switchTheme = () => {
+  const setTheme = () => {
     let theme = localStorage.getItem('theme');
 
-    if (theme === 'dark' || theme === 'light') {
-      document.body.classList.remove(theme);
-      theme = theme === 'light' ? 'dark' : 'light';
-    } else theme = "light";
+    if(!theme) theme = 'light';
 
+    localStorage.setItem('theme', theme);
+
+    document.body.classList.remove('dark');
+    document.body.classList.remove('light');
     document.body.classList.add(theme);
+  };
+
+  const switchTheme = () => {
+    let theme = '';
+    if (document.body.classList.contains('light')) theme = 'light'; 
+    else if (document.body.classList.contains('dark')) theme = 'dark'; 
+
+    theme = theme == 'light' ? 'dark' : 'light';
+
+    document.body.classList.remove('dark');
+    document.body.classList.remove('light');
+    document.body.classList.add(theme);
+
     localStorage.setItem('theme', theme);
   }
-  document.addEventListener('DOMContentLoaded', switchTheme());
+
+  document.addEventListener('DOMContentLoaded', setTheme());
   
   return (
     <div className='nav-bar'>
