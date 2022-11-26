@@ -31,7 +31,7 @@ const Navigation = () => {
     if (document.body.classList.contains('light')) theme = 'light'; 
     else if (document.body.classList.contains('dark')) theme = 'dark'; 
 
-    theme = theme == 'light' ? 'dark' : 'light';
+    theme = theme === 'light' ? 'dark' : 'light';
 
     document.body.classList.remove('dark');
     document.body.classList.remove('light');
