@@ -13,7 +13,7 @@ function App() {
   /**
    * Event move background with cursor
    */
-   var movementStrength = 10;
+   var movementStrength = 25;
    var height = movementStrength / window.innerHeight;
    var width = movementStrength / window.innerWidth;
  

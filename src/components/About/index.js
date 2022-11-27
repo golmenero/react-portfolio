@@ -16,13 +16,13 @@ const About = () => {
                     <p className='section-subtitle text-m'>{ t("about.header") }</p>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col sm="12" md="4">
                         <AboutItem icon={faGraduationCap} title={ t("about.education.title") } subtitle={ t("about.education.subtitle") }></AboutItem>
                     </Col>
-                    <Col>
+                    <Col sm="12" md="4">
                         <AboutItem icon={faGlobe} title={ t("about.languages.title") } subtitle={ t("about.languages.subtitle") }></AboutItem>
                     </Col>
-                    <Col>
+                    <Col sm="12" md="4">
                         <AboutItem icon={faKeyboard} title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
                     </Col>
                 </Row>

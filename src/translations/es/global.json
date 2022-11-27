@@ -40,7 +40,7 @@
             "subtitle": "HTML y CSS, así como frameworks como Bootstrap o Materialize."
         },
         "back": {
-            "title": "Desarrollo back-end",
+            "title": "Desarrollo Back-End",
             "subtitle": "Java, PHP, JavaScript, C#, C++, Python y TypeScript, así como tecnologías como Angular, NodeJS, Phalcon, Symfony, SpringBoot y React, entre otras."
         },
         "api": {
@@ -56,7 +56,7 @@
             "subtitle": "Amplios conocimientos en Patrones de Diseño y Diseño de Software, así como conceptos avanzados de Arquitectura de Software y principios de seguridad y consistencia de datos."
         },
         "tester": {
-            "title": "Probador",
+            "title": "Tester",
             "subtitle": "Conocimiento avanzado de testing (JUnit, Selenium y PHPUnit, entre otros)"
         }
     },

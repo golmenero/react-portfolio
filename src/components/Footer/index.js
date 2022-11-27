@@ -17,7 +17,7 @@ const Footer = () => {
                       LinkedIn <FontAwesomeIcon className='highlighted-text' icon={faLinkedin} />
                     </a>
                     <a href="https://github.com/golmenero">
-                      Github <FontAwesomeIcon className='highlighted-text' icon={faGithub} />
+                      GitHub <FontAwesomeIcon className='highlighted-text' icon={faGithub} />
                     </a>
                   </div>
                 </span>
