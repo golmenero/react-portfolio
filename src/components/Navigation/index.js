@@ -1,6 +1,5 @@
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -87,16 +86,6 @@ const Navigation = () => {
               </NavItem>
           </Nav>
           <Nav className='w-100 justify-content-end'>
-            <NavItem>
-              <NavLink href="https://www.linkedin.com/in/carlos-gomez-colmenero/">
-                <FontAwesomeIcon className='highlighted-text' icon={faLinkedin} />
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/golmenero">
-                <FontAwesomeIcon className='highlighted-text' icon={faGithub} />
-              </NavLink>
-            </NavItem>
             <NavItem className='point'>
               <NavLink onClick={switchTheme}>
                 <FontAwesomeIcon className='highlighted-text' icon={faLightbulb} />

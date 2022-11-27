@@ -1,4 +1,4 @@
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Col, Row } from 'reactstrap';
 import './index.scss';
@@ -9,9 +9,19 @@ const Footer = () => {
       <div id='footer'>
         <Row>
             <Col sm="12" className='m-0'>
-                <p className='text-s highlighted-text bold-600'>
-                  <FontAwesomeIcon icon={faEnvelope}/>cgomezcolmenero@gmail.com
-                </p>
+              <div>
+                <span className='text-m highlighted-text bold-600'>
+                  cgomezcolmenero@gmail.com
+                  <div>
+                    <a href="https://www.linkedin.com/in/carlos-gomez-colmenero/"> 
+                      LinkedIn <FontAwesomeIcon className='highlighted-text' icon={faLinkedin} />
+                    </a>
+                    <a href="https://github.com/golmenero">
+                      Github <FontAwesomeIcon className='highlighted-text' icon={faGithub} />
+                    </a>
+                  </div>
+                </span>
+              </div>
             </Col>
         </Row>
       </div>
