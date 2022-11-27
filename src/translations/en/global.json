@@ -12,11 +12,14 @@
         "projects": "Projects",
         "contact-me": "Contact Me"
     },
-    "about": {
+    "home": {
         "hello": "Hello!",
         "header": "I'm Carlos, a software developer.",
         "description": "I am a young Engineer with a passion for programming. Since I was a kid I've been obsessed with solving problems, and code development allows me to fulfill my dream of unleashing my creativity to put a solution to any problem in the world, while making people's lives easier.",
-        "quote": "Build the simplest code, solve the most complex problems",
+        "quote": "Build the simplest code, solve the most complex problems"
+    },
+    "about": {
+        "header": "",
         "education": {
             "title": "Education",
             "subtitle": "Graduated in 2021 in Software Engineering at the University of Oviedo, at the Higher Technical School of Computer Engineering."

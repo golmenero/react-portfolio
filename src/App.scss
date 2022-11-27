@@ -11,7 +11,7 @@ body.dark {
   --global-primary-color: #333333;
   --global-text-color: #fff;
   --global-navigation-color: #262626;
-  --global-secondary-color: #4d4d4d;
+  --global-secondary-color: #333333;
   --global-accent-color: #ffcc66;
   background: url('../public/background_dark.png');
 }
@@ -54,11 +54,11 @@ body {
 }
 
 .text-m {
-  font-size: 1.8em;
+  font-size: 2.2em;
 } 
 
 .text-s {
-  font-size: 1.4em;
+  font-size: 1.7em;
 }
 
 .flex {
@@ -130,14 +130,14 @@ $floats: right, left;
 }
 
 .fade-in-second {
-  animation: fadeIn 1.5s 2s;
+  animation: fadeIn 1.5s 1.5s;
   animation-fill-mode: forwards;
   clear: both;
   opacity: 0;
 }
 
 .fade-in-third {
-  animation: fadeIn 1.5s 2.5s;
+  animation: fadeIn 1.5s 2s;
   animation-fill-mode: forwards;
   clear: both;
   opacity: 0;

@@ -1,8 +1,9 @@
-import { Navigate, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import './App.scss';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Home from './components/Home';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -32,11 +33,11 @@ function App() {
     </header>
     <main>
       <Routes>
-          <Route path="/" element={<Navigate to="/about" />} />
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
     <footer>

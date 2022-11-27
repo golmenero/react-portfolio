@@ -12,11 +12,14 @@
         "projects": "Projets",
         "contact-me": "Contactez-moi"
     },
-    "about": {
+    "home": {
         "hello": "Bonjour!",
         "header": "Je suis Carlos, développeur de logiciels.",
         "description": "Je suis un jeune ingénieur passionné par la programmation. Depuis tout petit je suis obsédé par la résolution de problèmes, et le développement de code me permet de réaliser mon rêve de laisser libre cours à ma créativité pour résoudre n'importe quel problème dans le monde , tout en facilitant la vie des gens.",
-        "quote": "Créez le code le plus simple, résolvez les problèmes les plus complexes",
+        "quote": "Créez le code le plus simple, résolvez les problèmes les plus complexes"
+    },
+    "about": {
+        "header": "",
         "education": {
             "title": "Éducation",
             "subtitle": "Diplômé en 2021 en génie logiciel de l'Université d'Oviedo, à l'École d'ingénierie informatique."

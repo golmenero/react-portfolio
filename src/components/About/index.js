@@ -11,28 +11,18 @@ const About = () => {
     return (
         <>
             <Container>
-                <Row>
-                    <Col sm="12" md="9">
-                        <h1 className='fade-in-first text-l justify'>
-                            <span className='highlighted-text'>{ t("about.hello") }</span> <br/> { t("about.header") }
-                        </h1>
-                        <div className='fade-in-second'>
-                            <p className='justify text-m'>{ t("about.description") }</p>
-                            <p className="quote text-l">{ t("about.quote") }</p>
-                        </div>
-                    </Col>
-                    <Col sm="12" md="3">
-                        <img className='fade-in-first' alt="Profile" src='profile.jpeg'/>
-                    </Col>
+                <Row className='fade-in-first'>
+                    <h1 className='highlighted-text'>{ t("navigation.about") }</h1>
+                    <p className='section-subtitle text-m'>{ t("about.header") }</p>
                 </Row>
                 <Row>
-                    <Col sm="12" md="4">
+                    <Col>
                         <AboutItem icon={faGraduationCap} title={ t("about.education.title") } subtitle={ t("about.education.subtitle") }></AboutItem>
                     </Col>
-                    <Col sm="12" md="4">
+                    <Col>
                         <AboutItem icon={faGlobe} title={ t("about.languages.title") } subtitle={ t("about.languages.subtitle") }></AboutItem>
                     </Col>
-                    <Col sm="12" md="4">
+                    <Col>
                         <AboutItem icon={faKeyboard} title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
                     </Col>
                 </Row>

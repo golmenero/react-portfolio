@@ -12,11 +12,14 @@
         "projects": "Proyectos",
         "contact-me": "Contacto"
     },
-    "about": {
+    "home": {
         "hello": "¡Hola!",
         "header": "Soy Carlos, desarrollador de software.",
         "description": "Soy un joven Ingeniero apasionado por la programación. Desde niño he estado obsesionado con resolver problemas, y el desarrollo de código me permite cumplir mi sueño de dar rienda suelta a mi creatividad para poner solución a cualquier problema del mundo, mientras hace la vida de las personas más fácil.",
-        "quote": "Crea el código más simple, resuelve los problemas más complejos",
+        "quote": "Crea el código más simple, resuelve los problemas más complejos"
+    },
+    "about": {
+        "header": "",
         "education": {
             "title": "Educación",
             "subtitle": "Graduado en 2021 en Ingeniería del Software por la Universidad de Oviedo, en la Escuela de Ingeniería Informática."
