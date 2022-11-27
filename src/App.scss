@@ -20,23 +20,18 @@ body.dark {
 @import '~loaders.css/src/animations/ball-scale-ripple-multiple.scss';
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
-}
-
-@font-face {
   font-family: 'La Belle Aurore';
   src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Coolvetica';
-  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-family: 'GTWalsheimPro';
+  src: url('./assets/fonts/GTWalsheimPro-Light.ttf') format('truetype');
 }
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font: 300 11px/1.4 'GTWalsheimPro', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--global-text-color);
   background-position: center;
   background-size: auto;
