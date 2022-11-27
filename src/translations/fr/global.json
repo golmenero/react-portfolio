@@ -1,0 +1,89 @@
+{
+    "lang": {
+        "es": "Espagnol",
+        "en": "Anglais",
+        "ca": "Catalan",
+        "fr": "Français",
+        "de": "Allemand"
+    },
+    "navigation": {
+        "about": "À propos",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "contact-me": "Contactez-moi"
+    },
+    "about": {
+        "hello": "Bonjour!",
+        "header": "Je suis Carlos, développeur de logiciels.",
+        "description": "Je suis un jeune ingénieur passionné par la programmation. Depuis tout petit je suis obsédé par la résolution de problèmes, et le développement de code me permet de réaliser mon rêve de laisser libre cours à ma créativité pour résoudre n'importe quel problème dans le monde , tout en facilitant la vie des gens.",
+        "quote": "Créez le code le plus simple, résolvez les problèmes les plus complexes",
+        "education": {
+            "title": "Éducation",
+            "subtitle": "Diplômé en 2021 en génie logiciel de l'Université d'Oviedo, à l'École d'ingénierie informatique."
+        },
+        "languages": {
+            "title": "Langues",
+            "subtitle": "Niveau avancé d'expression orale, de lecture et d'écriture en anglais et natif en espagnol."
+        },
+        "experience": {
+            "title": "Expérience",
+            "subtitle": "J'ai travaillé sur différents projets avant de terminer mes études universitaires. Je travaille actuellement chez Idealista.com, l'entreprise la plus importante de son secteur en Espagne, au Portugal et en Italie."
+        }
+    },
+    "skills": {
+        "header": "J'ai de l'expérience dans les domaines de connaissances suivants.",
+        "front": {
+            "title": "Développement Front-End",
+            "subtitle": "HTML et CSS, ainsi que des frameworks comme Bootstrap ou Materialise."
+        },
+        "back": {
+            "title": "Développement back-end",
+            "subtitle": "Java, PHP, JavaScript, C#, C++, Python et TypeScript, ainsi que des technologies comme Angular, NodeJS, Phalcon, Symfony, SpringBoot, React, et plus."
+        },
+        "api": {
+            "title": "Gestion des API",
+            "subtitle": "Connaissance de la création, de la gestion et de la maintenance des API."
+        },
+        "database": {
+            "title": "Administration de la base de données",
+            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL et Oracle. Connaissance approfondie des bases de données relationnelles et documentaires."
+        },
+        "business": {
+            "title": "Connaissances commerciales",
+            "subtitle": "Connaissance approfondie des modèles de conception et de la conception de logiciels, ainsi que des concepts avancés d'architecture logicielle et des principes de sécurité et de cohérence des données."
+        },
+        "tester": {
+            "title": "Testeur",
+            "subtitle": "Connaissance avancée des tests (JUnit, Selenium et PHPUnit, entre autres)"
+        }
+    },
+    "projects": {
+        "header": "Voici une liste de mes précédents projets.",
+        "realestate": {
+            "title": "Application de gestion immobilière",
+            "subtitle": "Réalisée avec NodeJS, cette application permet à l'utilisateur de gérer tous les aspects liés à la location ou à l'achat d'un bien, ainsi que tout ce qui concerne les communications, les documents ou les médias."
+        },
+        "runner": {
+            "title": "Jeu de coureur",
+            "subtitle": "Ce jeu était une expérience pour essayer de créer une application de jeu avec du JavaScript pur."
+        },
+        "shooter": {
+            "title": "Jeu de tir",
+            "subtitle": "Ce jeu de tir est construit sur Unreal Engine 4 et permet à l'utilisateur de survivre à différents rounds contre différentes menaces. Pour vous défendre, vous pouvez utiliser différentes armes ou power-ups."
+        },
+        "music": {
+            "title": "Application Music Store",
+            "subtitle": "Une simple application de magasin de musique créée avec SpringBoot. Elle permet à l'utilisateur d'acheter, de vendre ou de jouer différents morceaux de musique."
+        }
+    },
+    "contact-me": {
+        "header": "Je serai heureux de répondre à toutes vos questions.",
+        "name": "Nom",
+        "email": "E-mail",
+        "subject": "Sujet",
+        "message": "Message",
+        "send": "Envoyer",
+        "feedback-error": "Une erreur s'est produite lors de l'envoi de votre e-mail. Veuillez réessayer ultérieurement",
+        "feedback-success": "Message envoyé avec succès"
+    }
+}

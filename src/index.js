@@ -10,6 +10,9 @@ import i18next from 'i18next';
 
 import global_es from "./translations/es/global.json";
 import global_en from "./translations/en/global.json";
+import global_ca from "./translations/ca/global.json";
+import global_fr from "./translations/fr/global.json";
+import global_de from "./translations/de/global.json";
 
 i18next.init({
   interpolation: {escapeValue: false },
@@ -20,6 +23,15 @@ i18next.init({
     },
     en: {
       global: global_en
+    },
+    ca: {
+      global: global_ca
+    },
+    fr: {
+      global: global_fr
+    },
+    de: {
+      global: global_de
     }
   }
 })

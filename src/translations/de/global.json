@@ -1,0 +1,89 @@
+{
+    "lang": {
+        "es": "Spanisch",
+        "en": "Englisch",
+        "ca": "Katalanisch",
+        "fr": "Französisch",
+        "de": "Deutsch"
+    },
+    "navigation": {
+        "about": "Über",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte",
+        "contact-me": "Kontakt"
+    },
+    "about": {
+        "hello": "Hallo!",
+        "header": "Ich bin Carlos, Softwareentwickler.",
+        "description": "Ich bin ein junger Ingenieur, der sich leidenschaftlich für das Programmieren interessiert. Seit meiner Kindheit bin ich davon besessen, Probleme zu lösen, und die Codeentwicklung ermöglicht es mir, meinen Traum zu erfüllen, meiner Kreativität freien Lauf zu lassen, um jedes Problem der Welt zu lösen , während das Leben der Menschen einfacher wird.",
+        "quote": "Erstellen Sie den einfachsten Code, lösen Sie die komplexesten Probleme",
+        "education": {
+            "title": "Bildung",
+            "subtitle": "Abschluss 2021 in Software Engineering an der University of Oviedo, an der School of Computer Engineering."
+        },
+        "languages": {
+            "title": "Sprachen",
+            "subtitle": "Fortgeschrittenes Niveau in Englisch sprechen, lesen und schreiben und Spanisch als Muttersprache."
+        },
+        "experience": {
+            "title": "Erfahrung",
+            "subtitle": "Schon vor meinem Universitätsabschluss habe ich an verschiedenen Projekten gearbeitet. Derzeit arbeite ich bei Idealista.com, dem wichtigsten Unternehmen seiner Branche in Spanien, Portugal und Italien."
+        }
+    },
+    "skills": {
+        "header": "Ich habe Erfahrung in folgenden Wissensgebieten.",
+        "front": {
+            "title": "Frontend-Entwicklung",
+            "subtitle": "HTML und CSS sowie Frameworks wie Bootstrap oder Materialize."
+        },
+        "back": {
+            "title": "Backend-Entwicklung",
+            "subtitle": "Java, PHP, JavaScript, C#, C++, Python und TypeScript sowie Technologien wie Angular, NodeJS, Phalcon, Symfony, SpringBoot, React und mehr."
+        },
+        "api": {
+            "title": "API-Verwaltung",
+            "subtitle": "Wissen über das Erstellen, Verwalten und Warten von APIs."
+        },
+        "database": {
+            "title": "Datenbankverwaltung",
+            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL und Oracle. Umfassende Kenntnisse von relationalen und Dokumentendatenbanken."
+        },
+        "business": {
+            "title": "Wirtschaftswissen",
+            "subtitle": "Umfangreiches Wissen über Entwurfsmuster und Softwaredesign sowie fortgeschrittene Konzepte der Softwarearchitektur und Prinzipien der Sicherheit und Datenkonsistenz."
+        },
+        "tester": {
+            "title": "Tester",
+            "subtitle": "Fortgeschrittene Kenntnisse im Testen (unter anderem JUnit, Selenium und PHPUnit)"
+        }
+    },
+    "projects": {
+        "header": "Hier ist eine Liste meiner bisherigen Projekte.",
+        "realestate": {
+            "title": "Immobilienverwaltungsanwendung",
+            "subtitle": "Diese mit NodeJS erstellte Anwendung ermöglicht es dem Benutzer, alle Aspekte im Zusammenhang mit der Anmietung oder dem Kauf von Immobilien zu verwalten sowie alles zu handhaben, was mit Kommunikation, Dokumenten oder Medien zu tun hat."
+        },
+        "runner": {
+            "title": "Runner-Spiel",
+            "subtitle": "Dieses Spiel war ein Experiment, um zu versuchen, eine Spielanwendung mit reinem JavaScript zu erstellen."
+        },
+        "shooter": {
+            "title": "Shooter-Spiel",
+            "subtitle": "Dieser Shooter basiert auf der Unreal Engine 4 und ermöglicht es dem Benutzer, verschiedene Runden gegen verschiedene Bedrohungen zu überleben. Um sich zu verteidigen, können Sie verschiedene Waffen oder Power-Ups verwenden."
+        },
+        "music": {
+            "title": "Music Store App",
+            "subtitle": "Eine einfache, in SpringBoot erstellte Music Store-Anwendung. Sie ermöglicht dem Benutzer, verschiedene Musiktitel zu kaufen, zu verkaufen oder abzuspielen."
+        }
+    },
+    "contact-me": {
+        "header": "Ich beantworte gerne Ihre Fragen.",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Betreff",
+        "message": "Nachricht",
+        "send": "Senden",
+        "feedback-error": "Beim Senden Ihrer E-Mail ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut",
+        "feedback-success": "Nachricht erfolgreich gesendet"
+    }
+}

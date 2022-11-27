@@ -1,7 +1,10 @@
 {
     "lang": {
         "es": "Spanish",
-        "en": "English"
+        "en": "English",
+        "ca": "Catalan",
+        "fr": "French",
+        "dr": "German"
     },
     "navigation": {
         "about": "About",

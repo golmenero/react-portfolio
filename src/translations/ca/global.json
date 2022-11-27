@@ -1,0 +1,89 @@
+{
+    "lang": {
+        "es": "Espanyol",
+        "en": "Anglès",
+        "ca": "Català",
+        "fr": "Francès",
+        "de": "Alemany"
+    },
+    "navigation": {
+        "about": "Sobre",
+        "skills": "Habilitats",
+        "projects": "Projectes",
+        "contact-me": "Contacte"
+    },
+    "about": {
+        "hello": "Hola!",
+        "header": "Sóc Carlos, desenvolupador de programari.",
+        "description": "Sóc un jove Enginyer apassionat per la programació. Des de petit he estat obsessionat amb resoldre problemes, i el desenvolupament de codi em permet complir el meu somni de donar curs a la meva creativitat per posar solució a qualsevol problema del món, mentre fa la vida de les persones més fàcil.",
+        "quote": "Crea el codi més simple, resol els problemes més complexos",
+        "education": {
+            "title": "Educació",
+            "subtitle": "Graduat el 2021 a Enginyeria del Programari per la Universitat d'Oviedo, a l'Escola d'Enginyeria Informàtica."
+        },
+        "languages": {
+            "title": "Idiomes",
+            "subtitle": "Nivell avançat de parla, lectura i escriptura en anglès i nadiu en espanyol."
+        },
+        "experience": {
+            "title": "Experiència",
+            "subtitle": "Porto treballant en diferents projectes des d'abans d'acabar la carrera universitària. Actualment treballo a Idealista.com, l'empresa més important d'Espanya, Portugal i Itàlia al seu sector."
+        }
+    },
+    "skills": {
+        "header": "Tinc experiència en els camps de coneixement següents.",
+        "front": {
+            "title": "Desenvolupament Front-End",
+            "subtitle": "HTML i CSS, així com frameworks com Bootstrap o Materialize."
+        },
+        "back": {
+            "title": "Desenvolupament back-end",
+            "subtitle": "Java, PHP, JavaScript, C#, C++, Python i TypeScript, així com tecnologies com Angular, NodeJS, Phalcon, Symfony, SpringBoot i React, entre d'altres."
+        },
+        "api": {
+            "title": "Administració d'API",
+            "subtitle": "Coneixement de creació, administració i manteniment d'APIs."
+        },
+        "database": {
+            "title": "Administració de base de dades",
+            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL i Oracle. Amplis coneixements en bases de dades tant relacionals com documentals."
+        },
+        "business": {
+            "title": "Coneixement de Negoci",
+            "subtitle": "Amplis coneixements en Patrons de Disseny i Disseny de Programari, així com conceptes avançats d'Arquitectura de Programari i principis de seguretat i consistència de dades."
+        },
+        "tester": {
+            "title": "Probador",
+            "subtitle": "Coneixement avançat de testing (JUnit, Selenium i PHPUnit, entre d'altres)"
+        }
+    },
+    "projects": {
+        "header": "Aquí hi ha una llista dels meus projectes anteriors.",
+        "realestate": {
+            "title": "Aplicació de Gestió Immobiliària",
+            "subtitle": "Feta amb NodeJS, aquesta aplicació permet a l'usuari administrar tots els aspectes relacionats amb el lloguer o la compra de propietats, així com manejar tot allò relacionat amb comunicacions, documents o mitjans."
+        },
+        "runner": {
+            "title": "Joc Runner",
+            "subtitle": "Aquest joc va ser un experiment per intentar crear una aplicació de joc amb JavaScript pur."
+        },
+        "shooter": {
+            "title": "Joc Shooter",
+            "subtitle": "Aquest videojoc de trets està creat a Unreal Engine 4 i permet a l'usuari sobreviure a diferents rondes contra diferents amenaces. Per defensar-se, podeu utilitzar diferents armes o potenciadors."
+        },
+        "music": {
+            "title": "Aplicació de botiga de música",
+            "subtitle": "Una senzilla aplicació de botiga de música feta a SpringBoot. Permet a l'usuari comprar, vendre o reproduir diferents pistes de música."
+        }
+    },
+    "contact-me": {
+        "header": "Estaré encantat de respondre qualsevol pregunta que tingui.",
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Assumpte",
+        "message": "Missatge",
+        "send": "Enviar",
+        "feedback-error": "S'ha produït un error en enviar el vostre correu. Intenteu-ho més tard",
+        "feedback-success": "Missatge enviat amb èxit"
+    }
+}

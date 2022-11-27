@@ -1,7 +1,10 @@
 {
     "lang": {
         "es": "Español",
-        "en": "Inglés"
+        "en": "Inglés",
+        "ca": "Catalán",
+        "fr": "Francés",
+        "de": "Alemán"
     },
     "navigation": {
         "about": "Acerca",
