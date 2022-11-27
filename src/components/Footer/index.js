@@ -8,7 +8,7 @@ const Footer = () => {
     return (
       <div id='footer'>
         <Row>
-            <Col sm="12" md="6" className='m-0'>
+            <Col sm="12" className='m-0'>
                 <p className='text-s highlighted-text bold-600'>
                   <FontAwesomeIcon icon={faEnvelope}/>cgomezcolmenero@gmail.com
                 </p>

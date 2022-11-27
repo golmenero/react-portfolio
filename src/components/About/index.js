@@ -3,8 +3,10 @@ import Loader from 'react-loaders';
 import { Col, Container, Row } from 'reactstrap';
 import AboutItem from './AboutItem';
 import './index.scss';
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+    const [t] =  useTranslation("global");
     
     return (
         <>
@@ -12,15 +14,11 @@ const About = () => {
                 <Row>
                     <Col sm="12" md="9">
                         <h1 className='fade-in-first text-l justify'>
-                            <span className='highlighted-text'>Hello!</span> <br/> I'm Carlos, a software developer.
+                            <span className='highlighted-text'>{ t("about.hello") }</span> <br/> { t("about.header") }
                         </h1>
                         <div className='fade-in-second'>
-                            <p className='justify text-m'>
-                                I am a young Engineer with a passion for programming. Since I was a kid I've been obsessed with solving problems, and code development allows me to fulfill my dream of unleashing my creativity to put a solution to any problem in the world, while making people's lives easier.
-                            </p>
-                            <p className="quote text-l">
-                                "Build the simplest code, solve the most complex problems"
-                            </p>
+                            <p className='justify text-m'>{ t("about.description") }</p>
+                            <p className="quote text-l">{ t("about.quote") }</p>
                         </div>
                     </Col>
                     <Col sm="12" md="3">
@@ -29,13 +27,13 @@ const About = () => {
                 </Row>
                 <Row>
                     <Col sm="12" md="4">
-                        <AboutItem icon={faGraduationCap} title='Education' subtitle="Graduated in 2021 in Software Engineering at the University of Oviedo, at the Higher Technical School of Computer Engineering."></AboutItem>
+                        <AboutItem icon={faGraduationCap} title={ t("about.education.title") } subtitle={ t("about.education.subtitle") }></AboutItem>
                     </Col>
                     <Col sm="12" md="4">
-                        <AboutItem icon={faGlobe} title='Spoken languages' subtitle="Advanced level of speaking, reading and writing in English and native in Spanish."></AboutItem>
+                        <AboutItem icon={faGlobe} title={ t("about.languages.title") } subtitle={ t("about.languages.subtitle") }></AboutItem>
                     </Col>
                     <Col sm="12" md="4">
-                        <AboutItem icon={faKeyboard} title='Experience' subtitle="I have been working on different projects since before finishing my university degree. I currently work at Idealista.com, the most important company in Spain, Portugal and Italy in its sector."></AboutItem> 
+                        <AboutItem icon={faKeyboard} title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
                     </Col>
                 </Row>
             </Container>

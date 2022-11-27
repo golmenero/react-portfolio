@@ -1,5 +1,86 @@
 {
+    "lang": {
+        "es": "Spanish",
+        "en": "English"
+    },
     "navigation": {
-        "about": "About" 
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact-me": "Contact Me"
+    },
+    "about": {
+        "hello": "Hello!",
+        "header": "I'm Carlos, a software developer.",
+        "description": "I am a young Engineer with a passion for programming. Since I was a kid I've been obsessed with solving problems, and code development allows me to fulfill my dream of unleashing my creativity to put a solution to any problem in the world, while making people's lives easier.",
+        "quote": "Build the simplest code, solve the most complex problems",
+        "education": {
+            "title": "Education",
+            "subtitle": "Graduated in 2021 in Software Engineering at the University of Oviedo, at the Higher Technical School of Computer Engineering."
+        },
+        "languages": {
+            "title": "Languages",
+            "subtitle": "Advanced level of speaking, reading and writing in English and native in Spanish."
+        },
+        "experience": {
+            "title": "Experience",
+            "subtitle": "I have been working on different projects since before finishing my university degree. I currently work at Idealista.com, the most important company in Spain, Portugal and Italy in its sector."
+        }
+    },    
+    "skills": {
+        "header": "I have experience in the following fields of knowledge.",
+        "front": {
+            "title": "Front-End Development",
+            "subtitle": "HTML and CSS, as well as frameworks like Bootstrap or Materialize."
+        },
+        "back": {
+            "title": "Back-End Development",
+            "subtitle": "Java, PHP, JavaScript, C#, C++, Python, and TypeScript, as well as technologies like Angular, NodeJS, Phalcon, Symfony, SpringBoot, and React, among others."
+        },
+        "api": {
+            "title": "API Management",
+            "subtitle": "Knowledge of creating, managing and maintaining APIs."
+        },
+        "database": {
+            "title": "Database Management",
+            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL and Oracle. Extensive knowledge in both relational and documentary databases."
+        },
+        "business": {
+            "title": "Business Management",
+            "subtitle": "Extensive knowledge in Design Patterns and Software Design, as well as advanced concepts of Software Architecture and principles of security and data consistency."
+        }, 
+        "tester": {
+            "title": "Tester",
+            "subtitle": "Advanced testing knowledge (JUnit, Selenium and PHPUnit, among others)"
+        }
+    },
+    "projects": {
+        "header": "Here's a list of my previous projects.",
+        "realestate": {
+            "title": "Real Estate Application",
+            "subtitle": "Made with NodeJS, this application allows the user to manage all the aspects related with renting or buying properties, as well as handling everything related with communications, documents or media."
+        },
+        "runner": {
+            "title": "Game Runner",
+            "subtitle": "This game was is an experiment to try to create a pure JavaScript game application."
+        },
+        "shooter": {
+            "title": "Game Shooter",
+            "subtitle": "This shooter videogame is created in Unreal Engine 4 and allows the user to survive different rounds against different threats. In order to defent himself, he can use different guns or powerups."
+        },
+        "music": {
+            "title": "Music Shop Application",
+            "subtitle": "A simple music shop application made in SpringBoot. It allows the user to buy, sell or play different music tracks."
+        }
+    },
+    "contact-me": {
+        "header": "I will be happy to answer any questions you have.",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send",
+        "feedback-error": "Failed to send the message, please try again",
+        "feedback-success": "Message successfully sent!"
     }
 }

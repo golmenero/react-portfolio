@@ -20,6 +20,21 @@
         }
     }
 
+    .dropdown-menu {
+        padding: 0;
+        border: none;
+        right: 0;
+        .dropdown-item {
+            padding: 10px;
+            background: var(--global-navigation-color);
+            color: var(--global-text-color);
+            span {
+                margin-right: 10px;
+            }
+        }
+    }
+
+
     nav {
         background: var(--global-navigation-color);
 

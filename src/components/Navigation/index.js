@@ -4,8 +4,9 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faEarthEurope, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from "react-i18next";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const Navigation = () => {
   const [t, i18n] =  useTranslation("global");
@@ -73,16 +74,16 @@ const Navigation = () => {
         <Collapse className='w-100' isOpen={isOpen} navbar>
           <Nav className='liner w-100 justify-content-center' navbar>
               <NavItem>
-                <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="about">{ t("navigation.about") }</NavLink>
+                <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="/about">{ t("navigation.about") }</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "skills" ? "active" : ""} href="skills">Skills</NavLink>
+                <NavLink className={splitLocation[1] === "skills" ? "active" : ""} href="/skills">{ t("navigation.skills") }</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "projects" ? "active" : ""} href="projects">Projects</NavLink>
+                <NavLink className={splitLocation[1] === "projects" ? "active" : ""} href="/projects">{ t("navigation.projects") }</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "contact" ? "active" : ""} href="contact">Contact Me</NavLink>
+                <NavLink className={splitLocation[1] === "contact" ? "active" : ""} href="/contact">{ t("navigation.contact-me") }</NavLink>
               </NavItem>
           </Nav>
           <Nav className='w-100 justify-content-end'>
@@ -102,12 +103,16 @@ const Navigation = () => {
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Language
+              <DropdownToggle nav>
+                <FontAwesomeIcon className='highlighted-text' icon={faEarthEurope} />
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem onClick={() => {switchLang("es")}}>Spanish</DropdownItem>
-                <DropdownItem onClick={() => {switchLang("en")}}>English</DropdownItem>
+                <DropdownItem onClick={() => {switchLang("es")}}>
+                  <span className="fi fi-es"></span>{ t("lang.es") }
+                </DropdownItem>
+                <DropdownItem onClick={() => {switchLang("en")}}>
+                  <span className="fi fi-gb"></span>{ t("lang.en") }
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>

@@ -1,5 +1,86 @@
 {
+    "lang": {
+        "es": "Español",
+        "en": "Inglés"
+    },
     "navigation": {
-        "about": "Acerca" 
+        "about": "Acerca",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact-me": "Contacto"
+    },
+    "about": {
+        "hello": "¡Hola!",
+        "header": "Soy Carlos, desarrollador de software.",
+        "description": "Soy un joven Ingeniero apasionado por la programación. Desde niño he estado obsesionado con resolver problemas, y el desarrollo de código me permite cumplir mi sueño de dar rienda suelta a mi creatividad para poner solución a cualquier problema del mundo, mientras hace la vida de las personas más fácil.",
+        "quote": "Crea el código más simple, resuelve los problemas más complejos",
+        "education": {
+            "title": "Educación",
+            "subtitle": "Graduado en 2021 en Ingeniería del Software por la Universidad de Oviedo, en la Escuela de Ingeniería Informática."
+        },
+        "languages": {
+            "title": "Idiomas",
+            "subtitle": "Nivel avanzado de habla, lectura y escritura en inglés y nativo en español."
+        },
+        "experience": {
+            "title": "Experiencia",
+            "subtitle": "Llevo trabajando en diferentes proyectos desde antes de acabar la carrera universitaria. Actualmente trabajo en Idealista.com, la empresa más importante de España, Portugal e Italia en su sector."
+        }
+    },
+    "skills": {
+        "header": "Tengo experiencia en los siguientes campos de conocimiento.",
+        "front": {
+            "title": "Desarrollo Front-End",
+            "subtitle": "HTML y CSS, así como frameworks como Bootstrap o Materialize."
+        },
+        "back": {
+            "title": "Desarrollo back-end",
+            "subtitle": "Java, PHP, JavaScript, C#, C++, Python y TypeScript, así como tecnologías como Angular, NodeJS, Phalcon, Symfony, SpringBoot y React, entre otras."
+        },
+        "api": {
+            "title": "Administración de API",
+            "subtitle": "Conocimiento de creación, administración y mantenimiento de APIs."
+        },
+        "database": {
+            "title": "Administración de base de datos",
+            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL y Oracle. Amplios conocimientos en bases de datos tanto relacionales como documentales."
+        },
+        "business": {
+            "title": "Conocimiento de Negocio",
+            "subtitle": "Amplios conocimientos en Patrones de Diseño y Diseño de Software, así como conceptos avanzados de Arquitectura de Software y principios de seguridad y consistencia de datos."
+        },
+        "tester": {
+            "title": "Probador",
+            "subtitle": "Conocimiento avanzado de testing (JUnit, Selenium y PHPUnit, entre otros)"
+        }
+    },
+    "projects": {
+        "header": "Aquí hay una lista de mis proyectos anteriores.",
+        "realestate": {
+            "title": "Aplicación de Gestión Inmobiliaria",
+            "subtitle": "Hecha con NodeJS, esta aplicación permite al usuario administrar todos los aspectos relacionados con el alquiler o la compra de propiedades, así como manejar todo lo relacionado con comunicaciones, documentos o medios."
+        },
+        "runner": {
+            "title": "Juego Runner",
+            "subtitle": "Este juego fue un experimento para intentar crear una aplicación de juego con JavaScript puro."
+        },
+        "shooter": {
+            "title": "Juego Shooter",
+            "subtitle": "Este videojuego de disparos está creado en Unreal Engine 4 y le permite al usuario sobrevivir a diferentes rondas contra diferentes amenazas. Para defenderse, puede usar diferentes armas o potenciadores."
+        },
+        "music": {
+            "title": "Aplicación de tienda de música",
+            "subtitle": "Una sencilla aplicación de tienda de música hecha en SpringBoot. Permite al usuario comprar, vender o reproducir diferentes pistas de música."
+        }
+    },
+    "contact-me": {
+        "header": "Estaré encantado de responder cualquier pregunta que tenga.",
+        "name": "Nombre",
+        "email": "Email",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "send": "Enviar",
+        "feedback-error": "Ocurrió un error al enviar su correo. Inténtelo más tarde",
+        "feedback-success": "Mensaje enviado con éxito"
     }
 }

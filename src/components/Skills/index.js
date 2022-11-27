@@ -3,37 +3,39 @@ import Loader from 'react-loaders';
 import { Col, Container, Row } from 'reactstrap';
 import './index.scss';
 import Skill from './Skill';
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+    const [t] =  useTranslation("global");
     
     return (
         <>
             <Container className='fade-in-first'>
                 <Row>
-                    <h1 className='highlighted-text'>Skills</h1>
-                    <p className='section-subtitle text-m'>I have experience in the following fields of knowledge.</p>
+                    <h1 className='highlighted-text'>{ t("navigation.skills") }</h1>
+                    <p className='section-subtitle text-m'>{ t("skills.header") }</p>
                 </Row>
                 <div className="fade-in-second">
                     <Row>
                         <Col sm="12" md="4">
-                            <Skill icon={faPalette} title='Front-End Development' subtitle="HTML and CSS, as well as frameworks like Bootstrap or Materialize."></Skill>
+                            <Skill icon={faPalette} title={ t("skills.front.title") } subtitle={ t("skills.front.subtitle") }></Skill>
                         </Col>
                         <Col sm="12" md="4">
-                            <Skill icon={faScrewdriverWrench} title='Back-End Development' subtitle="Java, PHP, JavaScript, C#, C++, Python, and TypeScript, as well as technologies like Angular, NodeJS, Phalcon, Symfony, SpringBoot, and React, among others."></Skill>
+                            <Skill icon={faScrewdriverWrench} title={ t("skills.back.title") } subtitle={ t("skills.back.subtitle") }></Skill>
                         </Col>
                         <Col sm="12" md="4">
-                            <Skill icon={faCloud} title='API Management' subtitle="Knowledge of creating, managing and maintaining APIs."></Skill>
+                            <Skill icon={faCloud} title={ t("skills.api.title") } subtitle={ t("skills.api.subtitle") }></Skill>
                         </Col>
                     </Row>
                     <Row>
                         <Col sm="12" md="4">
-                            <Skill icon={faDatabase} title='Database Management' subtitle="SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL and Oracle. Extensive knowledge in both relational and documentary databases."></Skill>
+                            <Skill icon={faDatabase} title={ t("skills.database.title") } subtitle={ t("skills.database.subtitle") }></Skill>
                         </Col>
                         <Col sm="12" md="4">
-                            <Skill icon={faBezierCurve} title='Business Management' subtitle="Extensive knowledge in Design Patterns and Software Design, as well as advanced concepts of Software Architecture and principles of security and data consistency."></Skill>
+                            <Skill icon={faBezierCurve} title={ t("skills.business.title") } subtitle={ t("skills.business.subtitle") }></Skill>
                         </Col>
                         <Col sm="12" md="4">
-                            <Skill icon={faCheckDouble} title='Tester' subtitle="Advanced testing knowledge (JUnit, Selenium and PHPUnit, among others)"></Skill> 
+                            <Skill icon={faCheckDouble} title={ t("skills.tester.title") } subtitle={ t("skills.tester.subtitle") }></Skill> 
                         </Col>
                     </Row>
                 </div>
