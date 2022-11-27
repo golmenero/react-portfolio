@@ -10,10 +10,11 @@
     background: var(--global-secondary-color);
     min-height: 30px;
 
+    svg, h3 {
+        color: var(--global-accent-color);
+    }
+
     &:hover {
         background: var(--global-secondary-color);
-        svg, h3 {
-            color: var(--global-accent-color);
-        }
     }
 }
