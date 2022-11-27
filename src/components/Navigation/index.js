@@ -1,12 +1,15 @@
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
+  const [t, i18n] =  useTranslation("global");
+
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -14,11 +17,22 @@ const Navigation = () => {
   const {pathname} = location;
   const splitLocation = pathname.split("/");
 
-  const setTheme = () => {
+  const setUp = () => {
+    /**
+     * Set Language
+     */
+    let lang = localStorage.getItem('lang');
+    if (!lang) {
+      lang = "es";
+      localStorage.setItem('lang', lang);
+    }
+    if (lang !== i18n.language) i18n.changeLanguage(lang);
+
+    /**
+     * Set Theme
+     */
     let theme = localStorage.getItem('theme');
-
     if(!theme) theme = 'light';
-
     localStorage.setItem('theme', theme);
 
     document.body.classList.remove('dark');
@@ -40,7 +54,16 @@ const Navigation = () => {
     localStorage.setItem('theme', theme);
   }
 
-  document.addEventListener('DOMContentLoaded', setTheme());
+  const switchLang = (lang) => {
+    let current = localStorage.getItem('lang');
+    
+    if (current !== lang) {
+      localStorage.setItem('lang', lang);
+      i18n.changeLanguage(lang)
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', setUp());
   
   return (
     <div className='nav-bar'>
@@ -50,16 +73,16 @@ const Navigation = () => {
         <Collapse className='w-100' isOpen={isOpen} navbar>
           <Nav className='liner w-100 justify-content-center' navbar>
               <NavItem>
-                <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="./about">About</NavLink>
+                <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="about">{ t("navigation.about") }</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "skills" ? "active" : ""} href="./skills">Skills</NavLink>
+                <NavLink className={splitLocation[1] === "skills" ? "active" : ""} href="skills">Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "projects" ? "active" : ""} href="./projects">Projects</NavLink>
+                <NavLink className={splitLocation[1] === "projects" ? "active" : ""} href="projects">Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "contact" ? "active" : ""} href="./contact">Contact Me</NavLink>
+                <NavLink className={splitLocation[1] === "contact" ? "active" : ""} href="contact">Contact Me</NavLink>
               </NavItem>
           </Nav>
           <Nav className='w-100 justify-content-end'>
@@ -78,6 +101,15 @@ const Navigation = () => {
                 <FontAwesomeIcon className='highlighted-text' icon={faLightbulb} />
               </NavLink>
             </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Language
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem onClick={() => {switchLang("es")}}>Spanish</DropdownItem>
+                <DropdownItem onClick={() => {switchLang("en")}}>English</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </Nav>
         </Collapse>
       </Navbar>
