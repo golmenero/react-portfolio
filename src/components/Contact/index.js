@@ -1,8 +1,7 @@
 import { useRef } from 'react';
 import './index.scss';
 import emailjs from '@emailjs/browser';
-import { Button, Col, Container, Input, Row } from 'reactstrap';
-import Loader from 'react-loaders';
+import { Button, Col, Input, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
@@ -31,8 +30,7 @@ const Contact = () => {
     }
 
     return (
-        <>
-        <Container className='fade-in-first'>
+        <section id="contact">
             <form ref={refForm} onSubmit={sendEmail}>
                 <Row className='fade-in-first'>
                     <h1 className='highlighted-text'>{ t("navigation.contact-me") }</h1>
@@ -64,9 +62,7 @@ const Contact = () => {
                     </Row>
                 </div>
             </form>
-        </Container>
-        <Loader type="ball-scale-ripple-multiple" />
-        </>
+        </section>
     )
 }
 

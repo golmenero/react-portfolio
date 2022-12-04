@@ -2,7 +2,6 @@ import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import { faEarthEurope, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from "react-i18next";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
@@ -12,10 +11,6 @@ const Navigation = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-
-  const location = useLocation();
-  const {pathname} = location;
-  const splitLocation = pathname.split("/");
 
   const setUp = () => {
     /**
@@ -68,21 +63,21 @@ const Navigation = () => {
   return (
     <div className='nav-bar'>
       <Navbar expand="md">
-        <NavbarBrand className='w-50' href="/">&lt; Carlos Gómez /&gt;</NavbarBrand>
+        <NavbarBrand className='w-50' href="#home">&lt; Carlos Gómez /&gt;</NavbarBrand>
         <NavbarToggler onClick={toggle}/>
         <Collapse className='w-100' isOpen={isOpen} navbar>
           <Nav className='liner w-100 justify-content-center' navbar>
               <NavItem>
-                <NavLink className={splitLocation[1] === "about" ? "active" : ""} href="/about">{ t("navigation.about") }</NavLink>
+                <NavLink href="#about">{ t("navigation.about") }</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "skills" ? "active" : ""} href="/skills">{ t("navigation.skills") }</NavLink>
+                <NavLink href="#skills">{ t("navigation.skills") }</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "projects" ? "active" : ""} href="/projects">{ t("navigation.projects") }</NavLink>
+                <NavLink href="#projects">{ t("navigation.projects") }</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={splitLocation[1] === "contact" ? "active" : ""} href="/contact">{ t("navigation.contact-me") }</NavLink>
+                <NavLink href="#contact">{ t("navigation.contact-me") }</NavLink>
               </NavItem>
           </Nav>
           <Nav className='w-100 justify-content-end'>

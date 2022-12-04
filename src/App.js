@@ -1,4 +1,3 @@
-import { Route, Routes} from 'react-router-dom';
 import './App.scss';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -7,6 +6,7 @@ import Home from './components/Home';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import { Container } from 'reactstrap';
 
 function App() {
 
@@ -24,6 +24,13 @@ function App() {
      var newvalueY = height * pageY * -1 - 50;
  
      document.body.style.backgroundPosition = newvalueX+"px     "+newvalueY+"px";
+
+      let x = e.clientX - 10;
+      let y = e.clientY - 10;
+      
+      let cursor = document.querySelector('.ball');
+      cursor.style.left = x+'px';
+      cursor.style.top = y+'px';
    })
 
   return (
@@ -32,13 +39,14 @@ function App() {
       <Navigation />
     </header>
     <main>
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Container>
+        <div class="ball"></div>
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </Container>
     </main>
     <footer>
       <Footer />
