@@ -8,7 +8,7 @@ body.light {
 
 body.dark {
   --global-base-color: #0d0d0d;
-  --global-base-color-2:  #404040;
+  --global-base-color-2:  #333333;
   --global-text-color: #cccccc;
   --global-accent-color: #9ec7af;
   background: var(--global-base-color);
@@ -43,7 +43,7 @@ section {
   }
 
   &:first-of-type {
-    min-height: 90vh;
+    min-height: 85vh;
   }
 }
 

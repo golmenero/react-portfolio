@@ -2,8 +2,6 @@ import { Col, Row } from 'reactstrap';
 import AboutItem from './AboutItem';
 import './index.scss';
 import { useTranslation } from "react-i18next";
-import { faGlobe, faGraduationCap, faKeyboard } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = () => {
     const [t] =  useTranslation("global");
