@@ -10,14 +10,14 @@ const Footer = () => {
         <Row>
             <Col sm="12" className='m-0'>
               <div>
-                <span className='text-m highlighted-text bold-600'>
+                <span className='text-m accent-color bold-600'>
                   cgomezcolmenero@gmail.com
                   <div>
                     <a href="https://www.linkedin.com/in/carlos-gomez-colmenero/"> 
-                      LinkedIn <FontAwesomeIcon className='highlighted-text' icon={faLinkedin} />
+                      LinkedIn <FontAwesomeIcon className='accent-color' icon={faLinkedin} />
                     </a>
                     <a href="https://github.com/golmenero">
-                      GitHub <FontAwesomeIcon className='highlighted-text' icon={faGithub} />
+                      GitHub <FontAwesomeIcon className='accent-color' icon={faGithub} />
                     </a>
                   </div>
                 </span>

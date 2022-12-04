@@ -9,7 +9,7 @@ const Projects = () => {
     return (
         <section id="projects">
             <Row className='fade-in-first'>
-                <h1 className='text-l highlighted-text'>{ t("navigation.projects") }</h1>
+                <h1 className='text-l accent-color'>{ t("navigation.projects") }</h1>
                 <p className='section-subtitle text-m'>{ t("projects.header") }</p>
             </Row>
             <div className="fade-in-second">

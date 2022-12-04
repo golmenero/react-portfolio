@@ -33,7 +33,7 @@ const Contact = () => {
         <section id="contact">
             <form ref={refForm} onSubmit={sendEmail}>
                 <Row className='fade-in-first'>
-                    <h1 className='highlighted-text'>{ t("navigation.contact-me") }</h1>
+                    <h1 className='accent-color'>{ t("navigation.contact-me") }</h1>
                     <p className='section-subtitle text-m'>{ t("contact-me.header") }</p>
                 </Row>
                 <div className='fade-in-second'>

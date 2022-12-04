@@ -1,19 +1,17 @@
 body.light {
-  --global-primary-color: #e9e7e4;
-  --global-text-color: #0c0c0c;
-  --global-navigation-color: #cccccc;
-  --global-secondary-color:  #cccccc;
+  --global-base-color:  #cccccc;
+  --global-base-color-2:  #f2f2f2;
+  --global-text-color: #0d0d0d;
   --global-accent-color: #54926e;
-  background: url('../public/background_light.png');
+  background: var(--global-base-color);
 }
 
 body.dark {
-  --global-primary-color: #333333;
-  --global-text-color: #fff;
-  --global-navigation-color: #262626;
-  --global-secondary-color: #262626;
+  --global-base-color: #0d0d0d;
+  --global-base-color-2:  #404040;
+  --global-text-color: #cccccc;
   --global-accent-color: #9ec7af;
-  background: url('../public/background_dark.png');
+  background: var(--global-base-color);
 }
 
 @import 'animate.css';
@@ -40,10 +38,12 @@ body {
 }
 
 section {
-  min-height: 100vh;
-
   h1:first-of-type {
     margin-top: 100px;
+  }
+
+  &:first-of-type {
+    min-height: 90vh;
   }
 }
 
@@ -77,10 +77,6 @@ section {
 
 p {
   margin: 0;
-}
-
-.highlighted-text {
-  color: var(--global-accent-color);
 }
 
 // FONT-WEIGHT
@@ -150,4 +146,16 @@ $floats: right, left;
   border-radius: 50%;
   transition: 0.05s;
   position: fixed;
+}
+
+.base-color {
+  background: var(--global-base-color);
+}
+
+.base-color-2 {
+  background: var(--global-base-color-2);
+}
+
+.accent-color {
+  color: var(--global-accent-color);
 }

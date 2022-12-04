@@ -10,7 +10,7 @@ const Home = () => {
             <Row>
                 <Col sm="12" md="9" className='fade-in-first'>
                     <h1 className='text-l justify'>
-                        <span className='highlighted-text'>{ t("home.hello") }</span>
+                        <span className='accent-color'>{ t("home.hello") }</span>
                     </h1>
                     <h1 className='text-xl justify'>
                         { t("home.header") }

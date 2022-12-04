@@ -42,7 +42,7 @@ function App() {
       var docViewTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
       var elemTop = section.offsetTop;
   
-      if (elemTop + 500 >= docViewTop && !current) current = "#" + section.getAttribute("id");
+      if (elemTop + 750 >= docViewTop && !current) current = "#" + section.getAttribute("id");
     });
 
     if (current) {
@@ -55,16 +55,22 @@ function App() {
 
   return (
     <>
-      <header>
-        <Navigation />
+      <header className="base-color">
+          <Navigation />
       </header>
       <main>
+        <div className="ball"></div>
         <Container>
-          <div className="ball"></div>
           <Home />
+        </Container>
+        <div className='base-color-2'>
+        <Container className='mt-0'>
           <About />
           <Skills />
           <Projects />
+        </Container>
+        </div>
+        <Container className='mt-0'>
           <Contact />
         </Container>
       </main>

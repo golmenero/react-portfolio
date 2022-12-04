@@ -83,12 +83,12 @@ const Navigation = () => {
           <Nav className='w-100 justify-content-end'>
             <NavItem className='point'>
               <NavLink onClick={switchTheme}>
-                <FontAwesomeIcon className='highlighted-text' icon={faLightbulb} />
+                <FontAwesomeIcon className='accent-color' icon={faLightbulb} />
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav>
-                <FontAwesomeIcon className='highlighted-text' icon={faEarthEurope} />
+                <FontAwesomeIcon className='accent-color' icon={faEarthEurope} />
               </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem onClick={() => {switchLang("es")}}>

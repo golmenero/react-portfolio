@@ -24,13 +24,13 @@ textarea {
     cursor: pointer;
     color: var(--global-accent-color);
     border: 1px solid var(--global-accent-color);
-    background: var(--global-primary-color);
+    background: var(--global-base-color);
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
 
     &:hover {
         background: var(--global-accent-color);
-        color: var(--global-primary-color);
+        color: var(--global-base-color);
     }
 }

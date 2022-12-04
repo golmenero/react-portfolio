@@ -5,6 +5,7 @@
     top:0;
     z-index: 100;
     width: 100%;
+    background: var(--global-base-color);
 
     .navbar-toggler {
         border: 2px solid var(--global-accent-color);
@@ -26,7 +27,7 @@
         right: 0;
         .dropdown-item {
             padding: 10px;
-            background: var(--global-navigation-color);
+            background: var(--global-base-color);
             color: var(--global-text-color);
             span {
                 margin-right: 10px;

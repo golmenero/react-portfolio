@@ -10,7 +10,7 @@ const Skills = () => {
     return (
         <section id="skills">
             <Row>
-                <h1 className='highlighted-text'>{ t("navigation.skills") }</h1>
+                <h1 className='accent-color'>{ t("navigation.skills") }</h1>
                 <p className='section-subtitle text-m'>{ t("skills.header") }</p>
             </Row>
             <div className="fade-in-second">

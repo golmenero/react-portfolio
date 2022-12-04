@@ -1,21 +1,21 @@
 import './index.scss';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
+import { Col, Row } from 'reactstrap';
 
 
-const AboutItem = ({ icon, title, subtitle}) => {
+const AboutItem = ({ title, subtitle}) => {
     
     return (
-        <div className='fade-in-third about-item centered p-2em'>
-            <div>
-                <FontAwesomeIcon icon={icon} className="icon-about-item" color="#999999"/>
-            </div>
-            <div>
-                <h3 className='text-m bold-600'>{title}</h3>
-                <p className='text-s justify'>{subtitle}</p>
-            </div>
-        </div>                 
+        <Row>
+            <Col sm="12">
+                <h2 className='text-m justify'>
+                    <span className='accent-color'>{ title }</span>
+                </h2>
+            </Col>
+            <Col sm="12">
+                <p className='text-s'> { subtitle }</p>
+            </Col>
+        </Row>
     )
 }
 
