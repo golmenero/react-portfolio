@@ -27,7 +27,7 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) entry.target.classList.add('fade-in');
       })
-    }, {threshold: 0.6});
+    }, {threshold: 0.6, rootMargin: "250px"});
     animation_elements.forEach((item) => {
       observer.observe(item);
     })
@@ -45,7 +45,7 @@ function App() {
           });
         }
       })
-    }, {threshold: 0.6});    
+    }, {threshold: 0.6, rootMargin: "250px"});    
     navigation_elements.forEach((item) => {
       observer_nav.observe(item);
     })

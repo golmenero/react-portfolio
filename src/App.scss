@@ -137,7 +137,7 @@ $floats: right, left;
 
 .ball{
   z-index: 10;
-  border: 1px solid #fff;
+  border: 1px solid var(--global-text-color);
   height: 25px;
   width: 25px;
   border-radius: 50%;
