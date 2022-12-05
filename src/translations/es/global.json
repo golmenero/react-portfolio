@@ -88,5 +88,8 @@
         "send": "Enviar",
         "feedback-error": "Ocurrió un error al enviar su correo. Inténtelo más tarde",
         "feedback-success": "Mensaje enviado con éxito"
+    },
+    "footer": {
+        "header": "Diseñado y desarrollado por Carlos Gómez Colmenero"
     }
 }

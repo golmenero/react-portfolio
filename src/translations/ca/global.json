@@ -88,5 +88,8 @@
         "send": "Enviar",
         "feedback-error": "S'ha produït un error en enviar el vostre correu. Intenteu-ho més tard",
         "feedback-success": "Missatge enviat amb èxit"
+    },
+    "footer": {
+        "header": "Dissenyat i desenvolupat per Carlos Gómez Colmenero"
     }
 }

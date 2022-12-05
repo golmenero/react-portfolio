@@ -88,5 +88,8 @@
         "send": "Send",
         "feedback-error": "Failed to send the message, please try again",
         "feedback-success": "Message successfully sent!"
+    },
+    "footer": {
+        "header": "Designed and developed by Carlos Gómez Colmenero" 
     }
 }
