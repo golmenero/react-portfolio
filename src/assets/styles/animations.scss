@@ -1,0 +1,15 @@
+.fade-in-down {
+    animation: fadeInDown 2s 1s;
+    animation-delay: 0ms;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s 0s;
+    animation-fill-mode: forwards;
+    clear: both;
+    opacity: 0;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+}

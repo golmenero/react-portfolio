@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url('../fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ARSMaquette';
+    src: url('../fonts/ARSMaquette/ARSMaquettePro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ARSMaquetteBold';
+    src: url('../fonts/ARSMaquette/ARSMaquettePro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ARSMaquetteBlack';
+    src: url('../fonts/ARSMaquette/ARSMaquettePro-Bold.ttf') format('truetype');
+}
+
+.quote {
+    font-family: "La Belle Aurore";
+    display: block;
+    text-align: center;  
+    margin: 1em 0px;
+}
+
+.font-bold {  
+    font: 300 11px/1.4 'ARSMaquetteBold';
+}
+
+.font-black {  
+    font: 300 11px/1.4 'ARSMaquetteBlack';
+}
+
+.text-xl {
+    font-size: 4.8em !important;
+}
+
+.text-l {
+    font-size: 2.6em !important;
+}
+
+.text-m {
+    font-size: 1.9em !important;
+} 
+
+.text-s {
+    font-size: 1.7em !important;
+}
+
+.heading-1 {
+    font: 11px 'ARSMaquetteBlack';
+    @extend .text-color;
+    @extend .text-xl;
+    margin: 100px 0 50px 0;
+}
+
+.heading-2 {
+    font: 11px 'ARSMaquetteBlack';
+    @extend .accent-color;
+    @extend .text-l;
+}
+
+.heading-3 {
+    font: 11px 'ARSMaquette';
+    @extend .text-color;
+    @extend .text-m;
+    text-align: justify;
+    margin-bottom: 25px;
+}

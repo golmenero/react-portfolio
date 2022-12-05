@@ -33,8 +33,8 @@ const Contact = () => {
         <section id="contact" className='animate-on-scroll' data-nav="contact">
             <form ref={refForm} onSubmit={sendEmail}>
                 <Row>
-                    <h1 className='accent-color'>{ t("navigation.contact-me") }</h1>
-                    <p className='section-subtitle text-m'>{ t("contact-me.header") }</p>
+                    <h1 className='heading-1'>{ t("navigation.contact-me") }</h1>
+                    <p className='heading-3'>{ t("contact-me.header") }</p>
                 </Row>
                 <div>
                     <Row>

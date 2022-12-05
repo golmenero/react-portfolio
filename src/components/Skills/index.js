@@ -1,8 +1,23 @@
 import { faBezierCurve, faCheckDouble, faCloud, faDatabase, faPalette, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { Col, Row } from 'reactstrap';
 import './index.scss';
-import Skill from './Skill';
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+const Skill = ({ icon, title, subtitle}) => {
+    
+    return (
+        <div className='skill p-2em'>
+            <div>
+                <FontAwesomeIcon icon={icon} className="icon-skill" color="#999999"/>
+            </div>
+            <div>
+                <h3 className='heading-2'>{title}</h3>
+                <p className='heading-3'>{subtitle}</p>
+            </div>
+        </div>                 
+    )
+}
 
 const Skills = () => {
     const [t] =  useTranslation("global");
@@ -10,8 +25,8 @@ const Skills = () => {
     return (
         <section id="skills" className='animate-on-scroll' data-nav="skills">
             <Row>
-                <h1 className='accent-color'>{ t("navigation.skills") }</h1>
-                <p className='section-subtitle text-m'>{ t("skills.header") }</p>
+                <h1 className='heading-1'>{ t("navigation.skills") }</h1>
+                <p className='heading-3'>{ t("skills.header") }</p>
             </Row>
             <div>
                 <Row>

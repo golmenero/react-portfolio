@@ -1,7 +1,20 @@
 import { Col, Row } from 'reactstrap';
 import './index.scss';
-import Project from './Project';
 import { useTranslation } from "react-i18next";
+
+const Project = ({ link, title, subtitle, img}) => {
+    
+    return (
+        <div className={`project ${img}`}>
+            <a href={link}>
+                <div>
+                    <h3 className='heading-2'>{title}</h3>
+                    <p className='heading-3'>{subtitle}</p>
+                </div>
+            </a>      
+        </div>
+    )
+}
 
 const Projects = () => {
     const [t] =  useTranslation("global");
@@ -9,8 +22,8 @@ const Projects = () => {
     return (
         <section id="projects" className='animate-on-scroll' data-nav="projects">
             <Row>
-                <h1 className='text-l accent-color'>{ t("navigation.projects") }</h1>
-                <p className='section-subtitle text-m'>{ t("projects.header") }</p>
+                <h1 className='heading-1'>{ t("navigation.projects") }</h1>
+                <p className='heading-3'>{ t("projects.header") }</p>
             </Row>
             <div>
                 <Row>
