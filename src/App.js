@@ -7,24 +7,12 @@ import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import { Container } from 'reactstrap';
+import { useEffect } from 'react';
+import Socials from './components/Socials';
 
 function App() {
 
-  /**
-   * Event move background with cursor
-   */
-  var movementStrength = 25;
-  var height = movementStrength / window.innerHeight;
-  var width = movementStrength / window.innerWidth;
-
   document.addEventListener('mousemove', function (e) {
-    var pageX = e.pageX - (window.innerWidth / 2);
-    var pageY = e.pageY - (window.innerHeight / 2);
-    var newvalueX = width * pageX * -1 - 25;
-    var newvalueY = height * pageY * -1 - 50;
-
-    document.body.style.backgroundPosition = newvalueX + "px     " + newvalueY + "px";
-
     let x = e.clientX - 10;
     let y = e.clientY - 10;
 
@@ -33,24 +21,34 @@ function App() {
     cursor.style.top = y + 'px';
   });
 
-  document.addEventListener('scroll', function (e) {
-    let sections = document.querySelectorAll("section");
-    let navLi = document.querySelectorAll("a.nav-link");
-    let current = "";
+  useEffect(() => {
+    const animation_elements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('fade-in');
+      })
+    }, {threshold: 0.6});
+    animation_elements.forEach((item) => {
+      observer.observe(item);
+    })
 
-    sections.forEach((section) => {
-      var docViewTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      var elemTop = section.offsetTop;
-  
-      if (elemTop + 750 >= docViewTop && !current) current = "#" + section.getAttribute("id");
-    });
+    const navigation_elements = document.querySelectorAll('[data-nav]');
+    const observer_nav = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          let navLi = document.querySelectorAll("a.nav-link");
+          let nav = '#' + entry.target.getAttribute("data-nav");
 
-    if (current) {
-      navLi.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === current) link.classList.add("active");
-      });
-    }
+          navLi.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === nav) link.classList.add("active");
+          });
+        }
+      })
+    }, {threshold: 0.6});    
+    navigation_elements.forEach((item) => {
+      observer_nav.observe(item);
+    })
   });
 
   return (
@@ -73,6 +71,7 @@ function App() {
         <Container className='mt-0'>
           <Contact />
         </Container>
+        <Socials />
       </main>
       <footer>
         <Footer />

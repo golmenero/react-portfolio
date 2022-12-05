@@ -103,22 +103,19 @@ $floats: right, left;
   }
 }
 
-.fade-in-first {
+.fade-in-down {
   animation: fadeInDown 2s 1s;
   animation-delay: 0ms;
 }
 
-.fade-in-second {
-  animation: fadeIn 1.5s 1.5s;
+.fade-in {
+  animation: fadeIn 0.5s 0s;
   animation-fill-mode: forwards;
   clear: both;
   opacity: 0;
 }
 
-.fade-in-third {
-  animation: fadeIn 1.5s 2s;
-  animation-fill-mode: forwards;
-  clear: both;
+.animate-on-scroll {
   opacity: 0;
 }
 
@@ -146,6 +143,7 @@ $floats: right, left;
   border-radius: 50%;
   transition: 0.05s;
   position: fixed;
+  pointer-events: none;
 }
 
 .base-color {
@@ -154,6 +152,10 @@ $floats: right, left;
 
 .base-color-2 {
   background: var(--global-base-color-2);
+}
+
+.text-color {
+  color: var(--global-text-color);
 }
 
 .accent-color {

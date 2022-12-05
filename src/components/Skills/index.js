@@ -8,12 +8,12 @@ const Skills = () => {
     const [t] =  useTranslation("global");
     
     return (
-        <section id="skills">
+        <section id="skills" className='animate-on-scroll' data-nav="skills">
             <Row>
                 <h1 className='accent-color'>{ t("navigation.skills") }</h1>
                 <p className='section-subtitle text-m'>{ t("skills.header") }</p>
             </Row>
-            <div className="fade-in-second">
+            <div>
                 <Row>
                     <Col sm="12" md="4">
                         <Skill icon={faPalette} title={ t("skills.front.title") } subtitle={ t("skills.front.subtitle") }></Skill>

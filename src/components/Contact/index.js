@@ -30,13 +30,13 @@ const Contact = () => {
     }
 
     return (
-        <section id="contact">
+        <section id="contact" className='animate-on-scroll' data-nav="contact">
             <form ref={refForm} onSubmit={sendEmail}>
-                <Row className='fade-in-first'>
+                <Row>
                     <h1 className='accent-color'>{ t("navigation.contact-me") }</h1>
                     <p className='section-subtitle text-m'>{ t("contact-me.header") }</p>
                 </Row>
-                <div className='fade-in-second'>
+                <div>
                     <Row>
                         <Col sm='12' md="3">
                             <Input type="text" name='name' placeholder={ t("contact-me.name") } required />

@@ -6,9 +6,9 @@ const Home = () => {
     const [t] =  useTranslation("global");
     
     return (
-        <section id="home">
+        <section id="home" className='fade-in-down'>
             <Row>
-                <Col sm="12" md="9" className='fade-in-first'>
+                <Col sm="12" md="9">
                     <h1 className='text-l justify'>
                         <span className='accent-color'>{ t("home.hello") }</span>
                     </h1>
@@ -20,7 +20,7 @@ const Home = () => {
                         <p className="quote text-l">{ t("home.quote") }</p>
                     </div>
                 </Col>
-                <Col sm="12" md="3" className='fade-in-first'>
+                <Col sm="12" md="3">
                     <img alt="Profile" src='profile.jpeg'/>
                 </Col>
             </Row>

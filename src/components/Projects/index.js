@@ -7,12 +7,12 @@ const Projects = () => {
     const [t] =  useTranslation("global");
     
     return (
-        <section id="projects">
-            <Row className='fade-in-first'>
+        <section id="projects" className='animate-on-scroll' data-nav="projects">
+            <Row>
                 <h1 className='text-l accent-color'>{ t("navigation.projects") }</h1>
                 <p className='section-subtitle text-m'>{ t("projects.header") }</p>
             </Row>
-            <div className="fade-in-second">
+            <div>
                 <Row>
                     <Col sm="12" md="6">
                         <Project link="https://github.com/golmenero/tfg_inmobiliaria" img="realestate" title={ t("projects.realestate.title") } subtitle={ t("projects.realestate.subtitle") }></Project>
