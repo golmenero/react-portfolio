@@ -27,7 +27,9 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) entry.target.classList.add('fade-in');
       })
-    }, {threshold: 0.6, rootMargin: "250px"});
+      console.log(document.querySelector("main"))
+
+    }, {threshold: 0.1});
     animation_elements.forEach((item) => {
       observer.observe(item);
     })
@@ -45,7 +47,7 @@ function App() {
           });
         }
       })
-    }, {threshold: 0.6, rootMargin: "400px"});    
+    }, {threshold: 0.1});    
     navigation_elements.forEach((item) => {
       observer_nav.observe(item);
     })
@@ -62,11 +64,15 @@ function App() {
           <Home />
         </Container>
         <div className='base-color-2'>
-        <Container className='mt-0'>
-          <About />
-          <Skills />
-          <Projects />
-        </Container>
+          <div className='custom-background'>
+            <Container className='mt-0'>
+              <About />
+            </Container>
+          </div>
+          <Container className='mt-0'>
+            <Skills />
+            <Projects />
+          </Container>
         </div>
         <Container className='mt-0'>
           <Contact />

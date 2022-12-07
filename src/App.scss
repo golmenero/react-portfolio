@@ -68,3 +68,11 @@ $floats: right, left;
 .container {
   margin-top: 150px;
 }
+
+.custom-background {
+  background: var(--global-custom-background);
+  height: 100vh;
+  background-position:center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

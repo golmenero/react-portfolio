@@ -1,18 +1,20 @@
 body.light {
     --global-base-color:  #cccccc;
     --global-base-color-2:  #f2f2f2;
-    --global-section-color:  #e6e6e6;
+    --global-section-color:  rgba(230, 230, 230, .8);
     --global-text-color: #0d0d0d;
     --global-accent-color: #54926e;
+    --global-custom-background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../../../public/background-about.png');
     background: var(--global-base-color);
 }
 
 body.dark {
     --global-base-color: #0d0d0d;
     --global-base-color-2:  #333333;
-    --global-section-color:  #666666;
+    --global-section-color:  rgba(102, 102, 102, .3);
     --global-text-color: #cccccc;
     --global-accent-color: #9ec7af;
+    --global-custom-background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../../public/background-about.png');
     background: var(--global-base-color);
 }
 
@@ -25,11 +27,15 @@ body.dark {
 }
 
 .section-color {
-    background: var(--global-section-color);
+    background-color: var(--global-section-color);
 }
 
 .text-color {
     color: var(--global-text-color);
+}
+
+.text-white {
+    color:#cccccc;
 }
 
 .accent-color {

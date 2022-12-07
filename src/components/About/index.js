@@ -18,7 +18,7 @@ const About = () => {
     return (
         <section id="about" className='animate-on-scroll' data-nav="about">
             <Row>
-                <h1 className='heading-1'>{ t("navigation.about") }</h1>
+                <h1 className='heading-1 text-white'>{ t("navigation.about") }</h1>
                 <p className='heading-3'>{ t("about.header") }</p>
             </Row>
             <Row>
@@ -31,9 +31,6 @@ const About = () => {
                 <Col sm="12" md="4">
                     <AboutItem img="experience" title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
                 </Col>
-            </Row>
-            <Row>
-                <img alt="My desktop" src="background-about.png" />
             </Row>
         </section>
        
