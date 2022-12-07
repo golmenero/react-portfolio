@@ -61,7 +61,7 @@ const Navigation = () => {
   document.addEventListener('DOMContentLoaded', setUp());
   
   return (
-    <div className='nav-bar'>
+    <div className='nav-bar base-color'>
       <Navbar expand="md">
         <NavbarBrand className='w-50' href="#home">&lt; Carlos Gómez /&gt;</NavbarBrand>
         <NavbarToggler onClick={toggle}/>

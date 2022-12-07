@@ -45,7 +45,7 @@ function App() {
           });
         }
       })
-    }, {threshold: 0.6, rootMargin: "250px"});    
+    }, {threshold: 0.6, rootMargin: "400px"});    
     navigation_elements.forEach((item) => {
       observer_nav.observe(item);
     })

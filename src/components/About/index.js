@@ -1,7 +1,6 @@
 import { Col, Row } from 'reactstrap';
 import './index.scss';
 import { useTranslation } from "react-i18next";
-import { useEffect } from 'react';
 
 const AboutItem = ({ img, title, subtitle}) => {
     
@@ -16,18 +15,6 @@ const AboutItem = ({ img, title, subtitle}) => {
 const About = () => {
     const [t] =  useTranslation("global");
 
-    useEffect(() => {
-        document.querySelectorAll("[data-img]").forEach((element) => {
-            element.addEventListener('click', (event) => {
-                document.querySelectorAll(".img-about").forEach((element) => {
-                    element.classList.add("d-none");
-                });
-                let img = element.getAttribute("data-img") + "-img";
-                document.getElementById(img).classList.remove("d-none");
-            });
-        });
-    });
-    
     return (
         <section id="about" className='animate-on-scroll' data-nav="about">
             <Row>
@@ -44,6 +31,9 @@ const About = () => {
                 <Col sm="12" md="4">
                     <AboutItem img="experience" title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
                 </Col>
+            </Row>
+            <Row>
+                <img alt="My desktop" src="background-about.png" />
             </Row>
         </section>
        
