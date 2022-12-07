@@ -1,6 +1,7 @@
 body.light {
     --global-base-color:  #cccccc;
     --global-base-color-2:  #f2f2f2;
+    --global-section-color:  #e6e6e6;
     --global-text-color: #0d0d0d;
     --global-accent-color: #54926e;
     background: var(--global-base-color);
@@ -9,6 +10,7 @@ body.light {
 body.dark {
     --global-base-color: #0d0d0d;
     --global-base-color-2:  #333333;
+    --global-section-color:  #666666;
     --global-text-color: #cccccc;
     --global-accent-color: #9ec7af;
     background: var(--global-base-color);
@@ -20,6 +22,10 @@ body.dark {
 
 .base-color-2 {
     background: var(--global-base-color-2);
+}
+
+.section-color {
+    background: var(--global-section-color);
 }
 
 .text-color {

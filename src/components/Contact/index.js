@@ -57,7 +57,7 @@ const Contact = () => {
                     </Row>
                     <Row>
                         <Col md="6">
-                            <Button type='submit' className='flat-button right'>{ t("contact-me.send") }</Button>
+                            <Button type='submit' className='custom-button right'>{ t("contact-me.send") }</Button>
                         </Col>
                     </Row>
                 </div>

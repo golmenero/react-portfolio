@@ -62,6 +62,7 @@
     },
     "projects": {
         "header": "Voici une liste de mes précédents projets.",
+        "see-source-code": "Voir le code source",
         "realestate": {
             "title": "Application de gestion immobilière",
             "subtitle": "Réalisée avec NodeJS, cette application permet à l'utilisateur de gérer tous les aspects liés à la location ou à l'achat d'un bien, ainsi que tout ce qui concerne les communications, les documents ou les médias."

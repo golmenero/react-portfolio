@@ -62,6 +62,7 @@
     },
     "projects": {
         "header": "Aquí hi ha una llista dels meus projectes anteriors.",
+        "see-source-code": "Vegeu el codi font",
         "realestate": {
             "title": "Aplicació de Gestió Immobiliària",
             "subtitle": "Feta amb NodeJS, aquesta aplicació permet a l'usuari administrar tots els aspectes relacionats amb el lloguer o la compra de propietats, així com manejar tot allò relacionat amb comunicacions, documents o mitjans."

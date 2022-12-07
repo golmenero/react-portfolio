@@ -62,6 +62,7 @@
     },
     "projects": {
         "header": "Here's a list of my previous projects.",
+        "see-source-code": "See source code",
         "realestate": {
             "title": "Real Estate Application",
             "subtitle": "Made with NodeJS, this application allows the user to manage all the aspects related with renting or buying properties, as well as handling everything related with communications, documents or media."

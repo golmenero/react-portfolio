@@ -62,6 +62,7 @@
     },
     "projects": {
         "header": "Hier ist eine Liste meiner bisherigen Projekte.",
+        "see-source-code": "Siehe Quellcode",
         "realestate": {
             "title": "Immobilienverwaltungsanwendung",
             "subtitle": "Diese mit NodeJS erstellte Anwendung ermöglicht es dem Benutzer, alle Aspekte im Zusammenhang mit der Anmietung oder dem Kauf von Immobilien zu verwalten sowie alles zu handhaben, was mit Kommunikation, Dokumenten oder Medien zu tun hat."

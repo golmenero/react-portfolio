@@ -2,15 +2,11 @@ import { faBezierCurve, faCheckDouble, faCloud, faDatabase, faPalette, faScrewdr
 import { Col, Row } from 'reactstrap';
 import './index.scss';
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Skill = ({ icon, title, subtitle}) => {
     
     return (
-        <div className='skill p-2em'>
-            <div>
-                <FontAwesomeIcon icon={icon} className="icon-skill" color="#999999"/>
-            </div>
+        <div className='p-2em section-color h-100'>
             <div>
                 <h3 className='heading-2'>{title}</h3>
                 <p className='heading-3'>{subtitle}</p>
