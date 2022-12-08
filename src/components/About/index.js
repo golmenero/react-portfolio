@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const AboutItem = ({ img, title, subtitle}) => {
     
     return (
-        <div data-img={img} className="about-item section-color p-2em h-100">
+        <div data-img={img} className="animated-border section-color p-2em h-100">
             <h2 className='heading-2'>{ title }</h2>
             <p className='heading-3'> { subtitle }</p>
         </div>

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Skill = ({ icon, title, subtitle}) => {
     
     return (
-        <div className='p-2em section-color h-100'>
+        <div className='p-2em animated-border section-color h-100'>
             <div>
                 <h3 className='heading-2'>{title}</h3>
                 <p className='heading-3'>{subtitle}</p>
@@ -21,8 +21,7 @@ const Skills = () => {
     return (
         <section id="skills" className='animate-on-scroll' data-nav="skills">
             <Row>
-                <h1 className='heading-1'>{ t("navigation.skills") }</h1>
-                <p className='heading-3'>{ t("skills.header") }</p>
+                <h1 className='heading-1 text-white'>{ t("navigation.skills") }</h1>
             </Row>
             <div>
                 <Row>

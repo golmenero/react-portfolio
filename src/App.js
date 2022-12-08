@@ -63,12 +63,12 @@ function App() {
         <Container>
           <Home />
         </Container>
-        <div className='base-color-2'>
-          <div className='custom-background'>
-            <Container className='mt-0'>
-              <About />
-            </Container>
-          </div>
+        <div className='custom-background top-border'>
+          <Container className='mt-0'>
+            <About />
+          </Container>
+        </div>
+        <div className='base-color-2 bottom-border'>
           <Container className='mt-0'>
             <Skills />
             <Projects />
