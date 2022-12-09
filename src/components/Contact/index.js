@@ -14,10 +14,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                'service_uvtbzrc',
-                'template_t09q0eo',
+                'service_v2ygwl6',
+                'template_oip3dsh',
                 refForm.current,
-                'JdLbK0qEeZkA1b5Ik'
+                'gzl6tN9s7tAoB0POl'
             ).then(
                 () => {
                     alert(t("contact-me.feedback-success"))
@@ -36,31 +36,27 @@ const Contact = () => {
                     <h1 className='heading-1'>{ t("navigation.contact-me") }</h1>
                     <p className='heading-3'>{ t("contact-me.header") }</p>
                 </Row>
-                <div>
-                    <Row>
-                        <Col sm='12' md="3">
-                            <Input type="text" name='name' placeholder={ t("contact-me.name") } required />
-                        </Col>
-                        <Col sm='12' md="3">
-                            <Input type="email" name='email' placeholder={ t("contact-me.email") } required />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md="6">
-                            <Input placeholder={ t("contact-me.subject") } type="text" name="subject" required />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md="6">
-                            <Input type="textarea" placeholder={ t("contact-me.message") } name='message' required />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md="6">
-                            <Button type='submit' className='custom-button right'>{ t("contact-me.send") }</Button>
-                        </Col>
-                    </Row>
-                </div>
+                <Row>
+                    <Col sm="12" md="6">
+                        <Row>
+                            <Col sm='12' md="6">
+                                <Input type="text" name='name' placeholder={ t("contact-me.name") } required />
+                            </Col>
+                            <Col sm='12' md="6">
+                                <Input type="email" name='email' placeholder={ t("contact-me.email") } required />
+                            </Col>
+                            <Col sm="12">
+                                <Input placeholder={ t("contact-me.subject") } type="text" name="subject" required />
+                            </Col>
+                            <Col sm="12">
+                                <Input type="textarea" placeholder={ t("contact-me.message") } name='message' required />
+                            </Col>
+                            <Col sm="12">
+                                <Button type='submit' className='custom-button right'>{ t("contact-me.send") }</Button>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
             </form>
         </section>
     )
