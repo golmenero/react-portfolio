@@ -71,15 +71,12 @@
 }
 
 .custom-button {
-    min-width: 200px;
-    font-weight: 600;
-    cursor: pointer;
-    color: var(--global-accent-color);
+    font-size: 18px;
     border: 1px solid var(--global-accent-color);
-    background: none;
-    letter-spacing: 3px;
-    text-decoration: none;
+    border-radius: 0;
     padding: 8px 10px;
+    background: 0;
+    color: var(--global-accent-color);
 
     &:hover {
         background: var(--global-accent-color);
