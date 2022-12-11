@@ -88,7 +88,8 @@
         "message": "Nachricht",
         "send": "Senden",
         "feedback-error": "Beim Senden Ihrer E-Mail ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut",
-        "feedback-success": "Nachricht erfolgreich gesendet"
+        "feedback-success": "Nachricht erfolgreich gesendet",
+        "captcha": "Bitte akzeptieren Sie das Captcha"
     },
     "footer": {
         "header": "Entworfen und entwickelt von Carlos Gómez Colmenero"

@@ -27,7 +27,6 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) entry.target.classList.add('fade-in');
       })
-      console.log(document.querySelector("main"))
 
     }, {threshold: 0.1});
     animation_elements.forEach((item) => {

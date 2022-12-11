@@ -3,16 +3,19 @@ import './index.scss';
 import emailjs from '@emailjs/browser';
 import { Button, Col, Input, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
     const [t] =  useTranslation("global");
 
     const refForm = useRef();
-
+    const captcha = useRef(null);
     const sendEmail = (e) => {
         e.preventDefault()
 
-        emailjs
+        if (!captcha.current.getValue()) alert(t("contact-me.captcha"));
+        else {
+            emailjs
             .sendForm(
                 'service_v2ygwl6',
                 'template_oip3dsh',
@@ -27,6 +30,7 @@ const Contact = () => {
                     alert("contact-me.feedback-error")
                 }
             )
+        }
     }
 
     return (
@@ -50,6 +54,9 @@ const Contact = () => {
                             </Col>
                             <Col sm="12">
                                 <Input type="textarea" placeholder={ t("contact-me.message") } name='message' required />
+                            </Col>
+                            <Col sm="12">
+                                <ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="dark"></ReCAPTCHA>
                             </Col>
                             <Col sm="12">
                                 <Button type='submit' className='custom-button right'>{ t("contact-me.send") }</Button>

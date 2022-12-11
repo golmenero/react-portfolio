@@ -88,7 +88,8 @@
         "message": "Message",
         "send": "Send",
         "feedback-error": "Failed to send the message, please try again",
-        "feedback-success": "Message successfully sent!"
+        "feedback-success": "Message successfully sent!",
+        "captcha": "Please, accept captcha"
     },
     "footer": {
         "header": "Designed and developed by Carlos Gómez Colmenero" 
