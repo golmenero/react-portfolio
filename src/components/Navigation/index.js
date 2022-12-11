@@ -27,7 +27,7 @@ const Navigation = () => {
      * Set Theme
      */
     let theme = localStorage.getItem('theme');
-    if(!theme) theme = 'light';
+    if(!theme) theme = 'dark';
     localStorage.setItem('theme', theme);
 
     document.body.classList.remove('dark');
