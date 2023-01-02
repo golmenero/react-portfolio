@@ -57,7 +57,8 @@
 }
 
 .heading-2 {
-    font: 11px 'ARSMaquetteBlack';
+    font: 11px 'ARSMaquette';
+    margin-bottom: 20px;
     @extend .accent-color;
     @extend .text-l;
 }
@@ -80,6 +81,6 @@
 
     &:hover {
         background: var(--global-accent-color);
-        color: var(--global-base-color);
+        color: var(--global-section-color);
     }
 }

@@ -63,6 +63,9 @@ const Contact = () => {
                             </Col>
                         </Row>
                     </Col>
+                    <Col sm="12" md="6">
+                        <img alt="Profile" src='profile2.jpg'/>
+                    </Col>
                 </Row>
             </form>
         </section>

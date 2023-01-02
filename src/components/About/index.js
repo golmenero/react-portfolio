@@ -18,17 +18,17 @@ const About = () => {
     return (
         <section id="about" className='animate-on-scroll' data-nav="about">
             <Row>
-                <h1 className='heading-1 text-white'>{ t("navigation.about") }</h1>
+                <h1 className='heading-1'>{ t("navigation.about") }</h1>
                 <p className='heading-3'>{ t("about.header") }</p>
             </Row>
             <Row>
-                <Col sm="12" md="4">
+                <Col sm="12" md="12" lg="4">
                     <AboutItem img="education" title={ t("about.education.title") } subtitle={ t("about.education.subtitle") }></AboutItem>
                 </Col>
-                <Col sm="12" md="4">
+                <Col sm="12" md="12" lg="4">
                     <AboutItem img="languages" title={ t("about.languages.title") } subtitle={ t("about.languages.subtitle") }></AboutItem>
                 </Col>
-                <Col sm="12" md="4">
+                <Col sm="12" md="12" lg="4">
                     <AboutItem img="experience" title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
                 </Col>
             </Row>

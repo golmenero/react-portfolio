@@ -15,8 +15,8 @@
 }
 
 .animated-border {
-    --c: var(--global-text-color); /* the border color */
-    --b: 1px;    /* the border thickness*/
+    --c: var(--global-accent-color); /* the border color */
+    --b: 4px;    /* the border thickness*/
     --g: 0px;     /* the gap on hover */
 
     --_g: #0000 25%,var(--c) 0;

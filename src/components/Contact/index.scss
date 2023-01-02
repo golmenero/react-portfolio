@@ -1,65 +1,28 @@
 @import '../../App.scss';
 
-.row {
-    div {
-        margin-bottom: 15px;
-    }
-}
-
-input[type='text'],
-input[type='email'],
-textarea,
-.flat-button {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-textarea {
-    min-height: 150px;
-    resize: none;
-}
-
 #contact {
-    .slottt-machine-recipe {
-        margin: 0px auto;
-        width: 700px;
-        margin-top: 50px;
-      }
-      
-      .slottt-machine-recipe__mask {
-          width: 100%;
-          height: 150px;
-          overflow: hidden; 
-          position: relative;
-          display: inline-block;
-          margin-bottom: -40px;
-      }
-      
-      .slottt-machine-recipe__items_container {
-          position: absolute;
-      }
-      
-      .slottt-machine-recipe__item {
-          min-height: 150px;
-          max-height: 150px;
-          margin: 0px;
-          padding: 0px;
-          background-size: contain;
-      }
+    .row {
+        div {
+            margin-bottom: 15px;
+        }
+    }
     
-      
-      .recipe_if, .recipe_then {
-          font-weight: bold;
-          font-size: 120px;
-      }
-      
-      .tagline {
-        font-weight: normal;
-        font-size: 24px;
-      }
-      
-      a {
-       font-weight: bold;
-       text-decoration: none;
-       color: #33CCFF;
-      }
+    input[type='text'],
+    input[type='email'],
+    textarea,
+    .flat-button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    textarea {
+        min-height: 150px;
+        resize: none;
+    }
+
+    img {
+        width: 100%;
+        border-radius: .5rem;
+        border: 4px solid var(--global-accent-color);
+        object-fit: cover;
+    }
 }

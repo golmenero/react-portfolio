@@ -8,8 +8,8 @@ const Home = () => {
     return (
         <section id="home" className='fade-in-down'>
             <Row>
-                <Col sm="12" md="9">
-                    <h1 className='heading-2'>
+                <Col sm="12" md="12" lg="7">
+                    <h1 className='heading-2 mt-0'>
                         <span className='accent-color'>{ t("home.hello") }</span>
                     </h1>
                     <h1 className='heading-1 mt-0'>
@@ -20,7 +20,7 @@ const Home = () => {
                         <p className="quote text-l">{ t("home.quote") }</p>
                     </div>
                 </Col>
-                <Col sm="12" md="3">
+                <Col sm="12" md="12" lg="5">
                     <img alt="Profile" src='profile.jpeg'/>
                 </Col>
             </Row>

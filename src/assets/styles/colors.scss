@@ -1,20 +1,18 @@
 body.light {
-    --global-base-color:  #cccccc;
-    --global-base-color-2:  linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../../../public/background.jpg');
-    --global-section-color:  rgba(230, 230, 230, .8);
+    --global-base-color: linear-gradient(180deg, #cccccc 20%, #E6E6E6 25%, #E6E6E6 84%, #cccccc 89%);
+    --global-base-color-2:  #E6E6E6;
+    --global-section-color:  #cccccc;
     --global-text-color: #0d0d0d;
     --global-accent-color: #54926e;
-    --global-custom-background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../../../public/background-about.png');
     background: var(--global-base-color);
 }
 
 body.dark {
-    --global-base-color: #0d0d0d;
-    --global-base-color-2:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../../public/background.jpg');
-    --global-section-color:  rgba(102, 102, 102, .3);
+    --global-base-color: linear-gradient(180deg, #0d0d0d 20%, #404040 25%, #404040 84%, #0d0d0d 89%);
+    --global-base-color-2: #404040;
+    --global-section-color: #262626;
     --global-text-color: #cccccc;
     --global-accent-color: #A9CEC2;
-    --global-custom-background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../../public/background-about.png');
     background: var(--global-base-color);
 }
 
@@ -28,24 +26,13 @@ body.dark {
 
 .section-color {
     background-color: var(--global-section-color) !important;
+    border-radius: 25px;
 }
 
 .text-color {
     color: var(--global-text-color);
 }
 
-.text-white {
-    color:#cccccc;
-}
-
 .accent-color {
     color: var(--global-accent-color);
-}
-
-.top-border {
-    border-top: 1px solid var(--global-text-color);
-}
-
-.bottom-border {
-    border-bottom: 1px solid var(--global-text-color);
 }

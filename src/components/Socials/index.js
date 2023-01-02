@@ -9,7 +9,7 @@ const Socials = () => {
             <ul className="social-networks square spin-icon">
                 <li>
                     <div>
-                        <span>cgomezcolmenero@gmail</span>
+                        <span>cgomezcolmenero</span><span className='accent-color'>@gmail.com</span>
                     </div>
                 </li>
                 <li>

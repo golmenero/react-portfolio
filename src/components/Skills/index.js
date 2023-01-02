@@ -21,28 +21,28 @@ const Skills = () => {
     return (
         <section id="skills" className='animate-on-scroll' data-nav="skills">
             <Row>
-                <h1 className='heading-1 text-white'>{ t("navigation.skills") }</h1>
+                <h1 className='heading-1'>{ t("navigation.skills") }</h1>
             </Row>
             <div>
                 <Row>
-                    <Col sm="12" md="4">
+                    <Col sm="12" md="12" lg="4">
                         <Skill icon={faPalette} title={ t("skills.front.title") } subtitle={ t("skills.front.subtitle") }></Skill>
                     </Col>
-                    <Col sm="12" md="4">
+                    <Col sm="12" md="12" lg="4">
                         <Skill icon={faScrewdriverWrench} title={ t("skills.back.title") } subtitle={ t("skills.back.subtitle") }></Skill>
                     </Col>
-                    <Col sm="12" md="4">
+                    <Col sm="12" md="12" lg="4">
                         <Skill icon={faCloud} title={ t("skills.api.title") } subtitle={ t("skills.api.subtitle") }></Skill>
                     </Col>
                 </Row>
                 <Row>
-                    <Col sm="12" md="4">
+                    <Col sm="12" md="12" lg="4">
                         <Skill icon={faDatabase} title={ t("skills.database.title") } subtitle={ t("skills.database.subtitle") }></Skill>
                     </Col>
-                    <Col sm="12" md="4">
+                    <Col sm="12" md="12" lg="4">
                         <Skill icon={faBezierCurve} title={ t("skills.business.title") } subtitle={ t("skills.business.subtitle") }></Skill>
                     </Col>
-                    <Col sm="12" md="4">
+                    <Col sm="12" md="12" lg="4">
                         <Skill icon={faCheckDouble} title={ t("skills.tester.title") } subtitle={ t("skills.tester.subtitle") }></Skill> 
                     </Col>
                 </Row>

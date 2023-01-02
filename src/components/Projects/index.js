@@ -25,7 +25,7 @@ const Projects = () => {
     return (
         <section id="projects" className='animate-on-scroll' data-nav="projects">
             <Row>
-                <h1 className='heading-1 text-white'>{ t("navigation.projects") }</h1>
+                <h1 className='heading-1'>{ t("navigation.projects") }</h1>
             </Row>
             <div>
                 <Project pos='L' link="https://github.com/golmenero/tfg_inmobiliaria" img="projects/proj-3-raw.png" title={ t("projects.realestate.title") } subtitle={ t("projects.realestate.subtitle") }></Project>
