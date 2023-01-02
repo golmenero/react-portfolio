@@ -10,7 +10,8 @@
         "about": "Acerca",
         "skills": "Habilidades",
         "projects": "Proyectos",
-        "contact-me": "Contacto"
+        "contact-me": "Contacto",
+        "others": "Otros"
     },
     "home": {
         "hello": "¡Hola!",
@@ -90,6 +91,9 @@
         "feedback-error": "Ocurrió un error al enviar su correo. Inténtelo más tarde",
         "feedback-success": "Mensaje enviado con éxito",
         "captcha": "Por favor, acepte el captcha"
+    },
+    "others": {
+        "header": "Soy un estudiante autodidacta y aficionado al modelado 3d. Para ello utilizo la herramienta de creación Blender. Estas son algunas de mis creaciones recientes."
     },
     "footer": {
         "header": "Diseñado y desarrollado por Carlos Gómez Colmenero"

@@ -10,7 +10,8 @@
         "about": "About",
         "skills": "Skills",
         "projects": "Projects",
-        "contact-me": "Contact Me"
+        "contact-me": "Contact Me",
+        "others": "Others"
     },
     "home": {
         "hello": "Hello!",
@@ -90,6 +91,9 @@
         "feedback-error": "Failed to send the message, please try again",
         "feedback-success": "Message successfully sent!",
         "captcha": "Please, accept captcha"
+    },
+    "others": {
+        "header": "I am a self-taught student and afficionate of 3d modelling. For that purpose, I use the creation tool Blender. Here are some of my recent creations."
     },
     "footer": {
         "header": "Designed and developed by Carlos Gómez Colmenero" 

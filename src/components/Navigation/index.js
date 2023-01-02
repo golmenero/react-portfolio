@@ -61,7 +61,7 @@ const Navigation = () => {
   document.addEventListener('DOMContentLoaded', setUp());
   
   return (
-    <div className='nav-bar base-color'>
+    <div className='nav-bar'>
       <Navbar expand="md">
         <NavbarBrand className='w-50' href="#home">&lt; Carlos Gómez /&gt;</NavbarBrand>
         <NavbarToggler onClick={toggle}/>
@@ -75,6 +75,9 @@ const Navigation = () => {
               </NavItem>
               <NavItem>
                 <NavLink href="#projects">{ t("navigation.projects") }</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#others">{ t("navigation.others") }</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#contact">{ t("navigation.contact-me") }</NavLink>

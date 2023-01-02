@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import { Container } from 'reactstrap';
 import { useEffect } from 'react';
 import Socials from './components/Socials';
+import Others from './components/Others';
 
 function App() {
 
@@ -61,19 +62,16 @@ function App() {
         <div className="ball"></div>
         <Container>
           <Home />
+          <About />
         </Container>
-        <div className='custom-background top-border'>
-          <Container className='mt-0'>
-            <About />
-          </Container>
-        </div>
-        <div className='base-color-2 bottom-border'>
+        <div className='base-color-2'>
           <Container className='mt-0'>
             <Skills />
             <Projects />
           </Container>
         </div>
         <Container className='mt-0'>
+          <Others />
           <Contact />
         </Container>
         <Socials />
