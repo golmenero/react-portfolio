@@ -11,7 +11,8 @@
         "skills": "Skills",
         "projects": "Projects",
         "contact-me": "Contact Me",
-        "others": "Others"
+        "others": "Others",
+        "flag": "fi fi-gb"
     },
     "home": {
         "hello": "Hello!",
