@@ -23,15 +23,17 @@
           background-color: var(--global-base-color);
           padding: 10px;
 
-          span, svg {
+          span, i {
+            color: var(--global-text-color);
             font-size: 1.7em;
             height: 100%;
+            margin-top: 4px;
           }
 
           &:hover {
 
-            span, svg {
-                color: var(--global-accent-color);  
+            span, i {
+                color: var(--global-accent-color);
             }
         }
         }

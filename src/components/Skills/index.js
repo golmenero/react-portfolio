@@ -1,17 +1,18 @@
-import { faBezierCurve, faCheckDouble, faCloud, faDatabase, faPalette, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { Col, Row } from 'reactstrap';
 import './index.scss';
 import { useTranslation } from "react-i18next";
+import Tilt from 'react-parallax-tilt';
 
 const Skill = ({ icon, title, subtitle}) => {
     
     return (
-        <div className='p-2em animated-border section-color h-100'>
-            <div>
+        <Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
+            <div className='p-2em section-color h-100'>
+                <i className={icon}></i>
                 <h3 className='heading-2'>{title}</h3>
                 <p className='heading-3'>{subtitle}</p>
-            </div>
-        </div>                 
+            </div>  
+        </Tilt>               
     )
 }
 
@@ -26,24 +27,24 @@ const Skills = () => {
             <div>
                 <Row>
                     <Col sm="12" md="12" lg="4">
-                        <Skill icon={faPalette} title={ t("skills.front.title") } subtitle={ t("skills.front.subtitle") }></Skill>
+                        <Skill icon="bx bx-palette" title={ t("skills.front.title") } subtitle={ t("skills.front.subtitle") }></Skill>
                     </Col>
                     <Col sm="12" md="12" lg="4">
-                        <Skill icon={faScrewdriverWrench} title={ t("skills.back.title") } subtitle={ t("skills.back.subtitle") }></Skill>
+                        <Skill icon="bx bx-cog" title={ t("skills.back.title") } subtitle={ t("skills.back.subtitle") }></Skill>
                     </Col>
                     <Col sm="12" md="12" lg="4">
-                        <Skill icon={faCloud} title={ t("skills.api.title") } subtitle={ t("skills.api.subtitle") }></Skill>
+                        <Skill icon="bx bx-cloud" title={ t("skills.api.title") } subtitle={ t("skills.api.subtitle") }></Skill>
                     </Col>
                 </Row>
                 <Row>
                     <Col sm="12" md="12" lg="4">
-                        <Skill icon={faDatabase} title={ t("skills.database.title") } subtitle={ t("skills.database.subtitle") }></Skill>
+                        <Skill icon="bx bx-data" title={ t("skills.database.title") } subtitle={ t("skills.database.subtitle") }></Skill>
                     </Col>
                     <Col sm="12" md="12" lg="4">
-                        <Skill icon={faBezierCurve} title={ t("skills.business.title") } subtitle={ t("skills.business.subtitle") }></Skill>
+                        <Skill icon="bx bx-sitemap" title={ t("skills.business.title") } subtitle={ t("skills.business.subtitle") }></Skill>
                     </Col>
                     <Col sm="12" md="12" lg="4">
-                        <Skill icon={faCheckDouble} title={ t("skills.tester.title") } subtitle={ t("skills.tester.subtitle") }></Skill> 
+                        <Skill icon="bx bx-check" title={ t("skills.tester.title") } subtitle={ t("skills.tester.subtitle") }></Skill> 
                     </Col>
                 </Row>
             </div>

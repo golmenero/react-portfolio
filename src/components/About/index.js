@@ -1,14 +1,18 @@
 import { Col, Row } from 'reactstrap';
 import './index.scss';
 import { useTranslation } from "react-i18next";
+import Tilt from 'react-parallax-tilt';
 
-const AboutItem = ({ img, title, subtitle}) => {
+const AboutItem = ({ icon, title, subtitle}) => {
     
     return (
-        <div data-img={img} className="animated-border section-color p-2em h-100">
-            <h2 className='heading-2'>{ title }</h2>
-            <p className='heading-3'> { subtitle }</p>
-        </div>
+        <Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
+            <div className="section-color p-2em h-100">
+                <i className={icon}></i>
+                <h2 className='heading-2'>{ title }</h2>
+                <p className='heading-3'> { subtitle }</p>
+            </div>
+        </Tilt>
     )
 }
 
@@ -23,13 +27,13 @@ const About = () => {
             </Row>
             <Row>
                 <Col sm="12" md="12" lg="4">
-                    <AboutItem img="education" title={ t("about.education.title") } subtitle={ t("about.education.subtitle") }></AboutItem>
+                    <AboutItem icon="bx bxs-graduation" title={ t("about.education.title") } subtitle={ t("about.education.subtitle") }></AboutItem>
                 </Col>
                 <Col sm="12" md="12" lg="4">
-                    <AboutItem img="languages" title={ t("about.languages.title") } subtitle={ t("about.languages.subtitle") }></AboutItem>
+                    <AboutItem icon="bx bx-globe" title={ t("about.languages.title") } subtitle={ t("about.languages.subtitle") }></AboutItem>
                 </Col>
                 <Col sm="12" md="12" lg="4">
-                    <AboutItem img="experience" title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
+                    <AboutItem icon="bx bx-wrench" title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
                 </Col>
             </Row>
         </section>

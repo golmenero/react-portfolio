@@ -1,8 +1,6 @@
 import './index.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
 import { useState } from 'react';
-import { faEarthEurope, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from "react-i18next";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
@@ -33,6 +31,13 @@ const Navigation = () => {
     document.body.classList.remove('dark');
     document.body.classList.remove('light');
     document.body.classList.add(theme);
+
+    let themeIcon = document.querySelector("#theme-icon");
+    if (themeIcon) {
+      themeIcon.classList.remove('bx-sun');
+      themeIcon.classList.remove('bx-moon');
+      themeIcon.classList.add(theme === 'dark' ? "bx-sun" : "bx-moon");
+    }
   };
 
   const switchTheme = () => {
@@ -45,8 +50,15 @@ const Navigation = () => {
     document.body.classList.remove('dark');
     document.body.classList.remove('light');
     document.body.classList.add(theme);
-
     localStorage.setItem('theme', theme);
+
+    let themeIcon = document.querySelector("#theme-icon");
+    if (themeIcon) {
+      console.log(themeIcon);
+      themeIcon.classList.remove('bx-sun');
+      themeIcon.classList.remove('bx-moon');
+      themeIcon.classList.add(theme === 'dark' ? "bx-sun" : "bx-moon");
+    }
   }
 
   const switchLang = (lang) => {
@@ -86,12 +98,12 @@ const Navigation = () => {
           <Nav className='w-100 justify-content-end'>
             <NavItem className='point'>
               <NavLink onClick={switchTheme}>
-                <FontAwesomeIcon className='accent-color' icon={faLightbulb} />
+                <i id="theme-icon" className='bx'></i>
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav>
-                <FontAwesomeIcon className='accent-color' icon={faEarthEurope} />
+                <i className={ t("navigation.flag") }></i>
               </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem onClick={() => {switchLang("es")}}>

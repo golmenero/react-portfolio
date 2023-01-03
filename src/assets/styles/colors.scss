@@ -8,9 +8,9 @@ body.light {
 }
 
 body.dark {
-    --global-base-color: linear-gradient(180deg, #0d0d0d 20%, #404040 25%, #404040 84%, #0d0d0d 89%);
-    --global-base-color-2: #404040;
-    --global-section-color: #262626;
+    --global-base-color: linear-gradient(180deg, #0d0d0d 20%, #262626 25%, #262626 84%, #0d0d0d 89%);
+    --global-base-color-2: #262626;
+    --global-section-color: #1a1a1a;
     --global-text-color: #cccccc;
     --global-accent-color: #A9CEC2;
     background: var(--global-base-color);

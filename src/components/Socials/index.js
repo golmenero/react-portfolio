@@ -1,5 +1,3 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
 
 const Socials = () => {
@@ -14,12 +12,12 @@ const Socials = () => {
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/carlos-gomez-colmenero/"> 
-                        <FontAwesomeIcon className='text-color' icon={faLinkedin} />
+                        <i class='bx bxl-linkedin' ></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/golmenero">
-                        <FontAwesomeIcon className='text-color' icon={faGithub} />
+                        <i class='bx bxl-github' ></i>
                     </a>
                 </li>
             </ul>

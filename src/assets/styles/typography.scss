@@ -18,13 +18,6 @@
     src: url('../fonts/ARSMaquette/ARSMaquettePro-Bold.ttf') format('truetype');
 }
 
-.quote {
-    font-family: "La Belle Aurore";
-    display: block;
-    text-align: center;  
-    margin: 10px 0px;
-}
-
 .font-bold {  
     font: 300 11px/1.4 'ARSMaquetteBold';
 }
@@ -33,42 +26,45 @@
     font: 300 11px/1.4 'ARSMaquetteBlack';
 }
 
-.text-xl {
-    font-size: 46px !important;
-}
-
-.text-l {
-    font-size: 28px !important;
-}
-
-.text-m {
-    font-size: 20px !important;
-} 
-
-.text-s {
-    font-size: 18px !important;
-}
-
 .heading-1 {
     font: 11px 'ARSMaquetteBlack';
     @extend .text-color;
-    @extend .text-xl;
+    font-size: 46px !important;
     margin: 100px 0 50px 0;
+
+    @media (max-width: 992px) {
+        font-size: 42px !important;
+    }
 }
 
 .heading-2 {
     font: 11px 'ARSMaquette';
     margin-bottom: 20px;
     @extend .accent-color;
-    @extend .text-l;
+    font-size: 28px !important;
+
+    @media (max-width: 992px) {
+        font-size: 24px !important;
+    }
 }
 
 .heading-3 {
     font: 11px 'ARSMaquette';
     @extend .text-color;
-    @extend .text-m;
-    text-align: justify;
     margin-bottom: 25px;
+    font-size: 20px !important;
+
+    @media (max-width: 992px) {
+        font-size: 16px !important;
+    }
+}
+
+.quote {
+    font-family: "La Belle Aurore";
+    display: block;
+    text-align: center;  
+    margin: 10px 0px;
+    font-size: 28px !important;
 }
 
 .custom-button {
