@@ -64,7 +64,7 @@ const Contact = () => {
                         </Row>
                     </Col>
                     <Col sm="12" md="6">
-                        <img alt="Profile" src='profile2.jpg'/>
+                        <img alt="Profile" src='profile.jpeg'/>
                     </Col>
                 </Row>
             </form>

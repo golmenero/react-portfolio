@@ -85,7 +85,7 @@
 
     &:hover {
         background: var(--global-accent-color);
-        color: var(--global-section-color);
+        color: var(--global-third-color);
     }
 }
 
@@ -94,4 +94,8 @@
     border-radius: 25px;
     padding: 2em;
     height: 100%;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }

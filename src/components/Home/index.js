@@ -21,7 +21,7 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col sm="12" md="12" lg="5">
-                    <img alt="Profile" src='profile.jpeg'/>
+                    <img alt="Profile" src='profile3.jpg'/>
                 </Col>
             </Row>
         </section>

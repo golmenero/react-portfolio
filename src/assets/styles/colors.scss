@@ -1,7 +1,7 @@
 body.light {
     --global-primary-color: #cccccc;
-    --global-primary-color-gradient: linear-gradient(180deg, #cccccc 75%, #E6E6E6 80%);
-    --global-primary-color-gradient-inverted: linear-gradient(0deg, #E6E6E6 25%, #cccccc 20%);
+    --global-primary-color-gradient: linear-gradient(180deg, #cccccc 60%, #E6E6E6 80%);
+    --global-primary-color-gradient-inverted: linear-gradient(0deg, #cccccc 85%, #E6E6E6 90%);
     --global-secondary-color: #E6E6E6;
     --global-third-color: #bfbfbf;
     --global-accent-color: #54926e;
@@ -10,11 +10,11 @@ body.light {
 }
 
 body.dark {
-    --global-primary-color: #0d0d0d;
-    --global-primary-color-gradient: linear-gradient(180deg, #0d0d0d 75%, #262626 80%);
-    --global-primary-color-gradient-inverted: linear-gradient(0deg, #0d0d0d 90%, #262626 95%);
-    --global-secondary-color: #262626;
-    --global-third-color: #1a1a1a;
+    --global-primary-color: #18191A;
+    --global-primary-color-gradient: linear-gradient(180deg, #18191A 60%, #3A3B3C 80%);
+    --global-primary-color-gradient-inverted: linear-gradient(0deg, #18191A 85%, #3A3B3C 90%);
+    --global-secondary-color: #3A3B3C;
+    --global-third-color: #242526;
     --global-accent-color: #A9CEC2;
     --global-text-color: #cccccc;
     background: var(--global-primary-color);
