@@ -10,7 +10,7 @@ const AboutItem = ({ img, icon, title, subtitle}) => {
             <Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
                 <div className="card-panel">
                     <Col sm="12">
-                        <img src={img}></img>
+                        <img src={img} alt={title}></img>
                     </Col>
                     <Col sm="12">
                         <h2 className='heading-2'>{ title }</h2>
