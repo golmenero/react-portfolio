@@ -9,7 +9,7 @@ const Project = ({ link, title, subtitle, img}) => {
     return (
         <Col className="mb-20" sm="12">
             <Tilt className='mb-20 h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-                <div class="card-panel">
+                <div className="card-panel">
                     <Row>
                         <Col sm="12" md="6">
                         <h2 className='heading-2'>{ title }</h2>

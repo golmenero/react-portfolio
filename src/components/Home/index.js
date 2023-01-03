@@ -21,9 +21,12 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col sm="12" md="12" lg="5">
-                    <img alt="Profile" src='profile3.jpg'/>
+                    <img className='cropped' alt="Profile" src='profile3.jpg'/>
                 </Col>
             </Row>
+            <div id="more">
+            { t("home.more") } <a href="#about"><i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
+            </div>
         </section>
        
     )

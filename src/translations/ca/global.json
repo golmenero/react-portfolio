@@ -18,7 +18,8 @@
         "hello": "Hola!",
         "header": "Sóc Carlos, desenvolupador de programari.",
         "description": "Sóc un jove Enginyer apassionat per la programació. Des de petit he estat obsessionat amb resoldre problemes, i el desenvolupament de codi em permet complir el meu somni de donar curs a la meva creativitat per posar solució a qualsevol problema del món, mentre fa la vida de les persones més fàcil.",
-        "quote": "Crea el codi més simple, resol els problemes més complexos"
+        "quote": "Crea el codi més simple, resol els problemes més complexos",
+        "more": "Més sobre mi"
     },
     "about": {
         "header": "",

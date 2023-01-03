@@ -18,7 +18,8 @@
         "hello": "Hallo!",
         "header": "Ich bin Carlos, Softwareentwickler.",
         "description": "Ich bin ein junger Ingenieur, der sich leidenschaftlich für das Programmieren interessiert. Seit meiner Kindheit bin ich davon besessen, Probleme zu lösen, und die Codeentwicklung ermöglicht es mir, meinen Traum zu erfüllen, meiner Kreativität freien Lauf zu lassen, um jedes Problem der Welt zu lösen , während das Leben der Menschen einfacher wird.",
-        "quote": "Erstellen Sie den einfachsten Code, lösen Sie die komplexesten Probleme"
+        "quote": "Erstellen Sie den einfachsten Code, lösen Sie die komplexesten Probleme",
+        "more": "Mehr über mich"
     },
     "about": {
         "header": "",
