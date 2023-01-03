@@ -6,7 +6,6 @@
 @import './assets/styles/animations.scss';
 
 body {
-  margin: 0;
   font: 300 11px/1.4 'ARSMaquette', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--global-text-color);
   background-position: center;
@@ -14,14 +13,18 @@ body {
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  .row {
+    margin-bottom: 20px;
+  }
 }
 
 section {
   h1:first-of-type {
-    margin-top: 200px;
+    margin-top: 100px;
 
     @media (max-width: 992px) {
-      margin-top: 0px;
+      margin-top: 50px;
     }
   }
 
@@ -67,8 +70,8 @@ $floats: right, left;
   transition: 0.05s;
   position: fixed;
   pointer-events: none;
-}
-
-.container {
-  margin-top: 150px;
+  
+  @media (max-width: 992px) {
+    display: none;
+  }
 }

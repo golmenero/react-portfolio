@@ -55,25 +55,29 @@ function App() {
 
   return (
     <>
-      <header className="base-color">
+      <header>
           <Navigation />
       </header>
       <main>
         <div className="ball"></div>
-        <Container>
-          <Home />
-          <About />
-        </Container>
-        <div className='base-color-2'>
-          <Container className='mt-0'>
-            <Skills />
-            <Projects />
+        <div className='gradient-color'>
+          <Container>
+            <Home />
           </Container>
         </div>
-        <Container className='mt-0'>
-          <Others />
-          <Contact />
-        </Container>
+        <div className='secondary-color'>
+          <Container className='mt-0'>
+            <About />
+            <Skills />
+            <Projects />
+            <Others />
+          </Container>
+        </div>
+        <div className='gradient-color inverted'>
+          <Container className='mt-0'>
+            <Contact />
+          </Container>
+        </div>
         <Socials />
       </main>
       <footer>

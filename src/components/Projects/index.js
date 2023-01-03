@@ -8,7 +8,7 @@ const Project = ({ pos, link, title, subtitle, img}) => {
 
     return (
         <Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-            <Row className="project section-color p-2em h-100">
+            <Row className="card-panel">
                 <Col sm="12" md="6">
                 <h2 className='heading-2'>{ title }</h2>
                     <p className='heading-3'> { subtitle }</p>

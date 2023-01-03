@@ -12,12 +12,12 @@ const Socials = () => {
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/carlos-gomez-colmenero/"> 
-                        <i class='bx bxl-linkedin' ></i>
+                        <i className='bx bxl-linkedin' ></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/golmenero">
-                        <i class='bx bxl-github' ></i>
+                        <i className='bx bxl-github' ></i>
                     </a>
                 </li>
             </ul>

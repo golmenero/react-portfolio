@@ -1,38 +1,49 @@
 body.light {
-    --global-base-color: linear-gradient(180deg, #cccccc 20%, #E6E6E6 25%, #E6E6E6 84%, #cccccc 89%);
-    --global-base-color-2:  #E6E6E6;
-    --global-section-color:  #cccccc;
-    --global-text-color: #0d0d0d;
+    --global-primary-color: #cccccc;
+    --global-primary-color-gradient: linear-gradient(180deg, #cccccc 75%, #E6E6E6 80%);
+    --global-primary-color-gradient-inverted: linear-gradient(0deg, #E6E6E6 25%, #cccccc 20%);
+    --global-secondary-color: #E6E6E6;
+    --global-third-color: #bfbfbf;
     --global-accent-color: #54926e;
-    background: var(--global-base-color);
+    --global-text-color: #0d0d0d;
+    background: var(--global-primary-color);
 }
 
 body.dark {
-    --global-base-color: linear-gradient(180deg, #0d0d0d 20%, #262626 25%, #262626 84%, #0d0d0d 89%);
-    --global-base-color-2: #262626;
-    --global-section-color: #1a1a1a;
-    --global-text-color: #cccccc;
+    --global-primary-color: #0d0d0d;
+    --global-primary-color-gradient: linear-gradient(180deg, #0d0d0d 75%, #262626 80%);
+    --global-primary-color-gradient-inverted: linear-gradient(0deg, #0d0d0d 90%, #262626 95%);
+    --global-secondary-color: #262626;
+    --global-third-color: #1a1a1a;
     --global-accent-color: #A9CEC2;
-    background: var(--global-base-color);
+    --global-text-color: #cccccc;
+    background: var(--global-primary-color);
 }
 
-.base-color {
-    background: var(--global-base-color);
+.primary-color {
+    background: var(--global-primary-color);
 }
 
-.base-color-2 {
-    background: var(--global-base-color-2);
+.secondary-color {
+    background: var(--global-secondary-color);
 }
 
-.section-color {
-    background-color: var(--global-section-color) !important;
-    border-radius: 25px;
+.third-color {
+    background-color: var(--global-third-color) !important;
 }
 
-.text-color {
-    color: var(--global-text-color);
+.gradient-color {
+    background: var(--global-primary-color-gradient);
+
+    &.inverted {
+        background: var(--global-primary-color-gradient-inverted);
+    }
 }
 
 .accent-color {
     color: var(--global-accent-color);
+}
+
+.text-color {
+    color: var(--global-text-color);
 }

@@ -38,6 +38,15 @@ const Navigation = () => {
       themeIcon.classList.remove('bx-moon');
       themeIcon.classList.add(theme === 'dark' ? "bx-sun" : "bx-moon");
     }
+
+    let togglerIcon = document.querySelector(".navbar-toggler-icon");
+    console.log(togglerIcon);
+    if (togglerIcon) {
+      togglerIcon.innerHTML = '';
+      let icon = document.createElement('i');
+      icon.classList.add("bx", "bx-menu");
+      togglerIcon.appendChild(icon);
+    }
   };
 
   const switchTheme = () => {

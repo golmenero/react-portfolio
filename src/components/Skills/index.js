@@ -7,7 +7,7 @@ const Skill = ({ icon, title, subtitle}) => {
     
     return (
         <Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
-            <div className='p-2em section-color h-100'>
+            <div className='card-panel'>
                 <i className={icon}></i>
                 <h3 className='heading-2'>{title}</h3>
                 <p className='heading-3'>{subtitle}</p>

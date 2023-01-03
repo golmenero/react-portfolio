@@ -7,7 +7,7 @@ const AboutItem = ({ icon, title, subtitle}) => {
     
     return (
         <Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
-            <div className="section-color p-2em h-100">
+            <div className="card-panel">
                 <i className={icon}></i>
                 <h2 className='heading-2'>{ title }</h2>
                 <p className='heading-3'> { subtitle }</p>
