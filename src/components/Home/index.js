@@ -7,6 +7,7 @@ const Home = () => {
     
     return (
         <section id="home" className='fade-in-down'>
+            <img id="logo-img" alt="Logo" src="logo.png"></img>
             <Row>
                 <Col sm="12" md="12" lg="7">
                     <h1 className='heading-2 mt-0'>

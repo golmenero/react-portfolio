@@ -18,6 +18,19 @@
         }
     }
 
+    #logo-img {
+        width: 40%;
+        opacity: 0.1;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 8%;
+
+        @media (max-width: 992px) {
+            width: 100%;
+        } 
+    }
+
     #more {
         font-size: 20px;
         margin-top: 20vh;

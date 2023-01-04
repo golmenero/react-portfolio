@@ -15,9 +15,9 @@
         "flag": "fi fi-gb"
     },
     "home": {
-        "hello": "Hello!",
-        "header": "I'm Carlos, a software developer.",
-        "description": "I am a young Engineer with a passion for programming. Since I was a kid I've been obsessed with solving problems, and code development allows me to fulfill my dream of unleashing my creativity to put a solution to any problem in the world, while making people's lives easier.",
+        "hello": "Hi, I'm Carlos",
+        "header": "Full Stack Developer.",
+        "description": "I am a Software Engineer whose goal is both to design quality code and to design effective user interfaces.",
         "quote": "Build the simplest code, solve the most complex problems",
         "more": "More about me"
     },
