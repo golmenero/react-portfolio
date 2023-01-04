@@ -4,22 +4,22 @@
 }
 
 @font-face {
-    font-family: 'ARSMaquette';
-    src: url('../fonts/ARSMaquette/ARSMaquettePro-Light.ttf') format('truetype');
+    font-family: 'SFPro';
+    src: url('../fonts/SFPro/SFPRODISPLAYREGULAR.OTF') format('opentype');
 }
 
 @font-face {
-    font-family: 'ARSMaquetteBold';
-    src: url('../fonts/ARSMaquette/ARSMaquettePro-Bold.ttf') format('truetype');
+    font-family: 'SFProMedium';
+    src: url('../fonts/SFPro/SFPRODISPLAYMEDIUM.OTF') format('opentype');
 }
 
 @font-face {
-    font-family: 'ARSMaquetteBlack';
-    src: url('../fonts/ARSMaquette/ARSMaquettePro-Bold.ttf') format('truetype');
+    font-family: 'SFProBlack';
+    src: url('../fonts/SFPro/SFPRODISPLAYBOLD.OTF') format('opentype');
 }
 
 .heading-1 {
-    font: 11px 'ARSMaquetteBlack';
+    font: 11px 'SFProBlack';
     @extend .text-color;
     font-size: 46px !important;
     margin: 100px 0 50px 0;
@@ -30,7 +30,7 @@
 }
 
 .heading-2 {
-    font: 11px 'ARSMaquette';
+    font: 11px 'SFProMedium';
     margin-bottom: 20px;
     @extend .accent-color;
     font-size: 28px !important;
@@ -41,7 +41,8 @@
 }
 
 .heading-3 {
-    font: 11px 'ARSMaquette';
+    font: 11px 'SFPro';
+    letter-spacing: 1px;
     @extend .text-color;
     margin-bottom: 25px;
     font-size: 20px !important;

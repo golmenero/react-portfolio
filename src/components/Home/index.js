@@ -25,7 +25,7 @@ const Home = () => {
                 </Col>
             </Row>
             <div id="more">
-            { t("home.more") } <a href="#about"><i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
+                <a href="#about"> { t("home.more") } <i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
             </div>
         </section>
        

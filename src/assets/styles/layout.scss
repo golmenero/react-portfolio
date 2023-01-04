@@ -1,5 +1,5 @@
 body {
-    font: 300 11px/1.4 'ARSMaquette', Tahoma, Geneva, Verdana, sans-serif;
+    font: 300 11px/1.4 'SFPro', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--global-text-color);
     background-position: center;
     background-size: auto;
@@ -31,6 +31,7 @@ section {
     border-radius: 25px;
     padding: 25px;
     height: 100%;
+    box-shadow: var(--global-third-color) 0px 5px 15px;
 }
 
 img {
