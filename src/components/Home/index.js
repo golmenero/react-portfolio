@@ -6,9 +6,9 @@ const Home = () => {
     const [t] =  useTranslation("global");
     
     return (
-        <section id="home" className='fade-in-down'>
+        <section id="home">
             <img id="logo-img" alt="Logo" src="logo.png"></img>
-            <Row>
+            <Row className='fade-in-down'>
                 <Col sm="12" md="12" lg="7">
                     <h1 className='heading-2 mt-0'>
                         <span className='accent-color'>{ t("home.hello") }</span>
