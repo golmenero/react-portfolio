@@ -1,20 +1,20 @@
 body.light {
-    --global-primary-color: #cccccc;
-    --global-primary-color-gradient: linear-gradient(180deg, #cccccc 60%, #E6E6E6 80%);
-    --global-primary-color-gradient-inverted: linear-gradient(0deg, #cccccc 85%, #E6E6E6 90%);
-    --global-secondary-color: #E6E6E6;
-    --global-third-color: #bfbfbf;
+    --global-primary-color: #F5F2F7;
+    --global-primary-color-gradient: linear-gradient(180deg, #F5F2F7 60%, #FFFFFF 80%);
+    --global-primary-color-gradient-inverted: linear-gradient(0deg, #F5F2F7 85%, #FFFFFF 90%);
+    --global-secondary-color: #FFFFFF;
+    --global-third-color: #F9F9F9;
     --global-accent-color: #54926e;
     --global-text-color: #0d0d0d;
     background: var(--global-primary-color);
 }
 
 body.dark {
-    --global-primary-color: #18191A;
-    --global-primary-color-gradient: linear-gradient(180deg, #18191A 60%, #3A3B3C 80%);
-    --global-primary-color-gradient-inverted: linear-gradient(0deg, #18191A 85%, #3A3B3C 90%);
-    --global-secondary-color: #3A3B3C;
-    --global-third-color: #242526;
+    --global-primary-color: #171719;
+    --global-primary-color-gradient: linear-gradient(180deg, #171719 60%, #3D3A41 80%);
+    --global-primary-color-gradient-inverted: linear-gradient(0deg, #171719 85%, #3D3A41 90%);
+    --global-secondary-color: #3D3A41;
+    --global-third-color: #27242C;
     --global-accent-color: #A9CEC2;
     --global-text-color: #cccccc;
     background: var(--global-primary-color);
