@@ -40,7 +40,6 @@ const Navigation = () => {
     }
 
     let togglerIcon = document.querySelector(".navbar-toggler-icon");
-    console.log(togglerIcon);
     if (togglerIcon) {
       togglerIcon.innerHTML = '';
       let icon = document.createElement('i');
@@ -63,7 +62,6 @@ const Navigation = () => {
 
     let themeIcon = document.querySelector("#theme-icon");
     if (themeIcon) {
-      console.log(themeIcon);
       themeIcon.classList.remove('bx-sun');
       themeIcon.classList.remove('bx-moon');
       themeIcon.classList.add(theme === 'dark' ? "bx-sun" : "bx-moon");
@@ -107,7 +105,7 @@ const Navigation = () => {
           <Nav className='w-100 justify-content-end'>
             <NavItem className='point'>
               <NavLink onClick={switchTheme}>
-                <i id="theme-icon" className='bx'></i>
+                <i id="theme-icon" className='bx bx-sun'></i>
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
