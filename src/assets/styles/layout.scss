@@ -1,10 +1,5 @@
 body {
     font: 300 11px/1.4 'SFPro', Tahoma, Geneva, Verdana, sans-serif;
-    background-position: center;
-    background-size: auto;
-    display: block;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 
     .container {
         margin-top: 150px;
@@ -28,13 +23,6 @@ body {
                 padding: 25px;
                 height: 100%;
                 box-shadow: var(--global-third-color) 0px 5px 15px;
-            }
-
-            input[type='text'],
-            input[type='email'],
-            textarea,
-            .flat-button {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
 
             textarea {

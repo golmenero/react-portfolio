@@ -5,19 +5,10 @@ import Tilt from 'react-parallax-tilt';
 const AboutItem = ({ img, icon, title, subtitle}) => {
     
     return (
-        <Col className="mb-20" sm="12" md="12" lg="4">
-            <Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
-                <div className="card-panel">
-                    <Col sm="12">
-                        <img className="mb-20" src={img} alt={title}></img>
-                    </Col>
-                    <Col sm="12">
-                        <h2 className='heading-2'>{ title }</h2>
-                        <p className='heading-3'> { subtitle }</p>
-                    </Col>
-                </div>
-            </Tilt>
-        </Col>
+        <div className="mb-20">
+            <h2 className='heading-2'>{ title }</h2>
+            <p className='heading-3'> { subtitle }</p>
+        </div>
     )
 }
 
@@ -31,9 +22,20 @@ const About = () => {
                 <p className='heading-3'>{ t("about.header") }</p>
             </Row>
             <Row>
-                <AboutItem img="about/education.png" icon="bx bxs-graduation" title={ t("about.education.title") } subtitle={ t("about.education.subtitle") }></AboutItem>
-                <AboutItem img="about/language.png" icon="bx bx-globe" title={ t("about.languages.title") } subtitle={ t("about.languages.subtitle") }></AboutItem>
-                <AboutItem img="about/work.png" icon="bx bx-wrench" title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
+                <Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+                    <div className="card-panel">
+                        <Row>
+                            <Col sm="12" md="7">
+                                <AboutItem img="about/education.png" icon="bx bxs-graduation" title={ t("about.education.title") } subtitle={ t("about.education.subtitle") }></AboutItem>
+                                <AboutItem img="about/language.png" icon="bx bx-globe" title={ t("about.languages.title") } subtitle={ t("about.languages.subtitle") }></AboutItem>
+                                <AboutItem img="about/work.png" icon="bx bx-wrench" title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
+                            </Col>
+                            <Col sm="12" md="5">
+                                <img alt="About" src='about.png'/>
+                            </Col>
+                        </Row>
+                    </div>
+                </Tilt>
             </Row>
         </section>
     )

@@ -8,7 +8,9 @@ const Skill = ({ icon, title, subtitle}) => {
         <Col className='mb-20' sm="12" md="12" lg="4">
             <Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
                 <div className='card-panel'>
-                    <i className={icon}></i>
+                    <div className='mb-20'>
+                        <i className={icon}></i>
+                    </div>
                     <h3 className='heading-2'>{title}</h3>
                     <p className='heading-3'>{subtitle}</p>
                 </div>  

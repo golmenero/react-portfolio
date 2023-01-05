@@ -24,7 +24,7 @@ const Home = () => {
                     <img className='cropped' alt="Profile" src='profile3.jpg'/>
                 </Col>
             </Row>
-            <div id="more">
+            <div id="more" className='text-center'>
                 <a href="#about"> { t("home.more") } <i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
             </div>
         </section>

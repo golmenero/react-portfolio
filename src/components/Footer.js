@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div id='footer'>
       <Row>
-          <Col sm="6" md="6" lg="12" className='m-0'>
-            <div>
+          <Col sm="12" className='m-0'>
+            <div className='text-center'>
               <span className='heading-3'>{ t("footer.header") }</span>
             </div>
           </Col>
