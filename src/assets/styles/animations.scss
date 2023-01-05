@@ -13,3 +13,18 @@
 .animate-on-scroll {
     opacity: 0;
 }
+
+.ball {
+    z-index: 999;
+    border: 1px solid var(--global-text-color);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transition: 0.05s;
+    position: fixed;
+    pointer-events: none;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}

@@ -1,4 +1,3 @@
-import './index.scss';
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
@@ -80,7 +79,7 @@ const Navigation = () => {
 	document.addEventListener('DOMContentLoaded', setUp());
 
 	return (
-		<div className='nav-bar'>
+		<div id="navigation" className='nav-bar'>
 			<Navbar expand="md">
 				<NavbarBrand className='w-50' href="#home">Carlos Gómez</NavbarBrand>
 				<NavbarToggler onClick={toggle} />

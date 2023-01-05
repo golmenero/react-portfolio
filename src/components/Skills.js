@@ -1,5 +1,4 @@
 import { Col, Row } from 'reactstrap';
-import './index.scss';
 import { useTranslation } from "react-i18next";
 import Tilt from 'react-parallax-tilt';
 

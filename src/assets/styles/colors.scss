@@ -8,6 +8,7 @@ body.light {
     --global-accent-color:#0077b3;
     --global-text-color: #0d0d0d;
     background: var(--global-primary-color);
+    color: var(--global-text-color);
 }
 
 body.dark {
@@ -20,6 +21,7 @@ body.dark {
     --global-accent-color: #b3e6ff;
     --global-text-color: #cccccc;
     background: var(--global-primary-color);
+    color: var(--global-text-color);
 }
 
 .primary-color {

@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import './index.scss';
 import emailjs from '@emailjs/browser';
 import { Button, Col, Input, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
@@ -43,22 +42,22 @@ const Contact = () => {
                 <Row>
                     <Col sm="12" md="6">
                         <Row>
-                            <Col sm='12' md="6">
+                            <Col className='mb-20' sm='12' md="6">
                                 <Input type="text" name='name' placeholder={ t("contact-me.name") } required />
                             </Col>
-                            <Col sm='12' md="6">
+                            <Col className='mb-20' sm='12' md="6">
                                 <Input type="email" name='email' placeholder={ t("contact-me.email") } required />
                             </Col>
-                            <Col sm="12">
+                            <Col className='mb-20' sm="12">
                                 <Input placeholder={ t("contact-me.subject") } type="text" name="subject" required />
                             </Col>
-                            <Col sm="12">
+                            <Col className='mb-20' sm="12">
                                 <Input type="textarea" placeholder={ t("contact-me.message") } name='message' required />
                             </Col>
-                            <Col sm="12">
+                            <Col className='mb-20' sm="12">
                                 <ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="dark"></ReCAPTCHA>
                             </Col>
-                            <Col sm="12">
+                            <Col className='mb-20' sm="12">
                                 <Button type='submit' className='custom-button right'>{ t("contact-me.send") }</Button>
                             </Col>
                         </Row>

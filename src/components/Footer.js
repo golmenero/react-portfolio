@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { Col, Row } from 'reactstrap';
-import './index.scss';
 
 const Footer = () => {
   const [t] =  useTranslation("global");
