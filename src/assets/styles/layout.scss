@@ -51,8 +51,21 @@ img {
     width: 100%;
 
     &.cropped {
-        z-index: 2;
+        z-index: 5;
         -webkit-clip-path: polygon(0% 0%, calc(100% - 50px) 0%, 100% calc(0% + 50px), 100% 100%, calc(0% + 50px) 100%, 0% calc(100% - 50px));
         clip-path: polygon(0% 0%, calc(100% - 50px) 0%, 100% calc(0% + 50px), 100% 100%, calc(0% + 50px) 100%, 0% calc(100% - 50px));
     }
+}
+
+#logo-img {
+    width: 40%;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 8%;
+
+    @media (max-width: 992px) {
+        width: 100%;
+    } 
 }

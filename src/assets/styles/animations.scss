@@ -1,17 +1,20 @@
-.fade-in-down {
-    animation: fadeInDown 2s 1s;
-    animation-delay: 0ms;
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
 }
 
-.fade-in {
-    animation: fadeIn 0.5s 0s;
-    animation-fill-mode: forwards;
-    clear: both;
-    opacity: 0;
-}
+.show {
+    opacity: 1;
+    filter: blur(0);
+}  
 
-.animate-on-scroll {
-    opacity: 0;
+@media(prefers-reduced-motion) {
+    .hidden,
+    .show {
+        opacity: 1;
+    }  
 }
 
 .ball {

@@ -81,7 +81,9 @@ const Navigation = () => {
 	return (
 		<div id="navigation" className='nav-bar'>
 			<Navbar expand="md">
-				<NavbarBrand className='w-50' href="#home">Carlos Gómez</NavbarBrand>
+				<NavbarBrand className='w-50' href="#home">
+					Carlos Gómez
+					</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse className='w-100' isOpen={isOpen} navbar>
 					<Nav className='liner w-100 justify-content-center' navbar>

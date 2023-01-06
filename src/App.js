@@ -23,13 +23,13 @@ function App() {
   });
 
   useEffect(() => {
-    const animation_elements = document.querySelectorAll('.animate-on-scroll');
+    const animation_elements = document.querySelectorAll('.hidden');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add('fade-in');
+        if (entry.isIntersecting) entry.target.classList.add('show');
+        else entry.target.classList.remove('show');
       })
-
-    }, {threshold: 0.1});
+    }, {threshold: 0.3});
     animation_elements.forEach((item) => {
       observer.observe(item);
     })
@@ -47,7 +47,7 @@ function App() {
           });
         }
       })
-    }, {threshold: 0.1});    
+    }, {threshold: 0.3});    
     navigation_elements.forEach((item) => {
       observer_nav.observe(item);
     })
@@ -61,6 +61,7 @@ function App() {
       <main>
         <div className="ball"></div>
         <div className='gradient-color'>
+          <img id="logo-img" alt="Logo" src="logo_l.png"></img>
           <Container>
             <Home />
           </Container>

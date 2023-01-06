@@ -5,7 +5,7 @@ const Others = () => {
     const [t] =  useTranslation("global");
     
     return (
-        <section id="others" className='animate-on-scroll' data-nav="others">
+        <section id="others" className='hidden' data-nav="others">
             <Row>
                 <h1 className='heading-1'>{ t("navigation.others") }</h1>
             </Row>
