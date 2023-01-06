@@ -61,7 +61,7 @@ function App() {
       <main>
         <div className="ball"></div>
         <div className='gradient-color'>
-          <img id="logo-img" alt="Logo" src="logo_l.png"></img>
+          <img id="logo-img" alt="Logo" src="logo2.png"></img>
           <Container>
             <Home />
           </Container>
