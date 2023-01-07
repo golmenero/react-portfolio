@@ -20,7 +20,6 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col sm="12" md="12" lg="5">
-                    <img className='cropped' alt="Profile" src='profile3.jpg'/>
                 </Col>
             </Row>
             <div id="more" className='text-center'>

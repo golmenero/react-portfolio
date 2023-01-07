@@ -31,7 +31,7 @@ const About = () => {
                                 <AboutItem img="about/work.png" icon="bx bx-wrench" title={ t("about.experience.title") } subtitle={ t("about.experience.subtitle") }></AboutItem> 
                             </Col>
                             <Col sm="12" md="5">
-                                <img alt="About" src='about.png'/>
+                                <img className='cropped' alt="Profile" src='profile3.jpg'/>
                             </Col>
                         </Row>
                     </div>
