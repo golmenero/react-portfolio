@@ -31,3 +31,22 @@
         display: none;
     }
 }
+
+.line-container {
+	position: fixed;
+	top: 0;
+	left: 1%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none;
+
+	@media (max-width: 992px) {
+		text-align: center;
+    }
+
+	svg {
+		display: inline-block;
+		height: 100%;
+	}
+}
