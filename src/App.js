@@ -29,7 +29,7 @@ function App() {
         if (entry.isIntersecting) entry.target.classList.add('show');
         else entry.target.classList.remove('show');
       })
-    }, {threshold: 0.3});
+    }, {threshold: 0.2});
     animation_elements.forEach((item) => {
       observer.observe(item);
     })
@@ -47,7 +47,7 @@ function App() {
           });
         }
       })
-    }, {threshold: 0.3});    
+    }, {threshold: 0.2});    
     navigation_elements.forEach((item) => {
       observer_nav.observe(item);
     })
