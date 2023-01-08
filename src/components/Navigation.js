@@ -88,6 +88,9 @@ const Navigation = () => {
 				<Collapse className='w-100' isOpen={isOpen} navbar>
 					<Nav className='liner w-100 justify-content-center' navbar>
 						<NavItem>
+							<NavLink href="#home">{t("navigation.home")}</NavLink>
+						</NavItem>
+						<NavItem>
 							<NavLink href="#about">{t("navigation.about")}</NavLink>
 						</NavItem>
 						<NavItem>

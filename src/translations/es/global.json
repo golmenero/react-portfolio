@@ -7,6 +7,7 @@
         "de": "Alemán"
     },
     "navigation": {
+		"home": "Inicio",
         "about": "Acerca",
         "skills": "Habilidades",
         "projects": "Proyectos",
