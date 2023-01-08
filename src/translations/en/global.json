@@ -23,6 +23,8 @@
     },
     "about": {
         "header": "",
+		"download": "Download",
+		"download-url": "/cv/CV-En.pdf",
         "education": {
             "title": "Education",
             "subtitle": "Graduated in 2021 in Software Engineering at the University of Oviedo, at the Higher Technical School of Computer Engineering."

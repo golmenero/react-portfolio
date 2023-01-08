@@ -37,6 +37,11 @@ body {
                 padding: 8px 10px;
                 background: 0;
                 color: var(--global-accent-color);
+				text-decoration: none;
+
+				&.right {
+					float: right;
+				}
 
                 &:hover {
                     background: var(--global-accent-color);

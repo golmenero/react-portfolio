@@ -23,6 +23,8 @@
     },
     "about": {
         "header": "",
+		"download": "Descarregar",
+		"download-url": "/cv/CV-Es.pdf",
         "education": {
             "title": "Educació",
             "subtitle": "Graduat el 2021 a Enginyeria del Programari per la Universitat d'Oviedo, a l'Escola d'Enginyeria Informàtica."

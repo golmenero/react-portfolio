@@ -31,7 +31,16 @@ const About = () => {
 								<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
 							</Col>
 							<Col sm="12" md="5">
-								<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
+								<Row className='mb-20'>
+									<Col sm="12">
+										<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
+									</Col>
+								</Row>
+								<Row>
+									<Col sm="12">
+										<a className='custom-button right' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
+									</Col>
+								</Row>
 							</Col>
 						</Row>
 					</div>

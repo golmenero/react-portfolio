@@ -23,6 +23,8 @@
     },
     "about": {
         "header": "",
+		"download": "Descargar",
+		"download-url": "/cv/CV-Es.pdf",
         "education": {
             "title": "Educación",
             "subtitle": "Graduado en 2021 en Ingeniería del Software por la Universidad de Oviedo, en la Escuela de Ingeniería Informática."

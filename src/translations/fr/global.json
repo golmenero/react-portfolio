@@ -23,6 +23,8 @@
     },
     "about": {
         "header": "",
+		"download": "Télécharger",
+		"download-url": "/cv/CV-En.pdf",
         "education": {
             "title": "Éducation",
             "subtitle": "Diplômé en 2021 en génie logiciel de l'Université d'Oviedo, à l'École d'ingénierie informatique."

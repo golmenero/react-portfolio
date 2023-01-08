@@ -23,6 +23,8 @@
     },
     "about": {
         "header": "",
+		"download": "Herunterladen",
+		"download-url": "/cv/CV-En.pdf",
         "education": {
             "title": "Bildung",
             "subtitle": "Abschluss 2021 in Software Engineering an der University of Oviedo, an der School of Computer Engineering."
