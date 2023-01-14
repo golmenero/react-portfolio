@@ -1,9 +1,19 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Col, Row } from 'reactstrap';
 import ModelViewer from './3D/ModelViewer';
 
 const Home = () => {
 	const [t] = useTranslation("global");
+
+	useEffect(() => {
+		const MAX_HEIGHT = document.body.scrollHeight;
+
+		window.addEventListener('scroll', function() {
+			let value = window.scrollY;
+			if (value <= MAX_HEIGHT) this.document.getElementById('content-home').style.top = value + "px";
+		})
+	});
 
 	return (
 		<section id="home" data-nav="home" className='hidden'>

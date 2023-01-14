@@ -23,8 +23,8 @@ function App() {
 	});
 
 	useEffect(() => {
-		const animation_elements = document.querySelectorAll('.hidden');
-		const observer = new IntersectionObserver((entries) => {
+		let animation_elements = document.querySelectorAll('.hidden');
+		let observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) entry.target.classList.add('show');
 				else entry.target.classList.remove('show');
@@ -34,8 +34,8 @@ function App() {
 			observer.observe(item);
 		})
 
-		const navigation_elements = document.querySelectorAll('[data-nav]');
-		const observer_nav = new IntersectionObserver((entries) => {
+		let navigation_elements = document.querySelectorAll('[data-nav]');
+		let observer_nav = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					let navLi = document.querySelectorAll("a.nav-link");
@@ -50,12 +50,6 @@ function App() {
 		}, { threshold: 0.15 });
 		navigation_elements.forEach((item) => {
 			observer_nav.observe(item);
-		})
-
-		window.addEventListener('scroll', function() {
-			let value = window.scrollY;
-
-			this.document.getElementById('content-home').style.top = value * 0.7 + "px";
 		})
 	});
 
@@ -72,7 +66,7 @@ function App() {
 					</Container>
 				</div>
 				<div className='secondary-color'>
-					<Container className='mt-0'>
+					<Container>
 						<About />
 						<Skills />
 						<Projects />
