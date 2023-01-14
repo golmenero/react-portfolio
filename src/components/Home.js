@@ -11,8 +11,8 @@ const Home = () => {
 
 		window.addEventListener('scroll', function() {
 			let value = window.scrollY;
-			if (value <= MAX_HEIGHT) this.document.getElementById('content-home').style.top = value + "px";
-		})
+			if (value <= MAX_HEIGHT) document.getElementById('content-home').style.top = value * 0.8 + 'px';
+		});
 	});
 
 	return (
