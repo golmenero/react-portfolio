@@ -8,11 +8,14 @@ const Home = () => {
 
 	useEffect(() => {
 		const MAX_HEIGHT = document.body.scrollHeight;
-
-		window.addEventListener('scroll', function() {
-			let value = window.scrollY;
-			if (value <= MAX_HEIGHT) document.getElementById('content-home').style.top = value * 0.8 + 'px';
-		});
+		let element = document.getElementById("content-home");
+		
+		window.addEventListener("scroll", () => {
+			requestAnimationFrame(() => {
+				let value = window.scrollY;
+				if (value <= MAX_HEIGHT) element.style.top = value * 0.8 + 'px';
+			});
+});
 	});
 
 	return (
