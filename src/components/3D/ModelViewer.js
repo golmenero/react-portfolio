@@ -6,10 +6,8 @@ const ModelViewer = ({ modelPath, scale = 13.5, position = [0, 0, 0] }) => {
 	return (
 		<Canvas className="canvas">
 			<ambientLight />
-			<spotLight position={[10, 10, 10]} angle={1} intensity={0.75} />
 			<spotLight position={[10, 10, -10]} angle={1} intensity={1} />
 			<spotLight position={[-10, -10, 10]} angle={1} intensity={1} />
-			<spotLight position={[-10, -10, -10]} angle={1} intensity={0.75} />
 			<Suspense fallback={null}>
 				<GltfModel modelPath={modelPath} scale={scale} position={position} />
 			</Suspense>
