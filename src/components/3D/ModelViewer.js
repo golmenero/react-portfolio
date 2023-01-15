@@ -13,7 +13,6 @@ const ModelViewer = ({ modelPath, scale = 45, position = [0, 0, -3] }) => {
 			<spotLight position={[-10, -10, -10]} angle={1} intensity={0.75} />
 			<Suspense fallback={null}>
 				<GltfModel modelPath={modelPath} scale={scale} position={position} />
-				<OrbitControls enableZoom={false} enablePan={false} target={[0, 0, -3]} />
 			</Suspense>
 		</Canvas>
 	);
