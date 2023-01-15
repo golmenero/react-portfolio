@@ -1,6 +1,5 @@
 import { Col, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
-import Tilt from 'react-parallax-tilt';
 
 const AboutItem = ({ img, icon, title, subtitle }) => {
 
@@ -22,29 +21,23 @@ const About = () => {
 				<p className='heading-3'>{t("about.header")}</p>
 			</Row>
 			<Row>
-				<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-					<div className="card-panel">
-						<Row>
-							<Col sm="12" md="7">
-								<AboutItem img="about/education.png" icon="bx bxs-graduation" title={t("about.education.title")} subtitle={t("about.education.subtitle")}></AboutItem>
-								<AboutItem img="about/language.png" icon="bx bx-globe" title={t("about.languages.title")} subtitle={t("about.languages.subtitle")}></AboutItem>
-								<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
-							</Col>
-							<Col sm="12" md="5">
-								<Row className='mb-20'>
-									<Col sm="12">
-										<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
-									</Col>
-								</Row>
-								<Row>
-									<Col sm="12">
-										<a className='custom-button right' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
-									</Col>
-								</Row>
-							</Col>
-						</Row>
-					</div>
-				</Tilt>
+				<Col sm="12" md="7">
+					<AboutItem img="about/education.png" icon="bx bxs-graduation" title={t("about.education.title")} subtitle={t("about.education.subtitle")}></AboutItem>
+					<AboutItem img="about/language.png" icon="bx bx-globe" title={t("about.languages.title")} subtitle={t("about.languages.subtitle")}></AboutItem>
+					<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
+				</Col>
+				<Col sm="12" md="5">
+					<Row className='mb-20'>
+						<Col sm="12">
+							<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
+						</Col>
+					</Row>
+					<Row>
+						<Col sm="12">
+							<a className='custom-button right' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
+						</Col>
+					</Row>
+				</Col>
 			</Row>
 		</section>
 	)
