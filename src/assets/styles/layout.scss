@@ -19,8 +19,8 @@ body {
 
             .card-panel {
                 @extend .third-color;
-                border-radius: 25px;
-                padding: 25px;
+                border-radius: 16px;
+                padding: 30px;
                 height: 100%;
                 box-shadow: var(--global-third-color) 0px 5px 15px;
             }
@@ -33,7 +33,7 @@ body {
             .custom-button {
                 font-size: 18px;
                 border: 1px solid var(--global-accent-color);
-                border-radius: 10px;
+                border-radius: 6px;
                 padding: 8px 10px;
                 background: 0;
                 color: var(--global-accent-color);
