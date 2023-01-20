@@ -176,3 +176,19 @@
 #footer {
     margin: 50px 25px 50px 25px;
 }
+
+#others {
+	.carousel {
+		.carousel-item {
+			img {
+				height: 550px;
+				width: auto;
+			}
+		}
+
+		.carousel-inner {
+			border-radius: 16px;
+			background-color: #19181b;
+		}
+	}
+}
