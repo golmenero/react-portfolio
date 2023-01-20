@@ -7,10 +7,14 @@ const GltfModel = ({ modelPath, scale = 10, position = [0, 0, 0]}) => {
 	const gltf = useLoader(GLTFLoader, modelPath);
   
 	useFrame((state, delta) => {
-		let value = Math.round((ref.current.rotation.y + Number.EPSILON) * 100) / 100;
-		if (value % 6.28 === 0) ref.current.rotation.y = 0;
-		if (value >= 4.2 && value <= 5.2) ref.current.rotation.y += 0.001;
-		else ref.current.rotation.y += 0.01;
+		/*
+			let value = Math.round((ref.current.rotation.y + Number.EPSILON) * 100) / 100;
+			if (value % 6.28 === 0) ref.current.rotation.y = 0;
+			if (value >= 4.2 && value <= 5.2) ref.current.rotation.y += 0.001;
+			else ref.current.rotation.y += 0.01;
+		*/
+		
+		ref.current.rotation.y += 0.002;
 	});
 
 	return (
