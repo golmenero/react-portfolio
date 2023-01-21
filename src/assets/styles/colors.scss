@@ -6,6 +6,7 @@ body.light {
     --global-accent-color: #54926e;
     --global-accent-color:#0077b3;
     --global-text-color: #0d0d0d;
+    --global-about-image: url('../../../public/profile/line_light.png');
     background: var(--global-primary-color-gradient);
     color: var(--global-text-color);
 }
@@ -18,6 +19,7 @@ body.dark {
     --global-accent-color: #A9CEC2;
     --global-accent-color: #b3e6ff;
     --global-text-color: #cccccc;
+    --global-about-image: url('../../../public/profile/line_dark.png');
     background: var(--global-primary-color-gradient);
     color: var(--global-text-color);
 }

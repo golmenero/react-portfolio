@@ -126,6 +126,14 @@
 	}
 }
 
+#about {
+	.about-image {
+		background-image: var(--global-about-image);
+		background-size: cover;
+		height: 400px;
+	}
+}
+
 #projects {
     img {
         max-height: 300px;
