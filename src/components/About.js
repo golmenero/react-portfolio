@@ -21,15 +21,15 @@ const About = () => {
 				<p className='heading-3'>{t("about.header")}</p>
 			</Row>
 			<Row>
-				<Col sm="12" md="7">
+				<Col sm="12" md="12" lg="7">
 					<AboutItem img="about/education.png" icon="bx bxs-graduation" title={t("about.education.title")} subtitle={t("about.education.subtitle")}></AboutItem>
 					<AboutItem img="about/language.png" icon="bx bx-globe" title={t("about.languages.title")} subtitle={t("about.languages.subtitle")}></AboutItem>
 					<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
 				</Col>
-				<Col sm="12" md="5">
+				<Col sm="12" md="12" lg="5">
 					<Row className='mb-20'>
 						<Col sm="12">
-							<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
+							<div className='about-image'></div>
 						</Col>
 					</Row>
 					<Row>

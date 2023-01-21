@@ -31,7 +31,7 @@ const Home = () => {
 						</h1>
 						<div>
 							<p className='heading-3'>{t("home.description")}</p>
-							<p className="quote text-l">{t("home.quote")}</p>
+							<p className="quote text-l">"{t("home.quote")}"</p>
 						</div>
 					</Col>
 					<Col sm="12" md="12" lg="5">
