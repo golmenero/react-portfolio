@@ -11,11 +11,11 @@ const Home = () => {
 		let element = document.getElementById("content-home");
 		
 		window.addEventListener("scroll", () => {
-			requestAnimationFrame(() => {
-				let value = window.scrollY;
-				if (value <= MAX_HEIGHT) element.style.top = value * 0.8 + 'px';
-			});
-});
+			let value = window.scrollY;
+			if (value <= MAX_HEIGHT) {
+				element.style.top = value * 0.8 + 'px';
+			}
+		});
 	});
 
 	return (
