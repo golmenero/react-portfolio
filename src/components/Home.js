@@ -35,7 +35,7 @@ const Home = () => {
 						</div>
 					</Col>
 					<Col sm="12" md="12" lg="5">
-						<ModelViewer modelPath={"logo/logo2.glb"} />
+						<ModelViewer modelPath={"logo/logo.glb"} />
 					</Col>
 				</Row>
 				<div id="more" className='text-center'>
