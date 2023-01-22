@@ -4,10 +4,14 @@ import { useTranslation } from "react-i18next";
 const AboutItem = ({ img, icon, title, subtitle }) => {
 
 	return (
-		<div className="mb-20">
-			<h2 className='heading-2'>{title}</h2>
-			<p className='heading-3'> {subtitle}</p>
-		</div>
+		<Row className="mb-20">
+			<Col sm="12">
+				<h2 className='heading-2'>{title}</h2>
+			</Col>
+			<Col sm="12">
+				<p className='heading-3'> {subtitle}</p>
+			</Col>
+		</Row>
 	)
 }
 
@@ -25,16 +29,16 @@ const About = () => {
 					<AboutItem img="about/education.png" icon="bx bxs-graduation" title={t("about.education.title")} subtitle={t("about.education.subtitle")}></AboutItem>
 					<AboutItem img="about/language.png" icon="bx bx-globe" title={t("about.languages.title")} subtitle={t("about.languages.subtitle")}></AboutItem>
 					<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
+					<Row>
+						<Col sm="12">
+							<a className='custom-button' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
+						</Col>
+					</Row>
 				</Col>
 				<Col sm="12" md="12" lg="5">
 					<Row className='mb-20'>
 						<Col sm="12">
 							<div className='about-image'></div>
-						</Col>
-					</Row>
-					<Row>
-						<Col sm="12">
-							<a className='custom-button right' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
 						</Col>
 					</Row>
 				</Col>

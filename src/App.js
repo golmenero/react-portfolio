@@ -14,8 +14,8 @@ import Footer from './components/Footer';
 function App() {
 
 	document.addEventListener('mousemove', function (e) {
-		let x = e.clientX - 10;
-		let y = e.clientY - 10;
+		let x = e.clientX - 18;
+		let y = e.clientY - 18;
 
 		let cursor = document.querySelector('.ball');
 		cursor.style.left = x + 'px';

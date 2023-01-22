@@ -108,7 +108,7 @@ const Navigation = () => {
 						</NavItem>
 					</Nav>
 					<Nav className='w-100 justify-content-end'>
-						<NavItem className='point'>
+						<NavItem>
 							<NavLink onClick={switchTheme}>
 								<i id="theme-icon" className='bx bx-sun'></i>
 							</NavLink>
