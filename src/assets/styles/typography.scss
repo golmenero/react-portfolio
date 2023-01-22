@@ -18,33 +18,54 @@
     src: url('../fonts/SFPro/SFPRODISPLAYBOLD.OTF') format('opentype');
 }
 
-.heading-1 {
-    font: 11px 'SFProBlack';
-    @extend .text-color;
-    font-size: 40px !important;
-    margin: 100px 0 50px 0;
+.fs-xl {
+    font-size: 36px !important;
+	@media (max-width: 992px) {
+		font-size: 40px !important;
+	}
 }
 
-.heading-2 {
-    font: 11px 'SFProMedium';
-    margin-bottom: 20px;
-    @extend .accent-color;
-    font-size: 24px !important;
+.fs-l {
+    font-size: 22px !important;
+	@media (max-width: 992px) {
+		font-size: 26px !important;
+	}
 }
 
-.heading-3 {
-    font: 11px 'SFPro';
-    letter-spacing: 1px;
-    @extend .text-color;
-    margin-bottom: 25px;
-    font-size: 20px !important;
+.fs-m {
+    font-size: 16px !important;
+	@media (max-width: 992px) {
+		font-size: 20px !important;
+	}
 }
 
-.quote {
-    font-family: "La Belle Aurore";
-    display: block;
-    margin: 10px 0px;
-    font-size: 24px !important;
+html {
+	h1 {
+		@extend .fs-xl;
+		font: 11px 'SFProBlack';
+		@extend .text-color;
+		margin: 100px 0 50px 0 !important;
+	}
+
+	h2 {
+		@extend .fs-l;
+		font: 11px 'SFProMedium';
+		@extend .accent-color;
+		margin-bottom: 20px !important;
+	}
+
+	p {
+		@extend .fs-m;
+		font: 11px 'SFPro';
+		letter-spacing: 1px;
+		@extend .text-color;
+		margin-bottom: 25px !important;
+
+		&.quote {
+			@extend .fs-l;
+			font-family: "La Belle Aurore";
+		}
+	}
 }
 
 .mb-20 {

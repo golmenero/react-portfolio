@@ -9,7 +9,7 @@ const Footer = () => {
 			<Row>
 				<Col sm="12" className='m-0'>
 					<div className='text-center'>
-						<span className='heading-3'>{t("footer.header")}</span>
+						<h2>{t("footer.header")}</h2>
 					</div>
 				</Col>
 			</Row>

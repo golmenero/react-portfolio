@@ -19,11 +19,11 @@ const Others = () => {
 	return (
 		<section id="others" className='hidden' data-nav="others">
 			<Row>
-				<h1 className='heading-1'>{t("navigation.others")}</h1>
+				<h1>{t("navigation.others")}</h1>
 			</Row>
 			<div>
 				<Row>
-					<h2 className='heading-3'>{t("others.header")}</h2>
+					<p>{t("others.header")}</p>
 				</Row>
 				<Row>
 					<Col sm="12">

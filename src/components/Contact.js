@@ -36,8 +36,8 @@ const Contact = () => {
 		<section id="contact" className='hidden' data-nav="contact">
 			<form ref={refForm} onSubmit={sendEmail}>
 				<Row>
-					<h1 className='heading-1'>{t("navigation.contact-me")}</h1>
-					<p className='heading-3'>{t("contact-me.header")}</p>
+					<h1>{t("navigation.contact-me")}</h1>
+					<p>{t("contact-me.header")}</p>
 				</Row>
 				<Row>
 					<Col sm="12" md="6">

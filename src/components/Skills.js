@@ -11,8 +11,8 @@ const Skill = ({ icon, title, subtitle }) => {
 					<div className='mb-20'>
 						<i className={icon}></i>
 					</div>
-					<h3 className='heading-2'>{title}</h3>
-					<p className='heading-3'>{subtitle}</p>
+					<h2>{title}</h2>
+					<p>{subtitle}</p>
 				</div>
 			</Tilt>
 		</Col>
@@ -25,7 +25,7 @@ const Skills = () => {
 	return (
 		<section id="skills" className='hidden' data-nav="skills">
 			<Row>
-				<h1 className='heading-1'>{t("navigation.skills")}</h1>
+				<h1>{t("navigation.skills")}</h1>
 			</Row>
 			<div>
 				<Row>

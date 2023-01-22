@@ -6,10 +6,10 @@ const AboutItem = ({ img, icon, title, subtitle }) => {
 	return (
 		<Row className="mb-20">
 			<Col sm="12">
-				<h2 className='heading-2'>{title}</h2>
+				<h2>{title}</h2>
 			</Col>
 			<Col sm="12">
-				<p className='heading-3'> {subtitle}</p>
+				<p> {subtitle}</p>
 			</Col>
 		</Row>
 	)
@@ -21,8 +21,7 @@ const About = () => {
 	return (
 		<section id="about" className='hidden' data-nav="about">
 			<Row>
-				<h1 className='heading-1'>{t("navigation.about")}</h1>
-				<p className='heading-3'>{t("about.header")}</p>
+				<h1>{t("navigation.about")}</h1>
 			</Row>
 			<Row>
 				<Col sm="12" md="12" lg="7">

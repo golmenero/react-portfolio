@@ -11,8 +11,8 @@ const Project = ({ link, title, subtitle, img }) => {
 				<div className="card-panel">
 					<Row>
 						<Col sm="12" md="6">
-							<h2 className='heading-2'>{title}</h2>
-							<p className='heading-3'> {subtitle}</p>
+							<h2>{title}</h2>
+							<p> {subtitle}</p>
 							<Button className='custom-button' href={link}>{t("projects.see-source-code")}</Button>
 						</Col>
 						<Col sm="12" md="6" className='text-center'>
@@ -31,7 +31,7 @@ const Projects = () => {
 	return (
 		<section id="projects" className='hidden' data-nav="projects">
 			<Row>
-				<h1 className='heading-1'>{t("navigation.projects")}</h1>
+				<h1>{t("navigation.projects")}</h1>
 			</Row>
 			<Row>
 				<Project link="https://github.com/golmenero/tfg_inmobiliaria" img="projects/proj-3-new.png" title={t("projects.realestate.title")} subtitle={t("projects.realestate.subtitle")}></Project>
