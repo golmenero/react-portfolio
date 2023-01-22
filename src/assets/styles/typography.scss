@@ -21,11 +21,11 @@
 .heading-1 {
     font: 11px 'SFProBlack';
     @extend .text-color;
-    font-size: 46px !important;
+    font-size: 40px !important;
     margin: 100px 0 50px 0;
 
     @media (max-width: 992px) {
-        font-size: 42px !important;
+        font-size: 36px !important;
     }
 }
 
@@ -33,10 +33,10 @@
     font: 11px 'SFProMedium';
     margin-bottom: 20px;
     @extend .accent-color;
-    font-size: 28px !important;
+    font-size: 22px !important;
 
     @media (max-width: 992px) {
-        font-size: 24px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -56,7 +56,7 @@
     font-family: "La Belle Aurore";
     display: block;
     margin: 10px 0px;
-    font-size: 28px !important;
+    font-size: 24px !important;
 
 	@media (max-width: 992px) {
         font-size: 24px !important;
