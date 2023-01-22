@@ -81,7 +81,7 @@ const Navigation = () => {
 	return (
 		<div id="navigation" className='nav-bar'>
 			<Navbar expand="md">
-				<NavbarBrand className='w-50' href="#home">
+				<NavbarBrand className='w-50 accent-color' href="#home">
 					<img src="logo/logo512.png" className='logo' alt="Logo"></img>
 					Carlos Gómez
 				</NavbarBrand>

@@ -47,25 +47,27 @@
 }
 
 html {
+    font: 300 11px/1.4 'SFPro', Tahoma, Geneva, Verdana, sans-serif;
+
 	h1 {
 		@extend .fs-xl;
-		font: 11px 'SFProBlack';
 		@extend .text-color;
+		font-family: 'SFProBlack';
 		margin: 100px 0 50px 0 !important;
 	}
 
 	h2 {
 		@extend .fs-l;
-		font: 11px 'SFProMedium';
 		@extend .accent-color;
+		font-family: 'SFProMedium';
 		margin-bottom: 20px !important;
 	}
 
 	p {
 		@extend .fs-s;
-		font: 11px 'SFPro';
-		letter-spacing: 1px;
 		@extend .text-color;
+		font-family: 'SFPro';
+		letter-spacing: 1px;
 		margin-bottom: -0 0 25px 0 !important;
 
 		&.quote {
@@ -74,7 +76,8 @@ html {
 		}
 	}
 
-	a {
+	a,
+	button {
 		@extend .fs-m;
 		@extend .text-color;
 		text-decoration: none;
@@ -82,6 +85,51 @@ html {
 		&:hover {
 			@extend .accent-color;
 		}
+
+		&.btn {
+			@extend .accent-color;
+			background: none;
+			border: 1px solid var(--global-accent-color);
+
+			&:hover {
+				color: var(--global-primary-color) !important;
+				background-color: var(--global-accent-color);
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+	
+		&.logo {
+			max-height: 40px;
+			max-width: 40px;
+			margin-right: 0.5rem;
+		}
+	
+		&.cropped {
+			z-index: 5;
+			-webkit-clip-path: polygon(0% 0%, calc(100% - 50px) 0%, 100% calc(0% + 50px), 100% 100%, calc(0% + 50px) 100%, 0% calc(100% - 50px));
+			clip-path: polygon(0% 0%, calc(100% - 50px) 0%, 100% calc(0% + 50px), 100% 100%, calc(0% + 50px) 100%, 0% calc(100% - 50px));
+		}
+	}
+
+	input, 
+	textarea {
+		@extend .fs-s;
+	}
+
+	textarea {
+		min-height: 150px;
+		resize: none;
+	}
+
+	.card-panel {
+		@extend .third-color;
+		border-radius: 16px;
+		padding: 30px;
+		height: 100%;
+		box-shadow: var(--global-third-color) 0px 5px 15px;
 	}
 }
 

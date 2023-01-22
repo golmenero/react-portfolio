@@ -13,7 +13,7 @@ const Project = ({ link, title, subtitle, img }) => {
 						<Col sm="12" md="6">
 							<h2>{title}</h2>
 							<p> {subtitle}</p>
-							<Button className='custom-button' href={link}>{t("projects.see-source-code")}</Button>
+							<Button className='btn' href={link}>{t("projects.see-source-code")}</Button>
 						</Col>
 						<Col sm="12" md="6" className='text-center'>
 							<img src={img} alt={title} />
