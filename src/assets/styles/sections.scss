@@ -33,6 +33,8 @@
         }
     
         a {
+            text-decoration: none;
+            font-size: 20px;
             color: inherit;
             position: relative;
         }
@@ -95,9 +97,11 @@
     }
 
     #more {
+        font-size: 20px;
 		margin-top: -8%;
 
         a {
+            text-decoration: none;
             color: var(--global-text-color);
         }
     }
@@ -138,9 +142,8 @@
     position: fixed;
 
     .left {
-	  @extend .heading-3;
-      bottom: 1%;
-	  margin-bottom: 0;
+      font-size: 25px;
+      bottom: 2%;
       position: inherit;
       left: 1%;
 
@@ -157,7 +160,7 @@
     }
 
     .right {
-	  @extend .heading-3;
+      font-size: 20px;
       bottom: 2%;
       position: inherit;
       right: 1%;
