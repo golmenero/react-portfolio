@@ -33,6 +33,13 @@
 }
 
 .fs-m {
+    font-size: 18px !important;
+	@media (max-width: 992px) {
+		font-size: 22px !important;
+	}
+}
+
+.fs-s {
     font-size: 16px !important;
 	@media (max-width: 992px) {
 		font-size: 20px !important;
@@ -55,25 +62,31 @@ html {
 	}
 
 	p {
-		@extend .fs-m;
+		@extend .fs-s;
 		font: 11px 'SFPro';
 		letter-spacing: 1px;
 		@extend .text-color;
-		margin-bottom: 25px !important;
+		margin-bottom: -0 0 25px 0 !important;
 
 		&.quote {
 			@extend .fs-l;
 			font-family: "La Belle Aurore";
 		}
 	}
+
+	a {
+		@extend .fs-m;
+		@extend .text-color;
+		text-decoration: none;
+
+		&:hover {
+			@extend .accent-color;
+		}
+	}
 }
 
 .mb-20 {
     margin-bottom: 20px;
-}
-
-p {
-    margin: 0;
 }
 
 i {

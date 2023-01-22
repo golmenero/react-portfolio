@@ -25,13 +25,13 @@ body.dark {
 }
 
 .primary-color {
-    background: var(--global-primary-color);
+    background: var(--global-primary-color) !important;
 }
 
 .secondary-color {
 	z-index: 1;
 	position: relative;
-    background: var(--global-secondary-color);
+    background: var(--global-secondary-color) !important;
 }
 
 .third-color {
@@ -39,13 +39,13 @@ body.dark {
 }
 
 .gradient-color {
-    background: var(--global-primary-color-gradient);
+    background: var(--global-primary-color-gradient) !important;
 }
 
 .accent-color {
-    color: var(--global-accent-color);
+    color: var(--global-accent-color) !important;
 }
 
 .text-color {
-    color: var(--global-text-color);
+    color: var(--global-text-color) !important;
 }

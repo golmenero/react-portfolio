@@ -11,7 +11,7 @@ const Socials = () => {
 				</a>
 			</div>
 			<div className="right">
-				<span>cgomezcolmenero@gmail.com</span>
+				<a href="#contact">cgomezcolmenero@gmail.com</a>
 			</div>
 		</div>
 	)

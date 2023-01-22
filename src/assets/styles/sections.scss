@@ -33,9 +33,6 @@
         }
     
         a {
-            text-decoration: none;
-            font-size: 20px;
-            color: inherit;
             position: relative;
         }
             
@@ -97,13 +94,7 @@
     }
 
     #more {
-        font-size: 20px;
 		margin-top: -12%;
-
-        a {
-            text-decoration: none;
-            color: var(--global-text-color);
-        }
     }
 
 	#content-home {
@@ -142,25 +133,15 @@
     position: fixed;
 
     .left {
-      font-size: 25px;
       bottom: 2%;
       position: inherit;
       left: 1%;
 
       display: grid;
       row-gap: 15px;
-      
-      a {
-        color: var(--global-text-color);
-
-        &:hover {
-          color: var(--global-accent-color);
-        }
-      }
     }
 
     .right {
-      font-size: 20px;
       bottom: 2%;
       position: inherit;
       right: 1%;
