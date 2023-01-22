@@ -131,12 +131,17 @@ html {
 		height: 100%;
 		box-shadow: var(--global-third-color) 0px 5px 15px;
 	}
+
+	.mb-20 {
+		margin-bottom: 20px;
+	}
+	
+	i {
+		font-size: 28px;
+	}
+	
+	.right {
+		float: right;
+	}
 }
 
-.mb-20 {
-    margin-bottom: 20px;
-}
-
-i {
-    font-size: 28px;
-}

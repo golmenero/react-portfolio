@@ -30,7 +30,7 @@ const About = () => {
 					<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
 					<Row>
 						<Col sm="12">
-							<a className='btn' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
+							<a className='btn right' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
 						</Col>
 					</Row>
 				</Col>
