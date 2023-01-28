@@ -1,5 +1,5 @@
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from 'reactstrap';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
@@ -9,7 +9,36 @@ const Navigation = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggle = () => setIsOpen(!isOpen);
 
-	const setUp = () => {
+	const switchTheme = () => {
+		let theme = '';
+		if (document.body.classList.contains('light')) theme = 'light';
+		else if (document.body.classList.contains('dark')) theme = 'dark';
+
+		theme = theme === 'dark' ? 'light' : 'dark';
+
+		document.body.classList.remove('dark');
+		document.body.classList.remove('light');
+		document.body.classList.add(theme);
+		localStorage.setItem('theme', theme);
+
+		let themeIcon = document.querySelector("#theme-icon");
+		if (themeIcon) {
+			themeIcon.classList.remove('bx-sun');
+			themeIcon.classList.remove('bx-moon');
+			themeIcon.classList.add(theme === 'dark' ? "bx-sun" : "bx-moon");
+		}
+	}
+
+	const switchLang = (lang) => {
+		let current = localStorage.getItem('lang');
+
+		if (current !== lang) {
+			localStorage.setItem('lang', lang);
+			i18n.changeLanguage(lang)
+		}
+	}
+
+	useEffect(() => {
 		/**
 		 * Set Language
 		 */
@@ -45,38 +74,7 @@ const Navigation = () => {
 			icon.classList.add("bx", "bx-menu");
 			togglerIcon.appendChild(icon);
 		}
-	};
-
-	const switchTheme = () => {
-		let theme = '';
-		if (document.body.classList.contains('light')) theme = 'light';
-		else if (document.body.classList.contains('dark')) theme = 'dark';
-
-		theme = theme === 'dark' ? 'light' : 'dark';
-
-		document.body.classList.remove('dark');
-		document.body.classList.remove('light');
-		document.body.classList.add(theme);
-		localStorage.setItem('theme', theme);
-
-		let themeIcon = document.querySelector("#theme-icon");
-		if (themeIcon) {
-			themeIcon.classList.remove('bx-sun');
-			themeIcon.classList.remove('bx-moon');
-			themeIcon.classList.add(theme === 'dark' ? "bx-sun" : "bx-moon");
-		}
-	}
-
-	const switchLang = (lang) => {
-		let current = localStorage.getItem('lang');
-
-		if (current !== lang) {
-			localStorage.setItem('lang', lang);
-			i18n.changeLanguage(lang)
-		}
-	}
-
-	document.addEventListener('DOMContentLoaded', setUp());
+	});
 
 	return (
 		<div id="navigation" className='nav-bar'>
