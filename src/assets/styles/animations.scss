@@ -30,3 +30,21 @@
         display: none;
     }
 }
+
+.wave {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+	margin-bottom: -1px;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(179% + 1.3px);
+    height: 103px;
+}
+
+.wave .shape-fill {
+    fill: var(--global-secondary-color);
+}
