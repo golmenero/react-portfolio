@@ -31,20 +31,28 @@
     }
 }
 
-.wave {
+#wave {
     width: 100%;
     overflow: hidden;
     line-height: 0;
 	margin-bottom: -1px;
-}
+	
+	svg {
+		position: relative;
+		display: block;
+		width: calc(179% + 1.3px);
+		height: 15vh;
+	}
 
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(179% + 1.3px);
-    height: 103px;
-}
+	.shape-fill {
+		fill: var(--global-secondary-color);
+	}
 
-.wave .shape-fill {
-    fill: var(--global-secondary-color);
+	#more {
+		z-index: 7;
+		position: relative;
+		height: 5vh;
+		margin-top: -2px;
+		background-color: var(--global-secondary-color);
+	}
 }
