@@ -137,8 +137,7 @@ html {
 
 	.card-panel {
 		@extend .third-color;
-		border-radius: 16px;
-		padding: 30px;
+		padding: 40px;
 		height: 100%;
 		box-shadow: var(--global-third-color) 0px 5px 15px;
 	}

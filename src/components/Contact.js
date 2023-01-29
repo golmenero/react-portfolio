@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { Button, Col, Input, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import ReCAPTCHA from 'react-google-recaptcha';
+import Tilt from 'react-parallax-tilt';
 
 const Contact = () => {
 	const [t] = useTranslation("global");
@@ -37,35 +38,36 @@ const Contact = () => {
 			<form ref={refForm} onSubmit={sendEmail}>
 				<Row>
 					<h1>{t("navigation.contact-me")}</h1>
-					<p>{t("contact-me.header")}</p>
 				</Row>
-				<Row>
-					<Col sm="12" md="6">
-						<Row>
-							<Col className='mb-20' sm='12' md="6">
-								<Input type="text" name='name' placeholder={t("contact-me.name")} required />
-							</Col>
-							<Col className='mb-20' sm='12' md="6">
-								<Input type="email" name='email' placeholder={t("contact-me.email")} required />
-							</Col>
-							<Col className='mb-20' sm="12">
-								<Input placeholder={t("contact-me.subject")} type="text" name="subject" required />
-							</Col>
-							<Col className='mb-20' sm="12">
-								<Input type="textarea" placeholder={t("contact-me.message")} name='message' required />
-							</Col>
-							<Col className='mb-20' sm="12">
-								<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="dark"></ReCAPTCHA>
-							</Col>
-							<Col className='mb-20' sm="12">
-								<Button type='submit' className='btn right'>{t("contact-me.send")}</Button>
-							</Col>
-						</Row>
-					</Col>
-					<Col sm="12" md="6">
-						<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
-					</Col>
-				</Row>
+				<Tilt className='h-100' tiltMaxAngleX="0.5" tiltMaxAngleY="0.5" scale="1.01">
+					<Row className='card-panel'>
+						<Col sm="12" md="6">
+							<Row>
+								<Col className='mb-20' sm='12' md="6">
+									<Input type="text" name='name' placeholder={t("contact-me.name")} required />
+								</Col>
+								<Col className='mb-20' sm='12' md="6">
+									<Input type="email" name='email' placeholder={t("contact-me.email")} required />
+								</Col>
+								<Col className='mb-20' sm="12">
+									<Input placeholder={t("contact-me.subject")} type="text" name="subject" required />
+								</Col>
+								<Col className='mb-20' sm="12">
+									<Input type="textarea" placeholder={t("contact-me.message")} name='message' required />
+								</Col>
+								<Col className='mb-20' sm="12">
+									<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="dark"></ReCAPTCHA>
+								</Col>
+								<Col className='mb-20' sm="12">
+									<Button type='submit' className='btn right'>{t("contact-me.send")}</Button>
+								</Col>
+							</Row>
+						</Col>
+						<Col sm="12" md="6">
+							<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
+						</Col>
+					</Row>
+				</Tilt>
 			</form>
 		</section>
 	)
