@@ -24,7 +24,7 @@ const Home = () => {
 				<Row>
 					<Col sm="12" md="12" lg="7">
 						<h2 className='m-0'>{t("home.hello")}</h2>
-						<h1 className='mt-0'>
+						<h1 className='mt-0 main'>
 							{t("home.header")}
 						</h1>
 						<div>

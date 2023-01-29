@@ -18,6 +18,13 @@
     src: url('../fonts/SFPro/SFPRODISPLAYBOLD.OTF') format('opentype');
 }
 
+.fs-xxl {
+    font-size: 48px !important;
+	@media (max-width: 992px) {
+		font-size: 50px !important;
+	}
+}
+
 .fs-xl {
     font-size: 36px !important;
 	@media (max-width: 992px) {
@@ -54,6 +61,10 @@ html {
 		@extend .text-color;
 		font-family: 'SFProBlack';
 		margin: 100px 0 50px 0 !important;
+
+		&.main {
+			@extend .fs-xxl;
+		}
 	}
 
 	h2 {
