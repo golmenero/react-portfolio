@@ -5,17 +5,15 @@ import Tilt from 'react-parallax-tilt';
 const Skill = ({ icon, title, subtitle }) => {
 
 	return (
-		<Col className='mb-20' sm="12" md="12" lg="4">
-			<Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
-				<div className='card-panel'>
-					<div className='mb-20'>
-						<i className={icon}></i>
-					</div>
-					<h2>{title}</h2>
-					<p>{subtitle}</p>
+		<Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
+			<div className='card-panel'>
+				<div className='mb-20'>
+					<i className={icon}></i>
 				</div>
-			</Tilt>
-		</Col>
+				<h2>{title}</h2>
+				<p>{subtitle}</p>
+			</div>
+		</Tilt>
 	)
 }
 
@@ -29,14 +27,31 @@ const Skills = () => {
 			</Row>
 			<div>
 				<Row>
-					<Skill icon="bx bx-palette" title={t("skills.front.title")} subtitle={t("skills.front.subtitle")}></Skill>
-					<Skill icon="bx bx-cog" title={t("skills.back.title")} subtitle={t("skills.back.subtitle")}></Skill>
-					<Skill icon="bx bx-cloud" title={t("skills.api.title")} subtitle={t("skills.api.subtitle")}></Skill>
+					<Col className='mb-20' sm="12" md="12" lg='4'>
+						<Skill icon="bx bx-palette" title={t("skills.front.title")} subtitle={t("skills.front.subtitle")}></Skill>
+					</Col>
+					<Col className='mb-20' sm="12" md="12" lg="4">
+						<Skill icon="bx bx-cog" title={t("skills.back.title")} subtitle={t("skills.back.subtitle")}></Skill>
+					</Col>
 				</Row>
 				<Row>
-					<Skill icon="bx bx-data" title={t("skills.database.title")} subtitle={t("skills.database.subtitle")}></Skill>
-					<Skill icon="bx bx-sitemap" title={t("skills.business.title")} subtitle={t("skills.business.subtitle")}></Skill>
-					<Skill icon="bx bx-check" title={t("skills.tester.title")} subtitle={t("skills.tester.subtitle")}></Skill>
+					<Col className='mb-20' sm="12" md="12" lg="4">
+						<Skill icon="bx bx-cloud" title={t("skills.api.title")} subtitle={t("skills.api.subtitle")}></Skill>
+					</Col>
+					<Col className='mb-20' sm="12" md="12" lg="4">
+						<Skill icon="bx bx-data" title={t("skills.database.title")} subtitle={t("skills.database.subtitle")}></Skill>
+					</Col>
+					<Col className='mb-20' sm="12" md="12" lg="4">
+						<Skill icon="bx bx-sitemap" title={t("skills.business.title")} subtitle={t("skills.business.subtitle")}></Skill>
+					</Col>
+				</Row>
+				<Row>
+					<Col className='mb-20' sm="12" md="12" lg={{ size: '4', offset: '4' }}>
+						<Skill icon="bx bx-check" title={t("skills.tester.title")} subtitle={t("skills.tester.subtitle")}></Skill>
+					</Col>
+					<Col className='mb-20' sm="12" md="12" lg="4">
+						<Skill icon="bx bx-wink-smile" title={t("skills.social.title")} subtitle={t("skills.social.subtitle")}></Skill>
+					</Col>
 				</Row>
 			</div>
 		</section>

@@ -64,6 +64,10 @@
         "tester": {
             "title": "Tester",
             "subtitle": "Advanced testing knowledge (JUnit, Selenium and PHPUnit, among others)"
+        },
+		"social": {
+            "title": "Social skills",
+            "subtitle": "Teamwork, leadership, positive attitude. Active listening, patience and assertiveness."
         }
     },
     "projects": {

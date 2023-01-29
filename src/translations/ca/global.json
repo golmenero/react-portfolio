@@ -64,6 +64,10 @@
         "tester": {
             "title": "Probador",
             "subtitle": "Coneixement avançat de testing (JUnit, Selenium i PHPUnit, entre d'altres)"
+        },
+		"social": {
+            "title": "Habilitats socials",
+            "subtitle": "Treball en equip, lideratge, actitud positiva. Escolta activa, paciència i assertivitat."
         }
     },
     "projects": {

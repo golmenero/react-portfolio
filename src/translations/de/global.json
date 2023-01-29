@@ -64,6 +64,10 @@
         "tester": {
             "title": "Tester",
             "subtitle": "Fortgeschrittene Kenntnisse im Testen (unter anderem JUnit, Selenium und PHPUnit)"
+        },
+		"social": {
+            "title": "Soziale Fähigkeiten",
+            "subtitle": "Teamarbeit, Führung, positive Einstellung. Aktives Zuhören, Geduld und Durchsetzungsvermögen."
         }
     },
     "projects": {
