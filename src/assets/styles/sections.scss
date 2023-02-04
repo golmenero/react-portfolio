@@ -134,6 +134,28 @@
 			margin-top: 100px;
 		}
 	}
+
+	#lifeCalendar {
+		display: flex;
+		flex-wrap: wrap;
+
+		.black-year,
+		.white-year {
+			height: 10px;
+			width: 10px;
+			margin-bottom: 5px;
+			border-radius: 100%;
+			margin-right: 5px;
+		}
+		.black-year {
+			background-color: var(--global-secondary-color);
+			border: 1px solid var(--global-text-color);
+		}
+
+		.white-year {
+			background-color: var(--global-text-color);
+		}
+	}
 }
 
 #projects {

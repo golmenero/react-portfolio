@@ -1,6 +1,7 @@
 import { Col, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import Tilt from 'react-parallax-tilt';
+import { useEffect } from 'react';
 
 const AboutItem = ({ img, icon, title, subtitle }) => {
 
@@ -19,12 +20,67 @@ const AboutItem = ({ img, icon, title, subtitle }) => {
 const About = () => {
 	const [t] = useTranslation("global");
 
+	function getDateDifference(date1, date2) {
+		let year1 = date1.getFullYear();
+		let year2 = date2.getFullYear();
+		let months1 = date1.getMonth();
+		let months2 = date2.getMonth();
+		let days1 = date1.getDate();
+		let days2 = date2.getDate();
+		
+		let yearsDiff = year2 - year1;
+		let monthsDiff = months2 - months1;
+		let daysDiff = days2 - days1;
+		
+		if (daysDiff < 0) {
+			let prevMonth = new Date(date2.getFullYear(), date2.getMonth(), 0);
+			daysDiff = prevMonth.getDate() - days1 + days2;
+			monthsDiff--;
+		}
+		if (monthsDiff < 0) {
+			monthsDiff += 12;
+			yearsDiff--;
+		}
+		return { years: yearsDiff, months: monthsDiff, days: daysDiff };
+	}
+
+	useEffect(() => {
+		let life_calendar = document.getElementById("lifeCalendar");
+		life_calendar.innerHTML = "";
+
+		let diff = getDateDifference(new Date(1998, 4, 15), new Date());
+
+		for (let i = 0; i < diff.years; i++) {
+			let black = document.createElement("span");
+			black.classList.add("black-year");
+
+			life_calendar.appendChild(black);
+		}
+
+		for (let i = 0; i < 90 - diff.years; i++) {
+			let white = document.createElement("span");
+			white.classList.add("white-year");
+
+			life_calendar.appendChild(white);
+		}
+
+		let years_div = document.getElementById("years_div");
+		years_div.textContent = diff.years;
+
+		let months_div = document.getElementById("months_div");
+		months_div.textContent = diff.months;
+
+		let days_div = document.getElementById("days_div");
+		days_div.textContent = diff.days;
+	});
+
+
 	return (
 		<section id="about" className='hidden' data-nav="about">
 			<Row>
 				<h1>{t("navigation.about")}</h1>
 			</Row>
-			<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+			<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01" className='mb-20'>
 				<div className="card-panel">
 					<Row>
 						<Col sm="12" md="12" lg="7">
@@ -47,6 +103,31 @@ const About = () => {
 					</Row>
 				</div>
 			</Tilt>
+			<Row>
+				<Col sm="12" md="12" lg="6">
+					<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+						<div className="card-panel">
+							<h2>Life Calendar</h2>
+							<Row>
+								<Col sm="6">
+									<div id="lifeCalendar"></div>
+								</Col>
+								<Col sm="6">
+									<div className='text-center' id="time_alive">
+										<div className='fs-xxl'>
+											<span id="years_div"></span> years
+										</div>
+										<div className='fs-l accent-color'>
+											<span id="months_div"></span> months, <span id="days_div"></span> days
+										</div>
+									</div>
+								</Col>
+							</Row>
+						</div>
+					</Tilt>
+				</Col>
+			</Row>
+			
 		</section>
 	)
 }
