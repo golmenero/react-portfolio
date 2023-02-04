@@ -107,7 +107,7 @@ const About = () => {
 				<Col className='mb-20' sm="12" md="12" lg="6">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel">
-							<h2>Life Calendar</h2>
+							<h2>{t("about.life.title")}</h2>
 							<Row>
 								<Col sm="6">
 									<div id="lifeCalendar"></div>
@@ -115,10 +115,10 @@ const About = () => {
 								<Col sm="6">
 									<div className='text-center' id="time_alive">
 										<div className='fs-xxl'>
-											<span id="years_div"></span> years
+											<span id="years_div"></span> {t("about.life.years")}
 										</div>
 										<div className='fs-s accent-color'>
-											<span id="months_div"></span> months, <span id="days_div"></span> days
+											<span id="months_div"></span> {t("about.life.months")}, <span id="days_div"></span> {t("about.life.days")}
 										</div>
 									</div>
 								</Col>
@@ -130,9 +130,13 @@ const About = () => {
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel">
 							<h2>Location</h2>
+				<Col className='mb-20' sm="12" md="6" lg="3">
+					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+						<div className="card-panel">
+							<h2>{t("about.location.title")}</h2>
 							<div className='fs-xl flex'>Oviedo</div>
 							<div className='fs-l accent-color'>Asturias, España
-								<a id="location-icon" href="https://goo.gl/maps/4zkKbKJ8XXn4GbPCA"><i className='bx bx-right-arrow-alt'></i></a>
+								<a className='right' href="https://goo.gl/maps/4zkKbKJ8XXn4GbPCA"><i className='bx bx-right-arrow-alt'></i></a>
 							</div>
 						</div>
 					</Tilt>
