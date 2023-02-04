@@ -37,7 +37,16 @@
         "experience": {
             "title": "Expérience",
             "subtitle": "J'ai travaillé sur différents projets avant de terminer mes études universitaires. Je travaille actuellement chez Idealista.com, l'entreprise la plus importante de son secteur en Espagne, au Portugal et en Italie."
-        }
+        },
+		"life": {
+			"title": "Calendrier de la vie",
+			"years": "années",
+			"months": "mois",
+			"days": "jours"
+		},
+		"location": {
+			"title": "Emplacement"
+		}
     },
     "skills": {
         "header": "J'ai de l'expérience dans les domaines de connaissances suivants.",

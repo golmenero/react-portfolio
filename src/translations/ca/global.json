@@ -37,7 +37,16 @@
         "experience": {
             "title": "Experiència",
             "subtitle": "Porto treballant en diferents projectes des d'abans d'acabar la carrera universitària. Actualment treballo a Idealista.com, l'empresa més important d'Espanya, Portugal i Itàlia al seu sector."
-        }
+        },
+		"life": {
+			"title": "Calendari de Vida",
+			"years": "anys",
+			"months":   "mesos",
+			"days": "dies"
+		},
+		"location": {
+			"title": "Localització"
+		}
     },
     "skills": {
         "header": "Tinc experiència en els camps de coneixement següents.",
