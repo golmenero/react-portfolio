@@ -138,6 +138,7 @@
 	#lifeCalendar {
 		display: flex;
 		flex-wrap: wrap;
+		margin-top: 24px;
 
 		.black-year,
 		.white-year {
@@ -155,6 +156,10 @@
 		.white-year {
 			background-color: var(--global-text-color);
 		}
+	}
+
+	#location-icon {
+		float: right;
 	}
 }
 

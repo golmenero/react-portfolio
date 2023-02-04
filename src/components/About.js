@@ -80,7 +80,7 @@ const About = () => {
 			<Row>
 				<h1>{t("navigation.about")}</h1>
 			</Row>
-			<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01" className='mb-20'>
+			<Tilt className='h-100 mb-20' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 				<div className="card-panel">
 					<Row>
 						<Col sm="12" md="12" lg="7">
@@ -104,8 +104,8 @@ const About = () => {
 				</div>
 			</Tilt>
 			<Row>
-				<Col sm="12" md="12" lg="6">
-					<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+				<Col className='mb-20' sm="12" md="12" lg="6">
+					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel">
 							<h2>Life Calendar</h2>
 							<Row>
@@ -117,12 +117,23 @@ const About = () => {
 										<div className='fs-xxl'>
 											<span id="years_div"></span> years
 										</div>
-										<div className='fs-l accent-color'>
+										<div className='fs-s accent-color'>
 											<span id="months_div"></span> months, <span id="days_div"></span> days
 										</div>
 									</div>
 								</Col>
 							</Row>
+						</div>
+					</Tilt>
+				</Col>
+				<Col className='mb-20' sm="12" md="6" lg="3">
+					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+						<div className="card-panel">
+							<h2>Location</h2>
+							<div className='fs-xl flex'>Oviedo</div>
+							<div className='fs-l accent-color'>Asturias, España
+								<a id="location-icon" href="https://goo.gl/maps/4zkKbKJ8XXn4GbPCA"><i className='bx bx-right-arrow-alt'></i></a>
+							</div>
 						</div>
 					</Tilt>
 				</Col>
