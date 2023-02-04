@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Col, Row } from 'reactstrap';
-import ModelViewer from './3D/ModelViewer';
 
 const Home = () => {
 	const [t] = useTranslation("global");
@@ -33,7 +32,7 @@ const Home = () => {
 						</div>
 					</Col>
 					<Col sm="12" md="12" lg="5">
-						<ModelViewer modelPath={"logo/logo.glb"} />
+						<img src="logo/logo2.png" id="img_logo" alt="Logo"></img>
 					</Col>
 				</Row>
 			</div>

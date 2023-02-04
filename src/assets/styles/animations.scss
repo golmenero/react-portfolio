@@ -42,6 +42,10 @@
 		display: block;
 		width: calc(179% + 1.3px);
 		height: 15vh;
+
+		@media (max-width: 992px) {
+			height: 5vh;
+		}
 	}
 
 	.shape-fill {
