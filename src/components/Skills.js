@@ -33,6 +33,11 @@ const Skills = () => {
 					<Col className='mb-20' sm="12" md="12" lg="4">
 						<Skill icon="bx bx-cog" title={t("skills.back.title")} subtitle={t("skills.back.subtitle")}></Skill>
 					</Col>
+					<Col className='mb-20' sm="12" md="12" lg="4">
+						<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+							<div className="card-panel gradient"></div>
+						</Tilt>
+					</Col>
 				</Row>
 				<Row>
 					<Col className='mb-20' sm="12" md="12" lg="4">
@@ -46,7 +51,12 @@ const Skills = () => {
 					</Col>
 				</Row>
 				<Row>
-					<Col className='mb-20' sm="12" md="12" lg={{ size: '4', offset: '4' }}>
+					<Col className='mb-20' sm="12" md="12" lg="4">
+						<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+							<div className="card-panel gradient"></div>
+						</Tilt>
+					</Col>
+					<Col className='mb-20' sm="12" md="12" lg="4">
 						<Skill icon="bx bx-check" title={t("skills.tester.title")} subtitle={t("skills.tester.subtitle")}></Skill>
 					</Col>
 					<Col className='mb-20' sm="12" md="12" lg="4">

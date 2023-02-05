@@ -152,7 +152,7 @@ const About = () => {
 				</Col>
 				<Col className='mb-20' sm="12" md="6" lg="3">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-						<div className="card-panel">
+						<div className="card-panel gradient">
 							<h2>{t("about.location.title")}</h2>
 							<div className='fs-xl flex'>Oviedo</div>
 							<div className='fs-s accent-color'>Asturias, España

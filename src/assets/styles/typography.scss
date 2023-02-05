@@ -169,6 +169,16 @@ html {
 		padding: 40px;
 		height: 100%;
 		box-shadow: var(--global-third-color) 0px 5px 15px;
+
+		&.gradient {
+			color: #0c0c0d;
+			background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+			* {
+				color: #0c0c0d !important;
+			}
+
+		}
 	}
 
 	.mb-20 {
