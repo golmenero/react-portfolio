@@ -156,7 +156,7 @@ const About = () => {
 							<h2>{t("about.location.title")}</h2>
 							<div className='fs-xl flex'>Oviedo</div>
 							<div className='fs-s accent-color'>Asturias, España
-								<a className='right' href="https://goo.gl/maps/4zkKbKJ8XXn4GbPCA"><i className='bx bx-right-arrow-alt'></i></a>
+								<a className='right' href="https://goo.gl/maps/4zkKbKJ8XXn4GbPCA"><i className='bx bxs-right-arrow-alt bx-fade-right'></i></a>
 							</div>
 						</div>
 					</Tilt>
