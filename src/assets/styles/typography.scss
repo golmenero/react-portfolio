@@ -99,13 +99,37 @@ html {
 		}
 
 		&.btn {
-			@extend .accent-color;
+			$basic-accent-color: var(--global-accent-color);
+
+			margin-bottom: 5px;
+			text-decoration: none !important;
+			width: 100%;
+			max-width: 200px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			color: var(--global-secondary-color);
+			border: 2px solid var(--global-secondary-color);
 			background: none;
-			border: 1px solid var(--global-accent-color);
+
+			transition: all 0.2s linear 0.2s;
+
+			i {
+				transition: all 0.2s linear 0s;
+			}
 
 			&:hover {
-				color: var(--global-primary-color) !important;
-				background-color: var(--global-accent-color);
+				transition: all 0.2s linear 0s;
+				border-color: var(--global-accent-color);
+				background: none;
+
+				i {
+					transform: scale(1.15);
+					text-shadow: 4px 0px 3px rgba($basic-accent-color, 0.3);
+					transition: all 0.2s linear 0.2s;
+				}
 			}
 		}
 	}
@@ -145,6 +169,10 @@ html {
 
 	.mb-20 {
 		margin-bottom: 20px;
+	}
+
+	.mt-10 {
+		margin-top: 10px;
 	}
 	
 	i {

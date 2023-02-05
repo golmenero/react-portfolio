@@ -89,7 +89,7 @@ const About = () => {
 							<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
 							<Row>
 								<Col sm="12">
-									<a className='btn right' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
+									<a className='btn' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
 								</Col>
 							</Row>
 						</Col>
@@ -129,13 +129,33 @@ const About = () => {
 				<Col className='mb-20' sm="12" md="6" lg="3">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel">
-							<h2>Location</h2>
+							<h2>Socials</h2>
+							<Row>
+								<Col sm="12" className='text-center'>
+									<a className='btn' href="https://www.linkedin.com/in/carlos-gomez-colmenero/">
+										<i className='bx bxl-linkedin' ></i>
+									</a>
+								</Col>
+								<Col sm="12" className='text-center'>
+									<a className='btn' href="https://github.com/golmenero">
+										<i className='bx bxl-github'></i>
+									</a>
+								</Col>
+								<Col sm="12">
+									<a className='btn' href="#contact">
+										<i class='bx bxl-gmail'></i>
+									</a>
+								</Col>
+							</Row>
+						</div>
+					</Tilt>
+				</Col>
 				<Col className='mb-20' sm="12" md="6" lg="3">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel">
 							<h2>{t("about.location.title")}</h2>
 							<div className='fs-xl flex'>Oviedo</div>
-							<div className='fs-l accent-color'>Asturias, España
+							<div className='fs-s accent-color'>Asturias, España
 								<a className='right' href="https://goo.gl/maps/4zkKbKJ8XXn4GbPCA"><i className='bx bx-right-arrow-alt'></i></a>
 							</div>
 						</div>

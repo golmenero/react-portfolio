@@ -7,7 +7,6 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Project';
 import Contact from './components/Contact';
-import Socials from './components/Socials';
 import Others from './components/Others';
 import Footer from './components/Footer';
 import { useTranslation } from 'react-i18next';
@@ -84,7 +83,6 @@ function App() {
 						<Contact />
 					</Container>
 				</div>
-				<Socials />
 			</main>
 			<footer>
 				<Footer />

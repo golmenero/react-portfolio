@@ -68,6 +68,11 @@ const Contact = () => {
 								<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
 							</Col>
 						</Row>
+						<Row>
+							<Col sm="12" className='text-center mt-10'>
+								<span className='fs-l'>cgomezcolmenero@gmail.com</span>
+							</Col>
+						</Row>
 					</div>
 				</Tilt>
 			</form>
