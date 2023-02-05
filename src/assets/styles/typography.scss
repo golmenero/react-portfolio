@@ -114,6 +114,10 @@ html {
 			border: 2px solid var(--global-secondary-color);
 			background: none;
 
+			&.full-width {
+				max-width: none;
+			}
+
 			transition: all 0.2s linear 0.2s;
 
 			i {
@@ -169,6 +173,10 @@ html {
 
 	.mb-20 {
 		margin-bottom: 20px;
+	}
+
+	.mb-10 {
+		margin-bottom: 10px;
 	}
 
 	.mt-10 {

@@ -129,21 +129,21 @@ const About = () => {
 				<Col className='mb-20' sm="12" md="6" lg="3">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel">
-							<h2>Socials</h2>
+							<h2>{t("about.socials.title")}</h2>
 							<Row>
-								<Col sm="12" className='text-center'>
-									<a className='btn' href="https://www.linkedin.com/in/carlos-gomez-colmenero/">
+								<Col sm="6" className='text-center mb-10'>
+									<a className='btn full-width' href="https://www.linkedin.com/in/carlos-gomez-colmenero/">
 										<i className='bx bxl-linkedin' ></i>
 									</a>
 								</Col>
-								<Col sm="12" className='text-center'>
-									<a className='btn' href="https://github.com/golmenero">
+								<Col sm="6" className='text-center mb-10'>
+									<a className='btn full-width' href="https://github.com/golmenero">
 										<i className='bx bxl-github'></i>
 									</a>
 								</Col>
 								<Col sm="12">
-									<a className='btn' href="#contact">
-										<i class='bx bxl-gmail'></i>
+									<a className='btn full-width' href="#contact">
+										<i className='bx bxl-gmail'></i>
 									</a>
 								</Col>
 							</Row>

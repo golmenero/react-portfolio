@@ -46,6 +46,9 @@
 		},
 		"location": {
 			"title": "Standort"
+		},
+		"socials": {
+			"title": "Soziale Netzwerke"
 		}
     },
     "skills": {
