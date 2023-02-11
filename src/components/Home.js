@@ -32,7 +32,7 @@ const Home = () => {
 						</div>
 					</Col>
 					<Col sm="12" md="12" lg="5">
-						<img src="logo/logo2.png" id="img_logo" alt="Logo"></img>
+						<img src="logo/logo3.png" id="img_logo" alt="Logo"></img>
 					</Col>
 				</Row>
 			</div>

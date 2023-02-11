@@ -1,33 +1,27 @@
-import React, { useRef } from "react";
-import { useLoader, useFrame } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import React, { useRef, useState } from "react";
+import { useFrame, useThree } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
 
-const GltfModel = ({ modelPath, scale = 10, position = [0, 0, 0]}) => {
+const GltfModel = (props) => {
+	const { nodes, materials } = useGLTF('./logo/logo.glb');
+	const { viewport } = useThree();
+
 	const ref = useRef();
-	const gltf = useLoader(GLTFLoader, modelPath);
+
+	console.log(materials)
   
-	useFrame((state, delta) => {
-		/*
-			let value = Math.round((ref.current.rotation.y + Number.EPSILON) * 100) / 100;
-			if (value % 6.28 === 0) ref.current.rotation.y = 0;
-			if (value >= 4.2 && value <= 5.2) ref.current.rotation.y += 0.001;
-			else ref.current.rotation.y += 0.01;
-		*/
-		
+	useFrame((state, delta) => {		
 		ref.current.rotation.y += 0.002;
 	});
 
 	return (
-		<>
-			<primitive
-				ref={ref}
-				object={gltf.scene}
-				position={position}
-				scale={scale}
-				rotation={[0, 4.2, 0.07]}
-			/>
-		</>
+		<group {...props} dispose={null} ref={ref} scale={(window.screen.availWidth > 992 ? viewport.width / 2.5 : viewport.width / 4.5)}>
+			<mesh geometry={nodes['Cylinder003'].geometry} material={materials['Primary.002']} />
+			<mesh geometry={nodes['Cylinder003_1'].geometry} material={materials['Secondary.002']} />
+		</group>
 	);
 };
 
 export default GltfModel;
+
+useGLTF.preload('./logo/logo.glb');
