@@ -1,6 +1,7 @@
 import { Col, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import CarouselElem from './CarouselElem';
+import Tilt from 'react-parallax-tilt';
 
 const Others = () => {
 	const [t] = useTranslation("global");
@@ -27,7 +28,11 @@ const Others = () => {
 				</Row>
 				<Row>
 					<Col sm="12">
+					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+						<div className="card-panel">
 						<CarouselElem items={items}></CarouselElem>
+						</div>
+						</Tilt>
 					</Col>
 				</Row>
 			</div>
