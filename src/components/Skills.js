@@ -1,6 +1,7 @@
 import { Col, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import Tilt from 'react-parallax-tilt';
+import CustomButton from './CustomButton';
 
 const Skill = ({ icon, title, subtitle, tags = [] }) => {
 
@@ -50,9 +51,7 @@ const Skills = () => {
 									<i className='bx bx-file-blank'></i>
 								</div>
 								<h2>CV</h2>
-								<a className='btn full-width' href={t("about.download-url")} target='_blank' rel="noreferrer">
-									<i className='bx bx-arrow-from-top'></i>
-								</a>
+								<CustomButton type="text" icon='bx bx-arrow-from-top' href={t("about.download-url")} text={t("about.download")}></CustomButton>
 							</div>
 						</Tilt>
 					</Col>

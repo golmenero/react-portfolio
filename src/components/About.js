@@ -2,6 +2,7 @@ import { Col, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import Tilt from 'react-parallax-tilt';
 import { useEffect } from 'react';
+import CustomButton from './CustomButton';
 
 const AboutItem = ({ img, icon, title, subtitle }) => {
 
@@ -126,20 +127,14 @@ const About = () => {
 						<div className="card-panel gradient">
 							<h2>{t("about.socials.title")}</h2>
 							<Row>
-								<Col sm="6" className='text-center mb-10'>
-									<a className='btn full-width' href="https://www.linkedin.com/in/carlos-gomez-colmenero/">
-										<i className='bx bxl-linkedin' ></i>
-									</a>
+								<Col sm="12" className='text-center mb-10'>
+									<CustomButton type="text" icon='bx bxl-linkedin' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="GitHub"></CustomButton>
 								</Col>
-								<Col sm="6" className='text-center mb-10'>
-									<a className='btn full-width' href="https://github.com/golmenero">
-										<i className='bx bxl-github'></i>
-									</a>
+								<Col sm="12" className='text-center mb-10'>
+									<CustomButton type="text" icon='bx bxl-github' href="https://github.com/golmenero" text="GitHub"></CustomButton>
 								</Col>
 								<Col sm="12">
-									<a className='btn full-width' href="#contact">
-										<i className='bx bxl-gmail'></i>
-									</a>
+									<CustomButton type="text" icon='bx bxl-gmail' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="E-Mail"></CustomButton>
 								</Col>
 							</Row>
 						</div>

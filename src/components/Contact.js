@@ -1,9 +1,10 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Button, Col, Input, Row } from 'reactstrap';
+import { Col, Input, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import ReCAPTCHA from 'react-google-recaptcha';
 import Tilt from 'react-parallax-tilt';
+import CustomButton from './CustomButton';
 
 const Contact = () => {
 	const [t] = useTranslation("global");
@@ -39,10 +40,10 @@ const Contact = () => {
 				<Row>
 					<h1>{t("navigation.contact-me")}</h1>
 				</Row>
-				<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-					<div className="card-panel">
-						<Row>
-							<Col sm="12" md="6">
+				<Row>
+					<Col sm="12" md="12" lg="6">
+						<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+							<div className="card-panel gradient">
 								<Row>
 									<Col className='mb-20' sm='12' md="6">
 										<Input type="text" name='name' placeholder={t("contact-me.name")} required />
@@ -57,24 +58,16 @@ const Contact = () => {
 										<Input type="textarea" placeholder={t("contact-me.message")} name='message' required />
 									</Col>
 									<Col className='mb-20' sm="12">
-										<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="dark"></ReCAPTCHA>
+										<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="light"></ReCAPTCHA>
 									</Col>
 									<Col className='mb-20' sm="12">
-										<Button type='submit' className='btn right'>{t("contact-me.send")}</Button>
+										<CustomButton type="submit" icon="bx bx-send" href="" text={ t("contact-me.send") }></CustomButton>
 									</Col>
 								</Row>
-							</Col>
-							<Col sm="12" md="6">
-								<img className='cropped' alt="Profile" src='profile/profile3.jpg' />
-							</Col>
-						</Row>
-						<Row>
-							<Col sm="12" className='text-center mt-10'>
-								<span className='fs-l'>cgomezcolmenero@gmail.com</span>
-							</Col>
-						</Row>
-					</div>
-				</Tilt>
+							</div>
+						</Tilt>
+					</Col>
+				</Row>
 			</form>
 		</section>
 	)

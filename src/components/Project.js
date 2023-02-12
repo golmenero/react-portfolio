@@ -1,25 +1,38 @@
-import { Button, Col, Row } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import Tilt from 'react-parallax-tilt';
+import CustomButton from './CustomButton';
 
 const Project = ({ link, title, subtitle, img }) => {
 	const [t] = useTranslation("global");
 
 	return (
-		<Tilt className='mb-20 h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-			<div className="card-panel">
-				<Row>
-					<Col sm="12" md="6">
-						<h2>{title}</h2>
-						<p> {subtitle}</p>
-						<Button className='btn' href={link}>{t("projects.see-source-code")}</Button>
-					</Col>
-					<Col sm="12" md="6" className='text-center'>
-						<img src={img} alt={title} />
-					</Col>
-				</Row>
-			</div>
-		</Tilt>
+		<Row>
+			<Col sm="12" md="12" lg="4">
+				<Tilt className='mb-20 h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+					<div className="card-panel gradient">
+						<Row>
+							<Col sm="12">
+								<h2>{title}</h2>
+								<p className='text-justify'> {subtitle}</p>
+								<CustomButton type="text" icon="bx bx-code-alt" href={link} text={t("projects.see-source-code")}></CustomButton>
+							</Col>
+						</Row>
+					</div>
+				</Tilt>
+			</Col>
+			<Col sm="12" md="12" lg="8">
+				<Tilt className='mb-20 h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+					<div className="card-panel">
+						<Row>
+							<Col sm="12" className='text-center'>
+								<img src={img} alt={title} />
+							</Col>
+						</Row>
+					</div>
+				</Tilt>
+			</Col>
+		</Row>
 	)
 }
 
