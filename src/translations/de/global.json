@@ -55,7 +55,7 @@
         "header": "Ich habe Erfahrung in folgenden Wissensgebieten.",
         "front": {
             "title": "Frontend-Entwicklung",
-            "subtitle": "HTML und CSS sowie Frameworks wie Bootstrap oder Materialize."
+            "subtitle": "Bemerkenswerte Fähigkeiten im Interface-Design. Validierungskontrolle für Zugänglichkeit und Anpassbarkeit des Webs."
         },
         "back": {
             "title": "Backend-Entwicklung",
@@ -67,7 +67,7 @@
         },
         "database": {
             "title": "Datenbankverwaltung",
-            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL und Oracle. Umfassende Kenntnisse von relationalen und Dokumentendatenbanken."
+            "subtitle": "Umfassende Kenntnisse von relationalen und Dokumentendatenbanken."
         },
         "business": {
             "title": "Wirtschaftswissen",
@@ -75,7 +75,7 @@
         },
         "tester": {
             "title": "Tester",
-            "subtitle": "Fortgeschrittene Kenntnisse im Testen (unter anderem JUnit, Selenium und PHPUnit)"
+            "subtitle": "Fortgeschrittene Testkenntnisse. Unit-Tests, Integrationstests, Lasttests, Leistungstests usw."
         },
 		"social": {
             "title": "Soziale Fähigkeiten",

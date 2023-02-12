@@ -55,7 +55,7 @@
         "header": "J'ai de l'expérience dans les domaines de connaissances suivants.",
         "front": {
             "title": "Développement Front-End",
-            "subtitle": "HTML et CSS, ainsi que des frameworks comme Bootstrap ou Materialise."
+            "subtitle": "Compétences remarquables dans la conception d'interfaces. Contrôle de validation de l'accessibilité et de l'adaptabilité du Web."
         },
         "back": {
             "title": "Développement back-end",
@@ -67,7 +67,7 @@
         },
         "database": {
             "title": "Administration de la base de données",
-            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL et Oracle. Connaissance approfondie des bases de données relationnelles et documentaires."
+            "subtitle": "Connaissance approfondie des bases de données relationnelles et documentaires."
         },
         "business": {
             "title": "Connaissances commerciales",
@@ -75,7 +75,7 @@
         },
         "tester": {
             "title": "Testeur",
-            "subtitle": "Connaissance avancée des tests (JUnit, Selenium et PHPUnit, entre autres)"
+            "subtitle": "Connaissance avancée des tests. Tests unitaires, tests d'intégration, tests de charge, tests de performance, etc."
         },
 		"social": {
             "title": "Aptitudes sociales",

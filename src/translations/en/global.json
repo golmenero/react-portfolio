@@ -55,7 +55,7 @@
         "header": "I have experience in the following fields of knowledge.",
         "front": {
             "title": "Front-End Development",
-            "subtitle": "HTML and CSS, as well as frameworks like Bootstrap or Materialize."
+            "subtitle": "Remarkable skills in interface design. Web accessibility and adaptability validation control."
         },
         "back": {
             "title": "Back-End Development",
@@ -67,7 +67,7 @@
         },
         "database": {
             "title": "Database Management",
-            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL and Oracle. Extensive knowledge in both relational and documentary databases."
+            "subtitle": "Extensive knowledge in both relational and documentary databases."
         },
         "business": {
             "title": "Business Management",
@@ -75,7 +75,7 @@
         }, 
         "tester": {
             "title": "Tester",
-            "subtitle": "Advanced testing knowledge (JUnit, Selenium and PHPUnit, among others)"
+            "subtitle": "Advanced knowledge of testing. Unit tests, integration tests, load tests, performance tests, etc."
         },
 		"social": {
             "title": "Social skills",

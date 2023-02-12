@@ -87,11 +87,6 @@ const About = () => {
 							<AboutItem img="about/education.png" icon="bx bxs-graduation" title={t("about.education.title")} subtitle={t("about.education.subtitle")}></AboutItem>
 							<AboutItem img="about/language.png" icon="bx bx-globe" title={t("about.languages.title")} subtitle={t("about.languages.subtitle")}></AboutItem>
 							<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
-							<Row>
-								<Col sm="12">
-									<a className='btn' href={t("about.download-url")} target='_blank' rel="noreferrer" download>{t("about.download")} CV</a>
-								</Col>
-							</Row>
 						</Col>
 						<Col sm="12" md="12" lg="5">
 							<Row className='mb-20'>
@@ -128,7 +123,7 @@ const About = () => {
 				</Col>
 				<Col className='mb-20' sm="12" md="6" lg="3">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-						<div className="card-panel">
+						<div className="card-panel gradient">
 							<h2>{t("about.socials.title")}</h2>
 							<Row>
 								<Col sm="6" className='text-center mb-10'>

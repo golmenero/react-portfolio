@@ -55,7 +55,7 @@
         "header": "Tinc experiència en els camps de coneixement següents.",
         "front": {
             "title": "Desenvolupament Front-End",
-            "subtitle": "HTML i CSS, així com frameworks com Bootstrap o Materialize."
+            "subtitle": "Habilitats notables en el disseny d'interfícies. Control de validació daccessibilitat i adaptabilitat web."
         },
         "back": {
             "title": "Desenvolupament back-end",
@@ -67,7 +67,7 @@
         },
         "database": {
             "title": "Administració de base de dades",
-            "subtitle": "SQL, MySQL, PL-SQL, MongoDB, MariaDB, NoSQL i Oracle. Amplis coneixements en bases de dades tant relacionals com documentals."
+            "subtitle": "Amplis coneixements en bases de dades tant relacionals com documentals."
         },
         "business": {
             "title": "Coneixement de Negoci",
@@ -75,7 +75,7 @@
         },
         "tester": {
             "title": "Probador",
-            "subtitle": "Coneixement avançat de testing (JUnit, Selenium i PHPUnit, entre d'altres)"
+            "subtitle": "Coneixement avançat de testing. Proves unitàries, dintegració, de càrrega, de rendiment etc."
         },
 		"social": {
             "title": "Habilitats socials",

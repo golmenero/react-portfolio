@@ -53,6 +53,13 @@
 	}
 }
 
+.fs-xs {
+    font-size: 14px !important;
+	@media (max-width: 992px) {
+		font-size: 16px !important;
+	}
+}
+
 html {
     font: 300 11px/1.4 'SFPro', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -125,10 +132,6 @@ html {
 			}
 
 			&:hover {
-				transition: all 0.2s linear 0s;
-				border-color: var(--global-accent-color);
-				background: none;
-
 				i {
 					transform: scale(1.15);
 					text-shadow: 4px 0px 3px rgba($basic-accent-color, 0.3);
@@ -178,6 +181,20 @@ html {
 				color: #0c0c0d !important;
 			}
 
+		}
+	}
+
+	.tags {
+		margin-top: 25px;
+
+		.tag {
+			@extend .fs-s;
+			display: inline-block;
+			background: var(--global-secondary-color);
+			padding: 10px;
+			border-radius: 8px;
+			margin-right: 5px;
+			margin-bottom: 5px;
 		}
 	}
 
