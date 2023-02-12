@@ -6,13 +6,6 @@ const Footer = () => {
 
 	return (
 		<div id='footer'>
-			<Row>
-				<Col sm="12" className='m-0'>
-					<div className='text-center'>
-						<h2>{t("footer.header")}</h2>
-					</div>
-				</Col>
-			</Row>
 		</div>
 	);
 };
