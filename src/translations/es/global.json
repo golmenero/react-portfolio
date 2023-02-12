@@ -111,7 +111,9 @@
         "send": "Enviar",
         "feedback-error": "Ocurrió un error al enviar su correo. Inténtelo más tarde",
         "feedback-success": "Mensaje enviado con éxito",
-        "captcha": "Por favor, acepte el captcha"
+        "captcha": "Por favor, acepte el captcha",
+		"value-1": "Construyamos cosas increíbles,",
+		"value-2": "juntos"
     },
     "others": {
         "header": "Soy un estudiante autodidacta y aficionado al modelado 3d. Para ello utilizo la herramienta de creación Blender. Estas son algunas de mis creaciones recientes."

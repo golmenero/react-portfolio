@@ -70,6 +70,14 @@ const Contact = () => {
 							</div>
 						</Tilt>
 					</Col>
+					<Col sm="12" md="12" lg="6" className='text-center'>
+						<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+							<div className="content-centered">
+								<h2>{t("contact-me.value-1")}</h2>
+								<h1>{t("contact-me.value-2")}<i className='bx bxs-happy-beaming' ></i></h1>
+							</div>
+						</Tilt>
+					</Col>
 				</Row>
 			</form>
 		</section>

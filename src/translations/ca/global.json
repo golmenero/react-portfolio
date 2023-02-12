@@ -111,7 +111,9 @@
         "send": "Enviar",
         "feedback-error": "S'ha produït un error en enviar el vostre correu. Intenteu-ho més tard",
         "feedback-success": "Missatge enviat amb èxit",
-        "captcha": "Si us plau, accepteu el captcha"
+        "captcha": "Si us plau, accepteu el captcha",
+		"value-1": "Construïm coses sorprenents,",
+		"value-2": "junts"
     },
     "others": {
         "header": "Sóc estudiant autodidacta i aficionat al modelatge 3D. Per a això, faig servir l'eina de creació Blender. Aquí teniu algunes de les meves creacions recents."

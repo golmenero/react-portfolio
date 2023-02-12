@@ -227,5 +227,36 @@ html {
 	.right {
 		float: right;
 	}
+
+	.content-centered {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (max-width: 992px) {
+			padding-top: 100px;
+        }
+
+		h1, 
+		h2 {
+			margin: 0 !important;
+		}
+
+		h2 {
+			@extend .fs-xl;
+			@extend .text-color;
+		}
+
+		h1 {
+			@extend .fs-xxl;
+			@extend .accent-color;
+		}
+
+		i {
+			font-size: 50px;
+			margin-left: 15px;
+		}
+	}
 }
 

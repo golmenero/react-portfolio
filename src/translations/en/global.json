@@ -111,7 +111,9 @@
         "send": "Send",
         "feedback-error": "Failed to send the message, please try again",
         "feedback-success": "Message successfully sent!",
-        "captcha": "Please, accept captcha"
+        "captcha": "Please, accept captcha",
+		"value-1": "Let's build amazing things,",
+		"value-2": "together"
     },
     "others": {
         "header": "I am a self-taught student and afficionate of 3d modelling. For that purpose, I use the creation tool Blender. Here are some of my recent creations."

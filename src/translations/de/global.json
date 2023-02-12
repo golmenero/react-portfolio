@@ -111,7 +111,9 @@
         "send": "Senden",
         "feedback-error": "Beim Senden Ihrer E-Mail ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut",
         "feedback-success": "Nachricht erfolgreich gesendet",
-        "captcha": "Bitte akzeptieren Sie das Captcha"
+        "captcha": "Bitte akzeptieren Sie das Captcha",
+		"value-1": "Lass uns erstaunliche Dinge bauen,",
+		"value-2": "zusammen"
     },
     "others": {
         "header": "Ich bin Autodidakt und leidenschaftlicher 3D-Modellierer. Dazu verwende ich das Erstellungstool Blender. Hier sind einige meiner letzten Kreationen."
