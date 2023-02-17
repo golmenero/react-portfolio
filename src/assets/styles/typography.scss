@@ -110,32 +110,33 @@ html {
 			width: 100%;
 			display: inline-flex;
 			align-items: center;
-			border: none;
-			border-radius: 6px !important;
+			border: 2px solid #262429;
 			padding: 0;
-			background-color: var(--global-secondary-color);
+			background-color: transparent;
 
 			.btn-icon {
 				height: 100%;
 				width: 50px;
-				background-color: var(--global-primary-color);
+				background-color: #262429;
 				padding: 10px 10px 5px 10px;
 				margin-right: 20px;
 				transition: width 0s;
-				border-radius: 6px !important;
 
-				i {
-					color: var(--global-accent-color) !important;
+				i, 
+				ion-icon {
+					color: #FFFFFF !important;
+					font-size: 20px;
 				}
 			}
 
 			.btn-text {
-				color: var(--global-text-color) !important;
+				color: #262429 !important;
 				font-weight: bold;
 			}
 
 			&:hover {
-				background-color: var(--global-primary-color);
+				background-color: #262429;
+				border: 2px solid #262429;
 
 				.btn-icon {
 					transition: width 1s ease-out;
@@ -202,7 +203,6 @@ html {
 			display: inline-block;
 			background: var(--global-secondary-color);
 			padding: 10px;
-			border-radius: 8px;
 			margin-right: 5px;
 			margin-bottom: 5px;
 		}

@@ -128,13 +128,13 @@ const About = () => {
 							<h2>{t("about.socials.title")}</h2>
 							<Row>
 								<Col sm="12" className='text-center mb-10'>
-									<CustomButton type="text" icon='bx bxl-linkedin' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="GitHub"></CustomButton>
+									<CustomButton type="text" icon='bx bxl-linkedin' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="LinkedIn"></CustomButton>
 								</Col>
 								<Col sm="12" className='text-center mb-10'>
 									<CustomButton type="text" icon='bx bxl-github' href="https://github.com/golmenero" text="GitHub"></CustomButton>
 								</Col>
 								<Col sm="12">
-									<CustomButton type="text" icon='bx bxl-gmail' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="E-Mail"></CustomButton>
+									<CustomButton type="text" icon='bx bxl-gmail' href="#contact" text="E-Mail"></CustomButton>
 								</Col>
 							</Row>
 						</div>
