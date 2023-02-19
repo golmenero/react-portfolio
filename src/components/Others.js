@@ -7,6 +7,7 @@ const Others = () => {
 	const [t] = useTranslation("global");
 
 	const items = [
+		{src: 'renders/render_10.png', caption: 'Render 10'},
 		{src: 'renders/render_1.png', caption: 'Render 1'},
 		{src: 'renders/render_2.png', caption: 'Render 2'},
 		{src: 'renders/render_4.png', caption: 'Render 4'},
