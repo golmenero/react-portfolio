@@ -1,20 +1,19 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import GltfModel from "./GltfModel";
+import { OrbitControls } from "@react-three/drei";
 
-const ModelViewer = ({ modelPath, scale = 20, position = [0, 1, 0] }) => {
-	return (
-		<Canvas className="canvas" camera={{
-			fov: 10,
-			position: [0, 0, -250]
-		}}>
-			<ambientLight intensity={1}/>
-			<spotLight position={[10, 10, -10]} angle={2} intensity={1} />
-			<spotLight position={[10, 10, 10]} angle={3} intensity={1} />
-			<GltfModel modelPath={modelPath} scale={scale} position={position} />
+const ModelViewer = ({ modelPath, scale = 8, position = [0, 0, -10] }) => {
+    return (
+        <Canvas className="canvas">
+            <ambientLight />
+            <spotLight position={[20, 0, -10]} angle={0.5} intensity={2} />
+            <spotLight position={[-20, 0, -10]} angle={0.5} intensity={2} />
+            <Suspense fallback={null}>
+                <GltfModel modelPath={modelPath} scale={scale} position={position} />
+            </Suspense>
 		</Canvas>
-
 	);
-};
+}
 
 export default ModelViewer;
