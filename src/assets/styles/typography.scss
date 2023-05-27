@@ -167,6 +167,7 @@ html {
 	input, 
 	textarea {
 		@extend .fs-s;
+		border-radius: 0 !important;
 	}
 
 	textarea {

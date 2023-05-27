@@ -61,7 +61,7 @@ const Contact = () => {
 										<Input type="textarea" placeholder={t("contact-me.message")} name='message' required />
 									</Col>
 									<Col className='mb-20' sm="12">
-										<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="light"></ReCAPTCHA>
+										<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="dark"></ReCAPTCHA>
 									</Col>
 									<Col className='mb-20' sm="12">
 										<CustomButton type="submit" icon="bx bx-send" href="" text={ t("contact-me.send") }></CustomButton>
