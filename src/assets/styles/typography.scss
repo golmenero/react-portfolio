@@ -104,6 +104,8 @@ html {
 
 		&:hover {
 			@extend .accent-color;
+			background-color: transparent !important;
+			border-color: #262429 !important;
 		}
 
 		&.btn {
@@ -113,41 +115,35 @@ html {
 			border: 1px solid #262429;
 			padding: 0;
 			background-color: transparent;
+			height: 50px;
 
-			.btn-icon {
+			.btn-content {
+				padding: 10px;
+				width: 100%;
 				height: 100%;
-				width: 50px;
-				background-color: #262429;
-				padding: 10px 10px 5px 10px;
-				margin-right: 20px;
-				transition: width 0s;
 
-				i, 
+				i,
 				ion-icon {
-					color: #FFFFFF !important;
 					font-size: 20px;
 				}
-			}
 
-			.btn-text {
-				color: #262429 !important;
-				font-weight: bold;
-			}
-
-			&:hover {
-				background-color: #262429;
-				border: 1px solid #262429;
-
-				.btn-icon {
-					transition: width 1s ease-out;
-					width: 100%;
-					margin-right: 0;
-					text-align: center;
+				span {
+					font-family: 'SFProBlack';
+					display: none;
 				}
 
-				.btn-text {
-					display: none;
-				}	
+				&:hover {
+					background-color: transparent;
+					i,
+					ion-icon {
+						display: none;
+						font-size: 20px;
+					}
+
+					span {
+						display: block;
+					}
+				}
 			}
 		}
 	}

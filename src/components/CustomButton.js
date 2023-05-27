@@ -4,12 +4,10 @@ const CustomButton = ({ href, icon, text, type }) => {
 	return (
 		<>
 			<Button type={ type } className='btn full-width' href={ href }>
-				<span className="btn-icon">
+				<div className='btn-content'>
 					<i className={ icon }></i>
-				</span>
-				<span className="btn-text">
-					{ text }
-				</span>
+					<span>{ text }</span>
+				</div>
 			</Button>
 		
 		</>
