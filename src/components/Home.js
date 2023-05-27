@@ -7,6 +7,7 @@ const Home = () => {
 
 	return (
 		<section id="home" data-nav="home" className='hidden'>
+			<ModelViewer modelPath="./logo/logo.glb" />
 			<div id='content-home'>
 				<Row>
 					<Col sm="12" md="12" lg="7">
@@ -16,11 +17,7 @@ const Home = () => {
 						</h1>
 						<div>
 							<p>{t("home.description")}</p>
-							<p className="quote">"{t("home.quote")}"</p>
 						</div>
-					</Col>
-					<Col sm="12" md="12" lg="5">
-						<ModelViewer modelPath="./logo/logo.glb" />
 					</Col>
 				</Row>
 			</div>
