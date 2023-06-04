@@ -79,12 +79,10 @@ const Navigation = () => {
 	return (
 		<div id="navigation" className='nav-bar'>
 			<Navbar expand="md">
-				<NavbarBrand className='w-50 accent-color' href="#home">
-					Carlos Gómez
-				</NavbarBrand>
+				<NavbarBrand className='accent-color' href="#home">Carlos Gómez</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
-				<Collapse className='w-100' isOpen={isOpen} navbar>
-					<Nav className='liner w-100 justify-content-center' navbar>
+				<Collapse isOpen={isOpen} navbar>
+					<Nav navbar>
 						<NavItem>
 							<NavLink href="#home">{t("navigation.home")}</NavLink>
 						</NavItem>
@@ -103,8 +101,6 @@ const Navigation = () => {
 						<NavItem>
 							<NavLink href="#contact">{t("navigation.contact-me")}</NavLink>
 						</NavItem>
-					</Nav>
-					<Nav className='w-100 justify-content-end'>
 						<NavItem>
 							<NavLink onClick={switchTheme}>
 								<i id="theme-icon" className='bx bx-sun'></i>

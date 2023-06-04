@@ -6,6 +6,10 @@
         width: 100%;
 		background-color: var(--global-primary-color);
 
+		.navbar-nav {
+			margin-left: auto;
+		}
+
         .navbar-toggler {
             border: none;
             box-shadow: none;
@@ -67,6 +71,10 @@
         .navbar-brand {
 			font: 20px 'SFProBlack';
             color: var(--global-accent-color);
+        }
+
+		.nav-link {
+			font: 20px 'SFProBlack';
         }
 
         .nav-link.active {
