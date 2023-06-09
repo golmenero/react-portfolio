@@ -1,16 +1,49 @@
-import { useTranslation } from "react-i18next";
-
 const Wave = () => {
-	const [t] = useTranslation("global");
-
 	return (
-		<div id="wave">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-				<path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
+		<div id="waveContainer">
+			<svg viewBox="0 650 1600 200" preserveAspectRatio="none">
+				<defs>
+					<path id="wave" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+				</defs>
+				<g>
+				<use xlinkHref='#wave' opacity=".3">
+					<animateTransform
+					attributeName="transform"
+					attributeType="XML"
+					type="translate"
+					dur="10s"
+					calcMode="spline"
+					values="270 230; -334 180; 270 230"
+					keyTimes="0; .5; 1"
+					keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+					repeatCount="indefinite" />
+				</use>
+				<use xlinkHref='#wave' opacity=".6">
+					<animateTransform
+					attributeName="transform"
+					attributeType="XML"
+					type="translate"
+					dur="8s"
+					calcMode="spline"
+					values="-270 230;243 220;-270 230"
+					keyTimes="0; .6; 1"
+					keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+					repeatCount="indefinite" />
+				</use>
+				<use xlinkHref='#wave' opacty=".9">
+					<animateTransform
+					attributeName="transform"
+					attributeType="XML"
+					type="translate"
+					dur="6s"
+					calcMode="spline"
+					values="0 230;-140 200;0 230"
+					keyTimes="0; .4; 1"
+					keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+					repeatCount="indefinite" />
+				</use>
+				</g>
 			</svg>
-			<div id="more" className='text-center'>
-				<a href="#about"> {t("home.more")} <i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
-			</div>
 		</div>
 	)
 }
