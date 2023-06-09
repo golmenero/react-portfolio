@@ -8,7 +8,11 @@
         top:0;
         z-index: 100;
         width: 100%;
-		background-color: var(--global-primary-color);
+		background-color: transparent;
+
+		@media screen and (max-width:992px) {
+			background-color: var(--global-primary-color);
+		}
 
 		.navbar-nav {
 			margin-left: auto;
