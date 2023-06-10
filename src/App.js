@@ -53,6 +53,9 @@ function App() {
 		navigation_elements.forEach((item) => {
 			observer_nav.observe(item);
 		})
+
+		let colors = ["#cccccc", "#83b799", "#c2b28f", "#e4d8b4", '#a3d6d4'];
+		document.body.style.setProperty('--accent', colors[Math.floor(Math.random() * colors.length)]);
 	});
 
 	return (

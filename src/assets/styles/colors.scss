@@ -2,12 +2,13 @@ html {
 	body.dark {
 		--black_0: #0c0c0d;
 		--black_1: #19181b;
-		--white_0: #bfbfbf;
+		--white_0: #e6e6e6;
 		--white_1: #cccccc;
 		--blue_0: #0077b3;
 		--blue_1: #b3e6ff;
-		--gradient: linear-gradient(180deg, #0c0c0d 60%, #bfbfbf 80%);
-		
+
+		--accent: #e4d8b4;
+
 		background-color: var(--black_0);
 		color: var(--white_1);
 	}
@@ -15,7 +16,7 @@ html {
 	#mainBody {
 		z-index: 1;
 		position: relative;
-		background: var(--white_0) !important;
+		background: var(--accent) !important;
 		color: var(--black_1);
 	}
 }

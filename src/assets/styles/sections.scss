@@ -21,7 +21,7 @@
             .navbar-toggler-icon {
                 border: none;
                 background-image: none;
-                color: var(--blue_1);
+                color: var(--accent);
                 font: var(--fa-font-solid);
             }
         }
@@ -32,7 +32,7 @@
             right: 0;
             .dropdown-item {
                 padding: 10px;
-                background: var(--black_0);
+                background: var(--black_1);
                 color: var(--white_1);
                 span {
                     margin-right: 10px;
@@ -42,11 +42,11 @@
     
         a {
             position: relative;
-			color: var(--white_0);
+			color: var(--white_1);
         }
             
         a:hover {
-            color: var(--blue_1);
+            color: var(--accent);
         }
         
         .nav-item {
@@ -56,7 +56,7 @@
 
         .navbar-brand {
 			font: 20px 'SFProBlack';
-            color: var(--blue_1);
+            color: var(--white_0);
         }
 
 		.nav-link {
@@ -64,7 +64,7 @@
         }
 
         .nav-link.active {
-            color: var(--blue_1) !important;
+            color: var(--accent) !important;
         }
     }
 }
@@ -83,7 +83,7 @@
 		position: absolute !important;
 		left: 0;
 		top: 0;
-		opacity: 0.3;
+		opacity: 0.7;
 		z-index: -1;
 		width: 100vw !important;
 		pointer-events: none;
@@ -132,11 +132,11 @@
 			margin-right: 5px;
 		}
 		.black-year {
-			border: 1px solid var(--white_0);
+			border: 1px solid var(--white_1);
 		}
 
 		.white-year {
-			background-color: var(--white_0);
+			background-color: var(--white_1);
 		}
 	}
 }
@@ -149,7 +149,8 @@
 }
 
 #footer {
-    margin: 100px 25px 50px 25px;
+    margin: 50px 25px 50px 50px;
+	font-weight: 600;
 }
 
 #others {
@@ -182,7 +183,7 @@
 
 #more {
 	a {
-		color: var(--black_0);
+		color: var(--black_1);
 	}
 }
 
