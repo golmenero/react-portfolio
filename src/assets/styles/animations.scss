@@ -18,7 +18,7 @@
 
 .ball {
     z-index: 999;
-    border: 2px solid var(--global-text-color);
+    border: 2px solid var(--black_0);
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -32,9 +32,8 @@
 
 #waveContainer {
 	path#wave {
-		fill: var(--global-secondary-color);
+		fill: var(--white_0);
 	}
-	
 }
 
 #more {
@@ -44,4 +43,8 @@
     left: 50vw;
     transform: translateX(-50%);
     z-index: 2;
+
+	a {
+		text-decoration: none;
+	}
 }

@@ -65,89 +65,32 @@ html {
 
 	h1 {
 		@extend .fs-xl;
-		@extend .text-color;
+		color: var(--black_1);
 		font-family: 'SFProBlack';
 		margin: 100px 0 50px 0 !important;
 
 		&.main {
 			@extend .fs-xxl;
+			color: var(--white_1);
 		}
 	}
 
 	h2 {
 		@extend .fs-l;
-		@extend .accent-color;
+		color: var(--blue_1);
 		font-family: 'SFProMedium';
 		margin-bottom: 20px !important;
 	}
 
 	p {
 		@extend .fs-s;
-		@extend .text-color;
 		font-family: 'SFPro';
 		letter-spacing: 1px;
 		margin-bottom: -0 0 25px 0 !important;
 		text-align: justify;
-
-		&.quote {
-			@extend .fs-l;
-			font-family: "La Belle Aurore";
-		}
 	}
 
-	a,
-	button {
-		@extend .fs-m;
-		@extend .text-color;
-		text-decoration: none;
-		border-radius: 0 !important;
-
-		&:hover {
-			@extend .accent-color;
-			background-color: transparent !important;
-			border-color: #262429 !important;
-		}
-
-		&.btn {
-			width: 100%;
-			display: inline-flex;
-			align-items: center;
-			border: 1px solid #262429;
-			padding: 0;
-			background-color: transparent;
-			height: 50px;
-
-			.btn-content {
-				padding: 10px;
-				width: 100%;
-				height: 100%;
-
-				i,
-				ion-icon {
-					font-size: 20px;
-				}
-
-				span {
-					font-family: 'SFProBlack';
-					display: none;
-				}
-
-				&:hover {
-					background-color: transparent;
-					i,
-					ion-icon {
-						display: none;
-						font-size: 20px;
-					}
-
-					span {
-						display: block;
-					}
-				}
-			}
-		}
-	}
-
+	
 	img {
 		width: 100%;
 	
@@ -161,47 +104,6 @@ html {
 			z-index: 5;
 			-webkit-clip-path: polygon(0% 0%, calc(100% - 50px) 0%, 100% calc(0% + 50px), 100% 100%, calc(0% + 50px) 100%, 0% calc(100% - 50px));
 			clip-path: polygon(0% 0%, calc(100% - 50px) 0%, 100% calc(0% + 50px), 100% 100%, calc(0% + 50px) 100%, 0% calc(100% - 50px));
-		}
-	}
-
-	input, 
-	textarea {
-		@extend .fs-s;
-		border-radius: 0 !important;
-	}
-
-	textarea {
-		min-height: 150px !important;
-		resize: none;
-	}
-
-	.card-panel {
-		@extend .third-color;
-		padding: 40px;
-		height: 100%;
-		box-shadow: var(--global-third-color) 0px 5px 15px;
-
-		&.gradient {
-			color: #0c0c0d;
-			background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
-			* {
-				color: #0c0c0d !important;
-			}
-
-		}
-	}
-
-	.tags {
-		margin-top: 25px;
-
-		.tag {
-			@extend .fs-s;
-			display: inline-block;
-			background: var(--global-secondary-color);
-			padding: 10px;
-			margin-right: 5px;
-			margin-bottom: 5px;
 		}
 	}
 
@@ -223,37 +125,6 @@ html {
 	
 	.right {
 		float: right;
-	}
-
-	.content-centered {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
-		@media (max-width: 992px) {
-			padding-top: 100px;
-        }
-
-		h1, 
-		h2 {
-			margin: 0 !important;
-		}
-
-		h2 {
-			@extend .fs-xl;
-			@extend .text-color;
-		}
-
-		h1 {
-			@extend .fs-xxl;
-			@extend .accent-color;
-		}
-
-		i {
-			font-size: 50px;
-			margin-left: 15px;
-		}
 	}
 }
 

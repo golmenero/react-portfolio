@@ -1,49 +1,21 @@
-body.light {
-    --global-primary-color: #F5F2F7;
-    --global-primary-color-gradient: linear-gradient(180deg, #F5F2F7 60%, #FFFFFF 80%);
-    --global-secondary-color: #FFFFFF;
-    --global-third-color: #f2f2f2;
-    --global-accent-color:#0077b3;
-    --global-text-color: #0d0d0d;
-    --global-about-image: url('../../../public/profile/line_light.png');
-    background: var(--global-primary-color-gradient);
-    color: var(--global-text-color);
-}
+html {
+	body.dark {
+		--black_0: #0c0c0d;
+		--black_1: #19181b;
+		--white_0: #bfbfbf;
+		--white_1: #cccccc;
+		--blue_0: #0077b3;
+		--blue_1: #b3e6ff;
+		--gradient: linear-gradient(180deg, #0c0c0d 60%, #bfbfbf 80%);
+		
+		background-color: var(--black_0);
+		color: var(--white_1);
+	}
 
-body.dark {
-    --global-primary-color: #0c0c0d;
-    --global-primary-color-gradient: linear-gradient(180deg, #0c0c0d 60%, #262429 80%);
-    --global-secondary-color: #262429;
-    --global-third-color: #19181b;
-    --global-accent-color: #b3e6ff;
-    --global-text-color: #cccccc;
-    --global-about-image: url('../../../public/profile/line_dark.png');
-    background: var(--global-primary-color-gradient);
-    color: var(--global-text-color);
-}
-
-.primary-color {
-    background: var(--global-primary-color) !important;
-}
-
-.secondary-color {
-	z-index: 1;
-	position: relative;
-    background: var(--global-secondary-color) !important;
-}
-
-.third-color {
-    background-color: var(--global-third-color) !important;
-}
-
-.gradient-color {
-    background: var(--global-primary-color-gradient) !important;
-}
-
-.accent-color {
-    color: var(--global-accent-color) !important;
-}
-
-.text-color {
-    color: var(--global-text-color) !important;
+	#mainBody {
+		z-index: 1;
+		position: relative;
+		background: var(--white_0) !important;
+		color: var(--black_1);
+	}
 }

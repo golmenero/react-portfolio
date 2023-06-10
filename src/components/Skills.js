@@ -8,7 +8,7 @@ const Skill = ({ icon, title, subtitle, tags = [] }) => {
 	return (
 		<Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
 			<div className='card-panel'>
-				<div className='mb-20'>
+				<div className='mb-10'>
 					<i className={icon}></i>
 				</div>
 				<h2>{title}</h2>
@@ -33,21 +33,21 @@ const Skills = () => {
 			</Row>
 			<div>
 				<Row>
-					<Col className='mb-20' sm="12" md="12" lg='4'>
+					<Col className='mb-10' sm="12" md="12" lg='4'>
 						<Skill icon="bx bx-palette" title={t("skills.front.title")} subtitle={t("skills.front.subtitle")} tags={["HTML", "CSS", "SASS / SCSS", "Bootstrap", "Materialize", "JavaScript"]}></Skill>
 					</Col>
-					<Col className='mb-20' sm="12" md="12" lg="8">
+					<Col className='mb-10' sm="12" md="12" lg="8">
 						<Skill icon="bx bx-cog" title={t("skills.back.title")} subtitle={t("skills.business.subtitle")} tags={["Java", "PHP", "C#", "C++", "Python", "TypeScript", "Angular", "NodeJS", "Phalcon", "Symfony", "SpringBoot", "React"]}></Skill>
 					</Col>
 				</Row>
 				<Row>
-					<Col className='mb-20' sm="12" md="12" lg="4">
+					<Col className='mb-10' sm="12" md="12" lg="4">
 						<Skill icon="bx bx-cloud" title={t("skills.api.title")} subtitle={t("skills.api.subtitle")}></Skill>
 					</Col>
-					<Col className='mb-20' sm="12" md="12" lg="4">
+					<Col className='mb-10' sm="12" md="12" lg="4">
 						<Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
 							<div className="card-panel gradient">
-								<div className='mb-20'>
+								<div className='mb-10'>
 									<i className='bx bx-file-blank'></i>
 								</div>
 								<h2>CV</h2>
@@ -55,15 +55,15 @@ const Skills = () => {
 							</div>
 						</Tilt>
 					</Col>
-					<Col className='mb-20' sm="12" md="12" lg="4">
+					<Col className='mb-10' sm="12" md="12" lg="4">
 						<Skill icon="bx bx-wink-smile" title={t("skills.social.title")} subtitle={t("skills.social.subtitle")}></Skill>
 					</Col>
 				</Row>
 				<Row>
-					<Col className='mb-20' sm="12" md="12" lg="8">
+					<Col className='mb-10' sm="12" md="12" lg="8">
 						<Skill icon="bx bx-data" title={t("skills.database.title")} subtitle={t("skills.database.subtitle")} tags={["SQL", "MySQL", "PL-SQL", "MongoDB", "MariaDB", "NoSQL", "Oracle"]}></Skill>
 					</Col>
-					<Col className='mb-20' sm="12" md="12" lg="4">
+					<Col className='mb-10' sm="12" md="12" lg="4">
 						<Skill icon="bx bx-check" title={t("skills.tester.title")} subtitle={t("skills.tester.subtitle")} tags={["JUnit", "Selenium", "PHPUnit"]}></Skill>
 					</Col>
 				</Row>

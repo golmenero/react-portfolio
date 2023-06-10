@@ -62,16 +62,14 @@ function App() {
 			</header>
 			<main>
 				<div className="ball"></div>
-				<div className='primary-color'>
-					<Container>
-						<Home />
-					</Container>
-				</div>
+				<Container>
+					<Home />
+				</Container>
 				<Wave />
 				<span id="more" className='text-center'>
 					<a href="#about"> {t("home.more")} <i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
 				</span>
-				<div className='secondary-color'>
+				<div id="mainBody">
 					<Container>
 						<About />
 						<Skills />

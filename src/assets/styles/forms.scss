@@ -1,0 +1,62 @@
+a,
+button {
+	@extend .fs-m;
+	text-decoration: none;
+	border-radius: 0 !important;
+
+	&:hover {
+		color: var(--blue_0);
+		background-color: transparent !important;
+		border-color: #262429 !important;
+	}
+
+	&.btn {
+		width: 100%;
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid #262429;
+		padding: 0;
+		background-color: transparent;
+		height: 50px;
+
+		.btn-content {
+			padding: 10px;
+			width: 100%;
+			height: 100%;
+
+			i,
+			ion-icon {
+				font-size: 20px;
+			}
+
+			span {
+				font-family: 'SFProBlack';
+				display: none;
+			}
+
+			&:hover {
+				background-color: transparent;
+				i,
+				ion-icon {
+					display: none;
+					font-size: 20px;
+				}
+
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+input, 
+textarea {
+	@extend .fs-s;
+	border-radius: 0 !important;
+}
+
+textarea {
+	min-height: 150px !important;
+	resize: none;
+}

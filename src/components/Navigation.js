@@ -9,26 +9,6 @@ const Navigation = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggle = () => setIsOpen(!isOpen);
 
-	const switchTheme = () => {
-		let theme = '';
-		if (document.body.classList.contains('light')) theme = 'light';
-		else if (document.body.classList.contains('dark')) theme = 'dark';
-
-		theme = theme === 'dark' ? 'light' : 'dark';
-
-		document.body.classList.remove('dark');
-		document.body.classList.remove('light');
-		document.body.classList.add(theme);
-		localStorage.setItem('theme', theme);
-
-		let themeIcon = document.querySelector("#theme-icon");
-		if (themeIcon) {
-			themeIcon.classList.remove('bx-sun');
-			themeIcon.classList.remove('bx-moon');
-			themeIcon.classList.add(theme === 'dark' ? "bx-sun" : "bx-moon");
-		}
-	}
-
 	const switchLang = (lang) => {
 		let current = localStorage.getItem('lang');
 
@@ -49,23 +29,7 @@ const Navigation = () => {
 		}
 		if (lang !== i18n.language) i18n.changeLanguage(lang);
 
-		/**
-		 * Set Theme
-		 */
-		let theme = localStorage.getItem('theme');
-		if (!theme) theme = 'dark';
-		localStorage.setItem('theme', theme);
-
-		document.body.classList.remove('dark');
-		document.body.classList.remove('light');
-		document.body.classList.add(theme);
-
-		let themeIcon = document.querySelector("#theme-icon");
-		if (themeIcon) {
-			themeIcon.classList.remove('bx-sun');
-			themeIcon.classList.remove('bx-moon');
-			themeIcon.classList.add(theme === 'dark' ? "bx-sun" : "bx-moon");
-		}
+		document.body.classList.add('dark');
 
 		let togglerIcon = document.querySelector(".navbar-toggler-icon");
 		if (togglerIcon) {
@@ -79,7 +43,7 @@ const Navigation = () => {
 	return (
 		<div id="navigation" className='nav-bar'>
 			<Navbar expand="md">
-				<NavbarBrand className='accent-color' href="#home">Carlos Gómez</NavbarBrand>
+				<NavbarBrand href="#home">Carlos Gómez</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav navbar>
@@ -100,11 +64,6 @@ const Navigation = () => {
 						</NavItem>
 						<NavItem>
 							<NavLink href="#contact">{t("navigation.contact-me")}</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink onClick={switchTheme}>
-								<i id="theme-icon" className='bx bx-sun'></i>
-							</NavLink>
 						</NavItem>
 						<UncontrolledDropdown nav inNavbar>
 							<DropdownToggle nav>

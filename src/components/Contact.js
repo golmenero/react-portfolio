@@ -48,33 +48,25 @@ const Contact = () => {
 						<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 							<div className="card-panel gradient">
 								<Row>
-									<Col className='mb-20' sm='12' md="6">
+									<Col className='mb-10' sm='12' md="6">
 										<Input type="text" name='name' placeholder={t("contact-me.name")} required />
 									</Col>
-									<Col className='mb-20' sm='12' md="6">
+									<Col className='mb-10' sm='12' md="6">
 										<Input type="email" name='email' placeholder={t("contact-me.email")} required />
 									</Col>
-									<Col className='mb-20' sm="12">
+									<Col className='mb-10' sm="12">
 										<Input placeholder={t("contact-me.subject")} type="text" name="subject" required />
 									</Col>
-									<Col className='mb-20' sm="12">
+									<Col className='mb-10' sm="12">
 										<Input type="textarea" placeholder={t("contact-me.message")} name='message' required />
 									</Col>
-									<Col className='mb-20' sm="12">
+									<Col className='mb-10' sm="12">
 										<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="dark"></ReCAPTCHA>
 									</Col>
-									<Col className='mb-20' sm="12">
+									<Col className='mb-10' sm="12">
 										<CustomButton type="submit" icon="bx bx-send" href="" text={ t("contact-me.send") }></CustomButton>
 									</Col>
 								</Row>
-							</div>
-						</Tilt>
-					</Col>
-					<Col sm="12" md="12" lg="6" className='text-center'>
-						<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-							<div className="content-centered">
-								<h2>{t("contact-me.value-1")}</h2>
-								<h1>{t("contact-me.value-2")}<i className='bx bxs-happy-beaming' ></i></h1>
 							</div>
 						</Tilt>
 					</Col>

@@ -7,7 +7,7 @@ import CustomButton from './CustomButton';
 const AboutItem = ({ img, icon, title, subtitle }) => {
 
 	return (
-		<Row className="mb-20">
+		<Row className="mb-10">
 			<Col sm="12">
 				<h2>{title}</h2>
 			</Col>
@@ -81,7 +81,7 @@ const About = () => {
 			<Row>
 				<h1>{t("navigation.about")}</h1>
 			</Row>
-			<Tilt className='h-100 mb-20' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+			<Tilt className='h-100 mb-10' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 				<div className="card-panel">
 					<Row>
 						<Col sm="12" md="12" lg="7">
@@ -90,9 +90,9 @@ const About = () => {
 							<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
 						</Col>
 						<Col sm="12" md="12" lg="5">
-							<Row className='mb-20'>
+							<Row className='mb-10'>
 								<Col sm="12">
-									<div className='about-image'></div>
+									<img src="profile/line_dark.png"></img>
 								</Col>
 							</Row>
 						</Col>
@@ -100,7 +100,7 @@ const About = () => {
 				</div>
 			</Tilt>
 			<Row>
-				<Col className='mb-20' sm="12" md="12" lg="6">
+				<Col className='mb-10' sm="12" md="12" lg="6">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel">
 							<h2>{t("about.life.title")}</h2>
@@ -113,7 +113,7 @@ const About = () => {
 										<div className='fs-xxl'>
 											<span id="years_div"></span> {t("about.life.years")}
 										</div>
-										<div className='fs-s accent-color'>
+										<div className='fs-s'>
 											<span id="months_div"></span> {t("about.life.months")}, <span id="days_div"></span> {t("about.life.days")}
 										</div>
 									</div>
@@ -122,7 +122,7 @@ const About = () => {
 						</div>
 					</Tilt>
 				</Col>
-				<Col className='mb-20' sm="12" md="6" lg="3">
+				<Col className='mb-10' sm="12" md="6" lg="3">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel gradient">
 							<h2>{t("about.socials.title")}</h2>
@@ -140,12 +140,12 @@ const About = () => {
 						</div>
 					</Tilt>
 				</Col>
-				<Col className='mb-20' sm="12" md="6" lg="3">
+				<Col className='mb-10' sm="12" md="6" lg="3">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel gradient">
 							<h2>{t("about.location.title")}</h2>
 							<div className='fs-xl flex'>Oviedo</div>
-							<div className='fs-s accent-color'>Asturias, España
+							<div className='fs-s'>Asturias, España
 								<a className='right' href="https://goo.gl/maps/4zkKbKJ8XXn4GbPCA"><i className='bx bxs-right-arrow-alt bx-fade-right'></i></a>
 							</div>
 						</div>
