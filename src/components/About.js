@@ -92,7 +92,7 @@ const About = () => {
 						<Col sm="12" md="12" lg="5">
 							<Row className='mb-10'>
 								<Col sm="12">
-									<img src="profile/line_dark.png"></img>
+									<img alt="Carlos Gómez" src="profile/line_dark.png"></img>
 								</Col>
 							</Row>
 						</Col>

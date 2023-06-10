@@ -41,9 +41,6 @@ const Contact = () => {
 					<h1>{t("navigation.contact-me")}</h1>
 				</Row>
 				<Row>
-					<p>cgomezcolmenero@gmail.com</p>
-				</Row>
-				<Row>
 					<Col sm="12" md="12" lg="6">
 						<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 							<div className="card-panel gradient">
