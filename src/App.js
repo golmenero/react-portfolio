@@ -54,7 +54,7 @@ function App() {
 			observer_nav.observe(item);
 		})
 
-		let colors = ["#cccccc", "#83b799", "#c2b28f", "#e4d8b4", '#a3d6d4'];
+		let colors = ["#c8d9c8", "#ebd0c9", "#b2c2c4", "#e7d4a5"];
 		document.body.style.setProperty('--accent', colors[Math.floor(Math.random() * colors.length)]);
 	});
 
