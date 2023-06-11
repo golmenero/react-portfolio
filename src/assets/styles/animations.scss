@@ -35,16 +35,3 @@
 		fill: var(--accent);
 	}
 }
-
-#more {
-	font-family: 'SFProBlack';
-	position: absolute;
-    top: 90vh;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: 2;
-
-	a {
-		text-decoration: none;
-	}
-}
