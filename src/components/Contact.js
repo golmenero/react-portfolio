@@ -40,10 +40,10 @@ const Contact = () => {
 				<Row>
 					<h1>{t("navigation.contact-me")}</h1>
 				</Row>
-				<Row>
-					<Col sm="12" md="12" lg="6">
-						<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-							<div className="card-panel gradient">
+				<Tilt tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
+					<div className="card-panel gradient">
+						<Row>
+							<Col sm="12" md="12" lg="6">
 								<Row>
 									<Col className='mb-10' sm='12' md="6">
 										<Input type="text" name='name' placeholder={t("contact-me.name")} required />
@@ -58,16 +58,19 @@ const Contact = () => {
 										<Input type="textarea" placeholder={t("contact-me.message")} name='message' required />
 									</Col>
 									<Col className='mb-10' sm="12">
-										<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="dark"></ReCAPTCHA>
+										<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="light"></ReCAPTCHA>
 									</Col>
 									<Col className='mb-10' sm="12">
 										<CustomButton type="submit" icon="bx bx-send" href="" text={ t("contact-me.send") }></CustomButton>
 									</Col>
 								</Row>
-							</div>
-						</Tilt>
-					</Col>
-				</Row>
+							</Col>
+							<Col sm="12" md="12" lg="6">
+									<img alt="Send email" src="profile/email.png"></img>
+							</Col>
+						</Row>
+					</div>
+				</Tilt>
 			</form>
 		</section>
 	)
