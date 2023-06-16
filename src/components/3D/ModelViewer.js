@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import GltfModel from "./GltfModel";
 
-const ModelViewer = ({ modelPath, scale = 15, position = [0, 0, -10] }) => {
+const ModelViewer = ({ modelPath, scale = 17, position = [0, 0, -10] }) => {
     return (
         <Canvas className="canvas">
             <ambientLight />
