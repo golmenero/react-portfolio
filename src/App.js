@@ -9,12 +9,8 @@ import Projects from './components/Project';
 import Contact from './components/Contact';
 import Others from './components/Others';
 import Footer from './components/Footer';
-import Wave from './components/Wave';
-import { useTranslation } from 'react-i18next';
 
 function App() {
-	const [t] = useTranslation("global");
-
 	document.addEventListener('mousemove', function (e) {
 		let x = e.clientX - 18;
 		let y = e.clientY - 18;
@@ -68,10 +64,6 @@ function App() {
 				<Container>
 					<Home />
 				</Container>
-				<Wave />
-				<span id="more" className='text-center'>
-					<a href="#about"> {t("home.more")} <i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
-				</span>
 				<div id="mainBody">
 					<Container>
 						<About />

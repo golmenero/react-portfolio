@@ -76,7 +76,7 @@
 
 #home {
 	position: relative;
-    min-height: 80vh;
+    min-height: 100vh;
 
     @media (max-width: 992px) {
 		h1 {
@@ -196,7 +196,7 @@
 
 	a {
 		text-decoration: none;
-		color: var(--black_1);
+		color: var(--white_1);
 	}
 }
 
