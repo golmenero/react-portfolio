@@ -1,21 +1,16 @@
 @font-face {
-    font-family: 'La Belle Aurore';
-    src: url('../fonts/LaBelleAurore.woff2') format('woff2');
+    font-family: 'Suisse';
+    src: url('../fonts/SuisseIntl/SuisseIntl-Light.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'SFPro';
-    src: url('../fonts/SFPro/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-family: 'SuisseMedium';
+    src: url('../fonts/SuisseIntl/SuisseIntl-Regular.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'SFProMedium';
-    src: url('../fonts/SFPro/SFPRODISPLAYMEDIUM.OTF') format('opentype');
-}
-
-@font-face {
-    font-family: 'SFProBlack';
-    src: url('../fonts/SFPro/SFPRODISPLAYBOLD.OTF') format('opentype');
+    font-family: 'SuisseBold';
+    src: url('../fonts/SuisseIntl/SuisseIntl-Medium.otf') format('opentype');
 }
 
 .fs-xxl {
@@ -61,12 +56,12 @@
 }
 
 html {
-    font: 300 11px/1.4 'SFPro', Tahoma, Geneva, Verdana, sans-serif;
+    font: 300 11px/1.4 'Suisse', Tahoma, Geneva, Verdana, sans-serif;
 
 	h1 {
 		@extend .fs-xl;
 		color: var(--black_1);
-		font-family: 'SFProBlack';
+		font-family: 'SuisseBold';
 		margin: 100px 0 50px 0 !important;
 
 		&.main {
@@ -78,13 +73,13 @@ html {
 	h2 {
 		@extend .fs-l;
 		color: var(--accent);
-		font-family: 'SFProMedium';
+		font-family: 'SuisseMedium';
 		margin-bottom: 20px !important;
 	}
 
 	p {
 		@extend .fs-s;
-		font-family: 'SFPro';
+		font-family: 'Suisse';
 		letter-spacing: 1px;
 		margin-bottom: -0 0 25px 0 !important;
 		text-align: justify;
