@@ -1,24 +1,20 @@
 import { Col, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
-import Tilt from 'react-parallax-tilt';
 
-const Skill = ({ icon, title, subtitle, tags = [] }) => {
+const Skill = ({ title, tags = [] }) => {
 
 	return (
-		<Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
-			<div className='card-panel'>
-				<div className='mb-10'>
-					<i className={icon}></i>
-				</div>
-				<h2>{title}</h2>
-				<p>{subtitle}</p>
-				<div className='tags'>
-					{tags.map((tag) => (
-						<span key={tag} className="tag">{ tag }</span>
-					))}
-				</div>
+		<div className='card-panel'>
+			<h2>{title}</h2>
+			<div className='tags'>
+				{tags.map((tag) => (
+					<div className="tag">
+						<i class="bx bx-check"></i>
+						<span key={tag}>{ tag }</span>
+					</div>
+				))}
 			</div>
-		</Tilt>
+		</div>
 	)
 }
 
@@ -34,22 +30,14 @@ const Skills = () => {
 				<p>{t("skills.header")}</p>
 			</Row>
 			<Row>
-				<Col className='mb-10' sm="12" md="6" lg="6">
-					<Skill icon="bx bx-cog" title={t("skills.back.title")} subtitle={t("skills.business.subtitle")} tags={["Java", "Kotlin", "PHP", "C#", "TypeScript", "Symfony", "SpringBoot"]}></Skill>
-				</Col>
-				<Col className='mb-10' sm="12" md="6" lg="6">
-					<Skill icon="bx bx-check" title={t("skills.tester.title")} subtitle={t("skills.tester.subtitle")} tags={["JUnit", "Selenium", "PHPUnit"]}></Skill>
-				</Col>
-			</Row>
-			<Row>
-				<Col className='mb-10' sm="4" md="4" lg="4">
-					<Skill icon="bx bx-cloud" title={t("skills.api.title")} subtitle={t("skills.api.subtitle")}></Skill>
+				<Col className='mb-10' sm="12" md="4" lg="4">
+					<Skill title={t("skills.back.title")} tags={["Java", "Kotlin", "PHP", "C#", "TypeScript", "Symfony", "SpringBoot", "Rest API"]}></Skill>
 				</Col>
 				<Col className='mb-10' sm="12" md="4" lg="4">
-					<Skill icon="bx bx-wink-smile" title={t("skills.social.title")} subtitle={t("skills.social.subtitle")}></Skill>
+					<Skill title={t("skills.database.title")} tags={["SQL", "MySQL", "PL-SQL", "MongoDB", "MariaDB", "NoSQL", "Oracle"]}></Skill>
 				</Col>
 				<Col className='mb-10' sm="12" md="4" lg="4">
-					<Skill icon="bx bx-data" title={t("skills.database.title")} subtitle={t("skills.database.subtitle")} tags={["SQL", "MySQL", "PL-SQL", "MongoDB", "MariaDB", "NoSQL", "Oracle"]}></Skill>
+					<Skill title={t("skills.tester.title")} tags={["JUnit", "Selenium", "PHPUnit"]}></Skill>
 				</Col>
 			</Row>
 		</section>

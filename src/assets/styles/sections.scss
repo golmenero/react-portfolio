@@ -156,15 +156,20 @@
 
 #skills {
 	.tags {
-		opacity: 0;
-		transition: opacity 0.5s ease-in-out;
-	}
+		margin-top: 25px;
 
-	.card-panel:hover {
-		.tags {
-			opacity: 1;
+		i {
+			color: lightgreen
+		}
+
+		.tag {
+			@extend .fs-s;
+			color: var(--white_0);
+			font-weight: 600;
+			margin-top: 10px;
 		}
 	}
+
 }
 
 #more {
