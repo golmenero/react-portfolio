@@ -13,22 +13,6 @@
     src: url('../fonts/Freight/FreightDispProBold-Regular.otf') format('opentype');
 }
 
-
-@font-face {
-    font-family: 'Suisse';
-    src: url('../fonts/SuisseIntl/SuisseIntl-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'SuisseMedium';
-    src: url('../fonts/SuisseIntl/SuisseIntl-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'SuisseBold';
-    src: url('../fonts/SuisseIntl/SuisseIntl-Medium.otf') format('opentype');
-}
-
 .fs-xxl {
     font-size: 56px !important;
 	@media (max-width: 992px) {
