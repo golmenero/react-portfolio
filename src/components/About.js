@@ -84,17 +84,10 @@ const About = () => {
 			<Tilt className='h-100 mb-10' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 				<div className="card-panel">
 					<Row>
-						<Col sm="12" md="12" lg="7">
+						<Col sm="12">
 							<AboutItem img="about/education.png" icon="bx bxs-graduation" title={t("about.education.title")} subtitle={t("about.education.subtitle")}></AboutItem>
 							<AboutItem img="about/language.png" icon="bx bx-globe" title={t("about.languages.title")} subtitle={t("about.languages.subtitle")}></AboutItem>
 							<AboutItem img="about/work.png" icon="bx bx-wrench" title={t("about.experience.title")} subtitle={t("about.experience.subtitle")}></AboutItem>
-						</Col>
-						<Col sm="12" md="12" lg="5">
-							<Row className='mb-10'>
-								<Col sm="12">
-									<img alt="Carlos Gómez" src="profile/line_dark.png"></img>
-								</Col>
-							</Row>
 						</Col>
 					</Row>
 				</div>

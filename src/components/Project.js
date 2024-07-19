@@ -28,7 +28,7 @@ const Projects = () => {
 	return (
 		<section id="projects" className='hidden' data-nav="projects">
 			<h1>{t("navigation.projects")}</h1>
-			<Carousel responsive={responsive}>
+			<Carousel responsive={responsive} itemClass="mr-10">
 				<Project link="https://github.com/golmenero/tfg_inmobiliaria" img="projects/proj-3-new.png" title={t("projects.realestate.title")} subtitle={t("projects.realestate.subtitle")}></Project>
 				<Project link="https://github.com/golmenero/javascript_videogame" img="projects/proj-4-new.png" title={t("projects.runner.title")} subtitle={t("projects.runner.subtitle")}></Project>
 				<Project link="https://github.com/golmenero/videojuego_shooter" img="projects/proj-2-new.png" title={t("projects.shooter.title")} subtitle={t("projects.shooter.subtitle")}></Project>
