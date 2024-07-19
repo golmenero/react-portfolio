@@ -18,7 +18,7 @@
     "home": {
         "hello": "¡Hola! soy Carlos",
         "header": "Desarrollador Back-End.",
-        "description": "Soy un Ingeniero de Software cuyo objetivo es tanto desarrollar código de calidad como diseñar interfaces de usuario efectivas.",
+        "description": "Graduado en 2021 en Ingeniería del Software por la Universidad de Oviedo, soy un desarrollador que combina creatividad con un alto nivel de conocimiento para cumplir con cualquier proyecto de una forma eficiente y completa.",
         "quote": "Crea el código más simple, resuelve los problemas más complejos",
         "more": "Más sobre mí"
     },
@@ -52,7 +52,7 @@
 		}
     },
     "skills": {
-        "header": "Tengo experiencia en los siguientes campos de conocimiento.",
+        "header": "Llevo casi una década trabajando en diferentes proyectos, tanto en inglés como en español. Actualmente trabajo en Idealista.com, la empresa más importante de España, Portugal e Italia en su sector",
         "front": {
             "title": "Desarrollo Front-End",
             "subtitle": "Habilidades notables en diseño de interfaces. Control de validación de accesibilidad y adaptabilidad web."

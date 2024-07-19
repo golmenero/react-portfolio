@@ -51,9 +51,6 @@ const Navigation = () => {
 							<NavLink href="#home">{t("navigation.home")}</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#about">{t("navigation.about")}</NavLink>
-						</NavItem>
-						<NavItem>
 							<NavLink href="#skills">{t("navigation.skills")}</NavLink>
 						</NavItem>
 						<NavItem>
@@ -72,12 +69,6 @@ const Navigation = () => {
 								</DropdownItem>
 								<DropdownItem onClick={() => { switchLang("en") }}>
 									<span className="fi fi-gb"></span>{t("lang.en")}
-								</DropdownItem>
-								<DropdownItem onClick={() => { switchLang("fr") }}>
-									<span className="fi fi-fr"></span>{t("lang.fr")}
-								</DropdownItem>
-								<DropdownItem onClick={() => { switchLang("de") }}>
-									<span className="fi fi-de"></span>{t("lang.de")}
 								</DropdownItem>
 								<DropdownItem onClick={() => { switchLang("ca") }}>
 									<span className="fi fi-es-ct"></span>{t("lang.ca")}

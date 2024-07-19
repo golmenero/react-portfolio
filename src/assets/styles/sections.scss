@@ -127,30 +127,6 @@
 	}
 }
 
-#about {
-	#lifeCalendar {
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 24px;
-
-		.black-year,
-		.white-year {
-			height: 10px;
-			width: 10px;
-			margin-bottom: 5px;
-			border-radius: 100%;
-			margin-right: 5px;
-		}
-		.black-year {
-			border: 1px solid var(--white_1);
-		}
-
-		.white-year {
-			background-color: var(--white_1);
-		}
-	}
-}
-
 #projects {
     img {
         max-height: 350px;
@@ -207,4 +183,12 @@
 
 #contact {
 	padding-bottom: 200px;
+
+	.btn {
+		background-color: var(--black_0);
+
+		&:hover {
+			background-color: var(--black_0) !important;
+		}
+	}
 }

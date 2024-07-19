@@ -18,7 +18,7 @@
     "home": {
         "hello": "Hola!, sóc Carles",
         "header": "Desarrollador Back-End.",
-        "description": "Sóc un Enginyer de Programari que té com a objectiu tant desenvolupar codi de qualitat com dissenyar interfícies d'usuari efectives.",
+        "description": "Graduat el 2021 a Enginyeria del Programari per la Universitat d'Oviedo, sóc un desenvolupador que combina creativitat amb un alt nivell de coneixement per complir amb qualsevol projecte d'una forma eficient i completa.",
         "quote": "Crea el codi més simple, resol els problemes més complexos",
         "more": "Més sobre mi"
     },
@@ -52,7 +52,7 @@
 		}
     },
     "skills": {
-        "header": "Tinc experiència en els camps de coneixement següents.",
+        "header": "Fa gairebé una dècada que treballo en diferents projectes, tant en anglès com en espanyol. Actualment treballo a Idealista.com, l'empresa més important d'Espanya, Portugal i Itàlia al seu sector",
         "front": {
             "title": "Desenvolupament Front-End",
             "subtitle": "Habilitats notables en el disseny d'interfícies. Control de validació daccessibilitat i adaptabilitat web."

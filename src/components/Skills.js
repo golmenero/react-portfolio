@@ -30,27 +30,28 @@ const Skills = () => {
 			<Row>
 				<h1>{t("navigation.skills")}</h1>
 			</Row>
-			<div>
-				<Row>
-					<Col className='mb-10' sm="12" md="6" lg="6">
-						<Skill icon="bx bx-cog" title={t("skills.back.title")} subtitle={t("skills.business.subtitle")} tags={["Java", "Kotlin", "PHP", "C#", "TypeScript", "Symfony", "SpringBoot"]}></Skill>
-					</Col>
-					<Col className='mb-10' sm="12" md="6" lg="6">
-						<Skill icon="bx bx-check" title={t("skills.tester.title")} subtitle={t("skills.tester.subtitle")} tags={["JUnit", "Selenium", "PHPUnit"]}></Skill>
-					</Col>
-				</Row>
-				<Row>
-					<Col className='mb-10' sm="4" md="4" lg="4">
-						<Skill icon="bx bx-cloud" title={t("skills.api.title")} subtitle={t("skills.api.subtitle")}></Skill>
-					</Col>
-					<Col className='mb-10' sm="12" md="4" lg="4">
-						<Skill icon="bx bx-wink-smile" title={t("skills.social.title")} subtitle={t("skills.social.subtitle")}></Skill>
-					</Col>
-					<Col className='mb-10' sm="12" md="4" lg="4">
-						<Skill icon="bx bx-data" title={t("skills.database.title")} subtitle={t("skills.database.subtitle")} tags={["SQL", "MySQL", "PL-SQL", "MongoDB", "MariaDB", "NoSQL", "Oracle"]}></Skill>
-					</Col>
-				</Row>
-			</div>
+			<Row>
+				<p>{t("skills.header")}</p>
+			</Row>
+			<Row>
+				<Col className='mb-10' sm="12" md="6" lg="6">
+					<Skill icon="bx bx-cog" title={t("skills.back.title")} subtitle={t("skills.business.subtitle")} tags={["Java", "Kotlin", "PHP", "C#", "TypeScript", "Symfony", "SpringBoot"]}></Skill>
+				</Col>
+				<Col className='mb-10' sm="12" md="6" lg="6">
+					<Skill icon="bx bx-check" title={t("skills.tester.title")} subtitle={t("skills.tester.subtitle")} tags={["JUnit", "Selenium", "PHPUnit"]}></Skill>
+				</Col>
+			</Row>
+			<Row>
+				<Col className='mb-10' sm="4" md="4" lg="4">
+					<Skill icon="bx bx-cloud" title={t("skills.api.title")} subtitle={t("skills.api.subtitle")}></Skill>
+				</Col>
+				<Col className='mb-10' sm="12" md="4" lg="4">
+					<Skill icon="bx bx-wink-smile" title={t("skills.social.title")} subtitle={t("skills.social.subtitle")}></Skill>
+				</Col>
+				<Col className='mb-10' sm="12" md="4" lg="4">
+					<Skill icon="bx bx-data" title={t("skills.database.title")} subtitle={t("skills.database.subtitle")} tags={["SQL", "MySQL", "PL-SQL", "MongoDB", "MariaDB", "NoSQL", "Oracle"]}></Skill>
+				</Col>
+			</Row>
 		</section>
 	)
 }

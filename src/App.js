@@ -3,7 +3,6 @@ import { Container } from 'reactstrap';
 import { useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
-import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Project';
 import Contact from './components/Contact';
@@ -62,7 +61,6 @@ function App() {
 				</Container>
 				<div id="mainBody">
 					<Container>
-						<About />
 						<Skills />
 						<Projects />
 						<Contact />

@@ -18,7 +18,7 @@
     "home": {
         "hello": "Hi, I'm Carlos",
         "header": "Back End Developer.",
-        "description": "I am a Software Engineer whose goal is to both develop quality code and design effective user interfaces.",
+        "description": "Graduated in 2021 in Software Engineering from the University of Oviedo, I am a developer who combines creativity with a high level of knowledge to complete any project in an efficient and complete way.",
         "quote": "Build the simplest code, solve the most complex problems",
         "more": "More about me"
     },
@@ -52,7 +52,7 @@
 		}
     },    
     "skills": {
-        "header": "I have experience in the following fields of knowledge.",
+        "header": "I have been working on different projects for almost a decade, both in English and Spanish. I currently work at Idealista.com, the most important company in Spain, Portugal and Italy in its sector",
         "front": {
             "title": "Front-End Development",
             "subtitle": "Remarkable skills in interface design. Web accessibility and adaptability validation control."
