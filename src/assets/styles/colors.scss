@@ -1,13 +1,13 @@
 html {
 	body.dark {
-		--black_0: #0c0c0d;
-		--black_1: #19181b;
+		--black_0: #1a1a1a;
+		--black_1: hsl(260, 6%, 10%);
 		--white_0: #e6e6e6;
 		--white_1: #cccccc;
 		--blue_0: #0077b3;
 		--blue_1: #b3e6ff;
 
-		--accent: #e4d8b4;
+		--accent:  #fdd6d5;
 
 		background-color: var(--black_0);
 		color: var(--white_1);
@@ -16,7 +16,7 @@ html {
 	#mainBody {
 		z-index: 1;
 		position: relative;
-		background: var(--accent) !important;
+		background: var(--white_1) !important;
 		color: var(--black_1);
 	}
 }

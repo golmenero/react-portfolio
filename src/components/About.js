@@ -123,23 +123,13 @@ const About = () => {
 					</Tilt>
 				</Col>
 				<Col className='mb-10' sm="12" md="6" lg="3">
-					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
-						<div className="card-panel gradient">
-							<h2>{t("about.socials.title")}</h2>
-							<Row>
-								<Col sm="12" className='text-center mb-10'>
-									<CustomButton type="text" icon='bx bxl-linkedin' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="LinkedIn"></CustomButton>
-								</Col>
-								<Col sm="12" className='text-center mb-10'>
-									<CustomButton type="text" icon='bx bxl-github' href="https://github.com/golmenero" text="GitHub"></CustomButton>
-								</Col>
-								<Col sm="12">
-									<CustomButton type="text" icon='bx bxl-gmail' href="#contact" text="E-Mail"></CustomButton>
-								</Col>
-							</Row>
-						</div>
-					</Tilt>
-				</Col>
+						<Tilt className='h-100' tiltMaxAngleX="4" tiltMaxAngleY="4" scale="1.02">
+							<div className="card-panel gradient">
+								<h2>CV</h2>
+								<CustomButton type="text" icon='bx bx-arrow-from-top' href={t("about.download-url")} text={t("about.download")}></CustomButton>
+							</div>
+						</Tilt>
+					</Col>
 				<Col className='mb-10' sm="12" md="6" lg="3">
 					<Tilt className='h-100' tiltMaxAngleX="1" tiltMaxAngleY="1" scale="1.01">
 						<div className="card-panel gradient">

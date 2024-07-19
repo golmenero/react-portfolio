@@ -17,7 +17,7 @@
     },
     "home": {
         "hello": "Hi, I'm Carlos",
-        "header": "Full Stack Developer.",
+        "header": "Back End Developer.",
         "description": "I am a Software Engineer whose goal is to both develop quality code and design effective user interfaces.",
         "quote": "Build the simplest code, solve the most complex problems",
         "more": "More about me"

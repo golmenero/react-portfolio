@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Col, Row } from 'reactstrap';
-import ModelViewer from './3D/ModelViewer';
+import CustomButton from './CustomButton';
 
 const Home = () => {
 	const [t] = useTranslation("global");
@@ -8,10 +8,9 @@ const Home = () => {
 	return (
 		<>
 			<section id="home" data-nav="home" className='hidden'>
-				<ModelViewer modelPath="./logo/logo.glb" />
 				<div id='content-home'>
 					<Row>
-						<Col sm="12" md="12" lg="7">
+						<Col sm="12" md="8" lg="8">
 							<h2 className='m-0'>{t("home.hello")}</h2>
 							<h1 className='mt-0 main'>
 								{t("home.header")}
@@ -19,6 +18,14 @@ const Home = () => {
 							<div>
 								<p>{t("home.description")}</p>
 							</div>
+							<div>
+								<CustomButton type="text" icon='bx bxl-linkedin' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="LinkedIn"></CustomButton>
+								<CustomButton type="text" icon='bx bxl-github' href="https://github.com/golmenero" text="GitHub"></CustomButton>
+								<CustomButton type="text" icon='bx bxl-gmail' href="#contact" text="E-Mail"></CustomButton>
+							</div>
+						</Col>
+						<Col sm="12" md="4" lg="4">
+							<img alt="Carlos Gómez" src="profile/line_dark.png"></img>
 						</Col>
 					</Row>
 				</div>

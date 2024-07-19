@@ -7,7 +7,6 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Project';
 import Contact from './components/Contact';
-import Others from './components/Others';
 import Footer from './components/Footer';
 
 function App() {
@@ -49,9 +48,6 @@ function App() {
 		navigation_elements.forEach((item) => {
 			observer_nav.observe(item);
 		})
-
-		let colors = ["#c8d9c8", "#ebd0c9", "#b2c2c4", "#e7d4a5"];
-		document.body.style.setProperty('--accent', colors[Math.floor(Math.random() * colors.length)]);
 	});
 
 	return (
@@ -69,7 +65,6 @@ function App() {
 						<About />
 						<Skills />
 						<Projects />
-						<Others />
 						<Contact />
 					</Container>
 				</div>
