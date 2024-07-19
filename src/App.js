@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Books from './components/Books';
 
 function App() {
 	document.addEventListener('mousemove', function (e) {
@@ -63,6 +64,7 @@ function App() {
 					<Container>
 						<Skills />
 						<Projects />
+						<Books />
 						<Contact />
 					</Container>
 				</div>

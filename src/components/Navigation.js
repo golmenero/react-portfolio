@@ -57,6 +57,9 @@ const Navigation = () => {
 							<NavLink href="#projects">{t("navigation.projects")}</NavLink>
 						</NavItem>
 						<NavItem>
+							<NavLink href="#books">{t("navigation.books")}</NavLink>
+						</NavItem>
+						<NavItem>
 							<NavLink href="#contact">{t("navigation.contact-me")}</NavLink>
 						</NavItem>
 						<UncontrolledDropdown nav inNavbar>

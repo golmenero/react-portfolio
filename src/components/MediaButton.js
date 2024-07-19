@@ -6,7 +6,6 @@ const MediaButton = ({ href, icon, text, type }) => {
 			<Button type='text' className='btn media' href={ href }>
 				<i className={ icon }></i>
 			</Button>
-		
 		</>
 	)
 }
