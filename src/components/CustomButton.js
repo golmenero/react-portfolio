@@ -1,15 +1,13 @@
 import { Button } from "reactstrap";
 
-const CustomButton = ({ href, icon, text, type }) => {
+const CustomButton = ({ href, text, type }) => {
 	return (
 		<>
-			<Button type={ type } className='btn full-width' href={ href }>
+			<Button type={ type } className='btn' href={ href }>
 				<div className='btn-content'>
-					<i className={ icon }></i>
 					<span>{ text }</span>
 				</div>
 			</Button>
-		
 		</>
 	)
 }

@@ -56,7 +56,7 @@ const Contact = () => {
 								<ReCAPTCHA ref={captcha} sitekey='6Lf1cnAjAAAAANcNeOWfKFE11Mk-D2BYHHJxxgiN' theme="light"></ReCAPTCHA>
 							</Col>
 							<Col className='mb-10' sm="12">
-								<CustomButton type="submit" icon="bx bx-send" href="" text={ t("contact-me.send") }></CustomButton>
+								<CustomButton type="submit" href="" text={ t("contact-me.send") }></CustomButton>
 							</Col>
 						</Row>
 					</Col>

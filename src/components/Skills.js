@@ -9,7 +9,7 @@ const Skill = ({ title, tags = [] }) => {
 			<div className='tags'>
 				{tags.map((tag) => (
 					<div className="tag">
-						<i class="bx bx-check"></i>
+						<i className="bx bx-check"></i>
 						<span key={tag}>{ tag }</span>
 					</div>
 				))}

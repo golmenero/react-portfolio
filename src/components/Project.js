@@ -13,7 +13,7 @@ const Project = ({ link, title, subtitle, img }) => {
 			</div>
 			<div className="content">
 				<p className='text-justify'>{subtitle}</p>
-				<CustomButton type="text" icon="bx bx-code-alt" href={link} text={t("projects.see-source-code")} />
+				<CustomButton type="text" href={link} text={t("projects.see-source-code")} />
 			</div>
     	</div>
 	)
