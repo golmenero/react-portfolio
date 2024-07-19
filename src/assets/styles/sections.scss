@@ -60,12 +60,12 @@
         }
 
         .navbar-brand {
-			font: 20px 'SuisseBold';
+			font: 20px 'FreightBold';
             color: var(--white_0);
         }
 
 		.nav-link {
-			font: 20px 'SuisseBold';
+			font: 20px 'FreightBold';
         }
 
         .nav-link.active {
@@ -212,12 +212,12 @@
 		margin-top: 25px;
 
 		i {
-			color: lightgreen
+			color: green
 		}
 
 		.tag {
 			@extend .fs-s;
-			color: var(--white_0);
+			font-family: 'Freight';
 			font-weight: 600;
 			margin-top: 10px;
 		}
@@ -226,7 +226,7 @@
 }
 
 #more {
-	font-family: 'SuisseBold';
+	font-family: 'FreightBold';
 	position: absolute;
     top: 90vh;
     left: 50vw;

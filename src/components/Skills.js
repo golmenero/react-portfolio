@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const Skill = ({ title, tags = [] }) => {
 
 	return (
-		<div className='card-panel'>
+		<div className='card-panel gradient'>
 			<h2>{title}</h2>
 			<div className='tags'>
 				{tags.map((tag) => (

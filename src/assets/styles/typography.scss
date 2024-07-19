@@ -1,4 +1,20 @@
 @font-face {
+    font-family: 'Freight';
+    src: url('../fonts/Freight/FreightDispProLight-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FreightMedium';
+    src: url('../fonts/Freight/FreightDispProMedium-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FreightBold';
+    src: url('../fonts/Freight/FreightDispProBold-Regular.otf') format('opentype');
+}
+
+
+@font-face {
     font-family: 'Suisse';
     src: url('../fonts/SuisseIntl/SuisseIntl-Regular.otf') format('opentype');
 }
@@ -14,54 +30,55 @@
 }
 
 .fs-xxl {
-    font-size: 52px !important;
+    font-size: 56px !important;
 	@media (max-width: 992px) {
-		font-size: 54px !important;
+		font-size: 58px !important;
 	}
 }
 
 .fs-xl {
-    font-size: 44px !important;
+    font-size: 48px !important;
 	@media (max-width: 992px) {
-		font-size: 46px !important;
+		font-size: 50px !important;
 	}
 }
 
 .fs-l {
+    font-size: 30px !important;
+	@media (max-width: 992px) {
+		font-size: 32px !important;
+	}
+}
+
+.fs-m {
     font-size: 26px !important;
 	@media (max-width: 992px) {
 		font-size: 28px !important;
 	}
 }
 
-.fs-m {
+.fs-s {
+    font-size: 24px !important;
+	font-weight: 600;
+	@media (max-width: 992px) {
+		font-size:26px !important;
+	}
+}
+
+.fs-xs {
     font-size: 22px !important;
 	@media (max-width: 992px) {
 		font-size: 24px !important;
 	}
 }
 
-.fs-s {
-    font-size: 20px !important;
-	@media (max-width: 992px) {
-		font-size:22px !important;
-	}
-}
-
-.fs-xs {
-    font-size: 18px !important;
-	@media (max-width: 992px) {
-		font-size: 20px !important;
-	}
-}
-
 html {
-    font: 300 11px/1.4 'Suisse', Tahoma, Geneva, Verdana, sans-serif;
+    font: 300 11px/1.4 'Freight', Tahoma, Geneva, Verdana, sans-serif;
 
 	h1 {
 		@extend .fs-xl;
 		color: var(--black_1);
-		font-family: 'SuisseBold';
+		font-family: 'FreightBold';
 		margin: 100px 0 50px 0 !important;
 
 		&.main {
@@ -73,13 +90,13 @@ html {
 	h2 {
 		@extend .fs-l;
 		color: var(--accent);
-		font-family: 'SuisseMedium';
+		font-family: 'FreightMedium';
 		margin-bottom: 20px !important;
 	}
 
 	p {
 		@extend .fs-s;
-		font-family: 'Suisse';
+		font-family: 'Freight';
 		letter-spacing: 1px;
 		margin-bottom: -0 0 25px 0 !important;
 		text-align: justify;
