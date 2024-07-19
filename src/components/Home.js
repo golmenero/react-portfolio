@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Col, Row } from 'reactstrap';
-import CustomButton from './CustomButton';
+import MediaButton from './MediaButton';
 
 const Home = () => {
 	const [t] = useTranslation("global");
@@ -19,10 +19,10 @@ const Home = () => {
 								<p>{t("home.description")}</p>
 							</div>
 							<div>
-								<CustomButton type="text" icon='bx bxl-linkedin' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="LinkedIn"></CustomButton>
-								<CustomButton type="text" icon='bx bxl-github' href="https://github.com/golmenero" text="GitHub"></CustomButton>
-								<CustomButton type="text" icon='bx bxl-gmail' href="#contact" text="E-Mail"></CustomButton>
-								<CustomButton type="text" icon='bx bx-arrow-from-top' href={t("about.download-url")} text={'CV'}></CustomButton>
+								<MediaButton icon='bx bxl-linkedin' href="https://www.linkedin.com/in/carlos-gomez-colmenero/" text="LinkedIn"></MediaButton>
+								<MediaButton icon='bx bxl-github' href="https://github.com/golmenero" text="GitHub"></MediaButton>
+								<MediaButton icon='bx bxl-gmail' href="#contact" text="E-Mail"></MediaButton>
+								<MediaButton icon='bx bx-arrow-from-top' href={t("about.download-url")} text={'CV'}></MediaButton>
 							</div>
 						</Col>
 						<Col sm="12" md="4" lg="4">
@@ -32,7 +32,7 @@ const Home = () => {
 				</div>
 			</section>
 			<span id="more" className='text-center'>
-				<a href="#skills"> {t("home.more")} <i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
+				<a href="#skills"> <i className='bx bx-down-arrow-alt bx-fade-down' ></i></a>
 			</span>
 		</>
 	)

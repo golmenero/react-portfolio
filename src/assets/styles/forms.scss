@@ -19,6 +19,15 @@ button {
 		background-color: transparent;
 		height: 50px;
 
+		&.media {
+			border: none;
+			width: auto;
+
+			&:hover {
+				color: var(--accent);
+			}
+		}
+
 		.btn-content {
 			padding: 10px;
 			width: 100%;
