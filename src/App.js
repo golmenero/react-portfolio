@@ -6,7 +6,6 @@ import Home from './components/Home';
 import Skills from './components/Skills';
 import Projects from './components/Project';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 import Books from './components/Books';
 
 function App() {
@@ -70,7 +69,6 @@ function App() {
 				</div>
 			</main>
 			<footer>
-				<Footer />
 			</footer>
 		</div>
 	);

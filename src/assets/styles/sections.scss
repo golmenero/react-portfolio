@@ -241,11 +241,20 @@
 #contact {
 	padding-bottom: 200px;
 
-	.btn {
-		background-color: var(--black_0);
+	.contact-item {
+		p {
+			display: flex;
+			align-items: center;
 
-		&:hover {
-			background-color: var(--black_0) !important;
+			a {
+				margin-left: 10px;
+				color: var(--black_0);
+				text-decoration: none;
+	
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 		}
 	}
 }

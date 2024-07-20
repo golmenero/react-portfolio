@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^3.9.1",
     "@react-three/drei": "^9.51.13",
     "@react-three/fiber": "^8.10.0",
     "@testing-library/jest-dom": "^5.16.5",
