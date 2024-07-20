@@ -55,32 +55,21 @@
     "skills": {
         "header": "Llevo casi una década trabajando en diferentes proyectos, tanto en inglés como en español. Actualmente trabajo en Idealista.com, la empresa más importante de España, Portugal e Italia en su sector",
         "front": {
-            "title": "Desarrollo Front-End",
-            "subtitle": "Habilidades notables en diseño de interfaces. Control de validación de accesibilidad y adaptabilidad web."
+            "title": "Desarrollo Front-End"
         },
         "back": {
-            "title": "Desarrollo Back-End",
-            "subtitle": "Java, PHP, JavaScript, C#, C++, Python y TypeScript, así como tecnologías como Angular, NodeJS, Phalcon, Symfony, SpringBoot y React, entre otras."
+            "title": "Desarrollo Back-End"
         },
-        "api": {
-            "title": "Administración de API",
-            "subtitle": "Conocimiento de creación, administración y mantenimiento de APIs."
-        },
-        "database": {
-            "title": "Administración de base de datos",
-            "subtitle": "Amplios conocimientos en bases de datos tanto relacionales como documentales."
-        },
-        "business": {
-            "title": "Conocimiento de Negocio",
-            "subtitle": "Amplios conocimientos en Patrones de Diseño y Diseño de Software, así como conceptos avanzados de Arquitectura de Software y principios de seguridad y consistencia de datos."
-        },
-        "tester": {
-            "title": "Tester",
-            "subtitle": "Conocimiento avanzado de testing. Pruebas unitarias, de integración, de carga, de rendimiento etc."
-        },
-		"social": {
-            "title": "Habilidades sociales",
-            "subtitle": "Trabajo en equipo, liderazgo, actitud positiva. Escucha activa, paciencia y asertividad."
+        "others": {
+            "title": "Otros",
+			"skill": {
+				"rest-api": "APIs Rest",
+				"database": "Gestion de Bases de Datos",
+				"design-patterns": "Patrones de Diseño",
+				"data-security": "Seguridad de Datos",
+				"testing": "Testing Avanzado",
+				"social": "Habilidades Sociales"
+			}
         }
     },
     "projects": {
@@ -103,6 +92,9 @@
             "subtitle": "Una sencilla aplicación de tienda de música hecha en SpringBoot. Permite al usuario comprar, vender o reproducir diferentes pistas de música."
         }
     },
+	"books": {
+		"header": "Estos son algunos libros que he recomiendo"
+	},
     "contact-me": {
         "header": "Estaré encantado de responder cualquier pregunta que tenga.",
         "name": "Nombre",

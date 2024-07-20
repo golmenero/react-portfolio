@@ -52,38 +52,27 @@
 			"title": "Xarxes socials"
 		}
     },
-    "skills": {
+	"skills": {
         "header": "Fa gairebé una dècada que treballo en diferents projectes, tant en anglès com en espanyol. Actualment treballo a Idealista.com, l'empresa més important d'Espanya, Portugal i Itàlia al seu sector",
         "front": {
-            "title": "Desenvolupament Front-End",
-            "subtitle": "Habilitats notables en el disseny d'interfícies. Control de validació daccessibilitat i adaptabilitat web."
+            "title": "Desenvolupament Front-End"
         },
         "back": {
-            "title": "Desenvolupament back-end",
-            "subtitle": "Java, PHP, JavaScript, C#, C++, Python i TypeScript, així com tecnologies com Angular, NodeJS, Phalcon, Symfony, SpringBoot i React, entre d'altres."
+            "title": "Desenvolupament back-end"
         },
-        "api": {
-            "title": "Administració d'API",
-            "subtitle": "Coneixement de creació, administració i manteniment d'APIs."
-        },
-        "database": {
-            "title": "Administració de base de dades",
-            "subtitle": "Amplis coneixements en bases de dades tant relacionals com documentals."
-        },
-        "business": {
-            "title": "Coneixement de Negoci",
-            "subtitle": "Amplis coneixements en Patrons de Disseny i Disseny de Programari, així com conceptes avançats d'Arquitectura de Programari i principis de seguretat i consistència de dades."
-        },
-        "tester": {
-            "title": "Probador",
-            "subtitle": "Coneixement avançat de testing. Proves unitàries, dintegració, de càrrega, de rendiment etc."
-        },
-		"social": {
-            "title": "Habilitats socials",
-            "subtitle": "Treball en equip, lideratge, actitud positiva. Escolta activa, paciència i assertivitat."
+        "others": {
+            "title": "Altres",
+			"skill": {
+				"rest-api": "APIs Rest",
+				"database": "Gestió de Bases de Dades",
+				"design-patterns": "Patrons de disseny",
+				"data-security": "Seguretat de dades",
+				"testing": "Testing avançat",
+				"social": "Habilitats socials"
+			}
         }
     },
-    "projects": {
+	"projects": {
         "header": "Aquí hi ha una llista dels meus projectes anteriors.",
         "see-source-code": "Vegeu el codi font",
         "realestate": {
@@ -103,6 +92,9 @@
             "subtitle": "Una senzilla aplicació de botiga de música feta a SpringBoot. Permet a l'usuari comprar, vendre o reproduir diferents pistes de música."
         }
     },
+	"books": {
+		"header": "Aquests són alguns llibres que he recomano"
+	},
     "contact-me": {
         "header": "Estaré encantat de respondre qualsevol pregunta que tingui.",
         "name": "Nom",

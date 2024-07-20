@@ -48,9 +48,6 @@ const Navigation = () => {
 				<Collapse isOpen={isOpen} navbar>
 					<Nav navbar>
 						<NavItem>
-							<NavLink href="#home">{t("navigation.home")}</NavLink>
-						</NavItem>
-						<NavItem>
 							<NavLink href="#skills">{t("navigation.skills")}</NavLink>
 						</NavItem>
 						<NavItem>

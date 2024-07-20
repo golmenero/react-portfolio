@@ -51,36 +51,25 @@
 		"socials": {
 			"title": "Social networks"
 		}
-    },    
-    "skills": {
+    },
+	"skills": {
         "header": "I have been working on different projects for almost a decade, both in English and Spanish. I currently work at Idealista.com, the most important company in Spain, Portugal and Italy in its sector",
         "front": {
-            "title": "Front-End Development",
-            "subtitle": "Remarkable skills in interface design. Web accessibility and adaptability validation control."
+            "title": "Front-End Development"
         },
         "back": {
-            "title": "Back-End Development",
-            "subtitle": "Java, PHP, JavaScript, C#, C++, Python, and TypeScript, as well as technologies like Angular, NodeJS, Phalcon, Symfony, SpringBoot, and React, among others."
+            "title": "Back-End Development"
         },
-        "api": {
-            "title": "API Management",
-            "subtitle": "Knowledge of creating, managing and maintaining APIs."
-        },
-        "database": {
-            "title": "Database Management",
-            "subtitle": "Extensive knowledge in both relational and documentary databases."
-        },
-        "business": {
-            "title": "Business Management",
-            "subtitle": "Extensive knowledge in Design Patterns and Software Design, as well as advanced concepts of Software Architecture and principles of security and data consistency."
-        }, 
-        "tester": {
-            "title": "Tester",
-            "subtitle": "Advanced knowledge of testing. Unit tests, integration tests, load tests, performance tests, etc."
-        },
-		"social": {
-            "title": "Social skills",
-            "subtitle": "Teamwork, leadership, positive attitude. Active listening, patience and assertiveness."
+        "others": {
+            "title": "Others",
+			"skill": {
+				"rest-api": "Rest API",
+				"database": "Database Management",
+				"design-patterns": "Design Patterns",
+				"data-security": "Data Security",
+				"testing": "Advanced Testing",
+				"social": "Social skills"
+			}
         }
     },
     "projects": {
@@ -103,6 +92,9 @@
             "subtitle": "A simple music shop application made in SpringBoot. It allows the user to buy, sell or play different music tracks."
         }
     },
+	"books": {
+		"header": "These are some books that I have recommended"
+	},
     "contact-me": {
         "header": "I will be happy to answer any questions you have.",
         "name": "Name",

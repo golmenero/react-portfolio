@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Row } from "reactstrap";
 
 const Book = ({ title, img }) => {
 	return (
@@ -24,7 +25,12 @@ const Books = () => {
 
 	return (
 		<section id="books" className='hidden' data-nav="books">
-			<h1>{t("navigation.books")}</h1>
+			<Row>
+				<h1>{t("navigation.books")}</h1>
+			</Row>
+			<Row>
+				<p>{t("books.header")}</p>
+			</Row>
 			<Carousel responsive={responsive}>
 				<Book title='From Objects to Functions' img="books/objects.jpg"></Book>
 				<Book title='Grokking Simplicity' img="books/grokking.jpg"></Book>
