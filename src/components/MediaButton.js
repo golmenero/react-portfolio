@@ -1,6 +1,6 @@
 import { Button } from "reactstrap";
 
-const MediaButton = ({ href, icon, text, type }) => {
+const MediaButton = ({ href, icon }) => {
 	return (
 		<>
 			<Button type='text' className='btn media' href={ href }>
